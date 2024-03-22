@@ -1532,7 +1532,9 @@ class ConnectService {
   Signup(newUser) {
     var _this = this;
     return (0,_home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      let resp = yield _this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base}/auth/signup`, newUser).toPromise();
+      let resp = yield _this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base}/auth/signup`, newUser, {
+        withCredentials: true
+      }).toPromise();
       console.log(resp);
       return resp;
     })();
@@ -1543,7 +1545,9 @@ class ConnectService {
       let currentUser = new _models_fasten_user__WEBPACK_IMPORTED_MODULE_1__.User();
       currentUser.email = email;
       currentUser.password = pass;
-      let resp = yield _this2._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base}/auth/login`, currentUser).toPromise();
+      let resp = yield _this2._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base}/auth/login`, currentUser, {
+        withCredentials: true
+      }).toPromise();
       return resp;
     })();
   }

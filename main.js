@@ -255,15 +255,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class IsAuthenticatedAuthGuard {
-  constructor(connectService, router) {
-    this.connectService = connectService;
+  constructor(authService, router) {
+    this.authService = authService;
     this.router = router;
   }
   canActivate(route, state) {
     var _this = this;
     return (0,_home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //check if the user is authenticated, if not, redirect to login
-      if (!(yield _this.connectService.IsAuthenticated())) {
+      if (!(yield _this.authService.IsAuthenticated())) {
         return yield _this.router.navigate(['/auth/signin']);
       }
       // continue as normal

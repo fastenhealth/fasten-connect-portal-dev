@@ -1514,7 +1514,7 @@ DevelopersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Name");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "th", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Public Key");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Public Id");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "th", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Private Key");
@@ -1648,9 +1648,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var _models_fasten_user__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/fasten/user */ 8821);
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ 2340);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 6317);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 6317);
+/* harmony import */ var jose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jose */ 8042);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 8987);
+
 
 
 
@@ -1661,7 +1663,7 @@ const FASTEN_AUTH_COOKIE_NAME = 'fasten_connect_auth';
 class AuthService {
   constructor(_httpClient) {
     this._httpClient = _httpClient;
-    this.IsAuthenticatedSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__.BehaviorSubject(false);
+    this.IsAuthenticatedSubject = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject(false);
   }
   /**
    * Signup  (and Signin) both require an "online" user.
@@ -1711,13 +1713,24 @@ class AuthService {
         _this4.publishAuthenticationState(false);
         return false;
       }
-      _this4.publishAuthenticationState(true);
-      return true;
-      //TODO: check if the authToken is valid
-      // let jwtClaims = jose.decodeJwt(authToken)
-      // let valid = Date.now() < (jwtClaims.exp * 1000);
-      // this.publishAuthenticationState(valid)
-      // return valid
+      // TODO: check if the authToken is valid
+      let jwks = jose__WEBPACK_IMPORTED_MODULE_3__.createRemoteJWKSet(new URL(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.jwks_uri));
+      let issuerHost = new URL(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base).host;
+      try {
+        const {
+          payload,
+          protectedHeader
+        } = yield jose__WEBPACK_IMPORTED_MODULE_3__.jwtVerify(authToken, jwks, {
+          issuer: issuerHost
+        });
+        console.log(payload, protectedHeader);
+        _this4.publishAuthenticationState(true);
+        return true;
+      } catch (e) {
+        console.error(e);
+        _this4.publishAuthenticationState(false);
+        return false;
+      }
     })();
   }
   //https://stackoverflow.com/questions/34298133/angular-cookies
@@ -1751,9 +1764,9 @@ class AuthService {
   }
 }
 AuthService.ɵfac = function AuthService_Factory(t) {
-  return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient));
+  return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClient));
 };
-AuthService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({
+AuthService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjectable"]({
   token: AuthService,
   factory: AuthService.ɵfac,
   providedIn: 'root'
@@ -1779,6 +1792,7 @@ const environment = {
     // connect_api_endpoint_base: 'https://api.connect-dev.fastenhealth.com/v1',
     // if relative, must start with /
     connect_api_endpoint_base: 'https://api.connect-dev.fastenhealth.com/v1',
+    jwks_uri: 'https://cdn.fastenhealth.com/jwks/fasten-connect/dev.json',
 };
 
 

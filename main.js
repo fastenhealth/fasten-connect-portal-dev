@@ -1081,6 +1081,7 @@ class AuthSignupOrganizationComponent {
     signupOrgSubmit() {
         this.loading = true;
         this.submitted = true;
+        this.newOrg.logo_uri = "https://example.com"; //TODO: placeholder logo url.
         console.log("starting signup process...", this.newOrg);
         this.connectService.createOrg(this.newOrg).then((resp) => {
             console.log("Organization Created", resp);
@@ -1872,11 +1873,13 @@ class AuthService {
       let jwks = jose__WEBPACK_IMPORTED_MODULE_3__.createRemoteJWKSet(new URL(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.jwks_uri));
       let issuerHost = _environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base;
       try {
+        //audience and issuer must be the same. This token is only valid on the fasten connect api
         const {
           payload,
           protectedHeader
         } = yield jose__WEBPACK_IMPORTED_MODULE_3__.jwtVerify(authToken, jwks, {
-          issuer: issuerHost
+          issuer: issuerHost,
+          audience: issuerHost
         });
         return payload;
       } catch (e) {

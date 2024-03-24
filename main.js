@@ -269,9 +269,13 @@ class IsAuthenticatedAuthGuard {
   canActivate(route, state) {
     var _this = this;
     return (0,_home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      let jwtPayload = yield _this.authService.GetJWTPayload();
       //check if the user is authenticated, if not, redirect to login
-      if (!(yield _this.authService.IsAuthenticated())) {
+      if (!jwtPayload) {
         return yield _this.router.navigate(['/auth/signin']);
+      } else if (jwtPayload.org_id == '' || jwtPayload.org_id == null) {
+        console.log("User is not associated with an organization, redirecting to org signup", jwtPayload);
+        return yield _this.router.navigate(['/auth/signup/org']);
       }
       // continue as normal
       return true;
@@ -842,7 +846,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_fasten_organization__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../models/fasten/organization */ 1306);
 /* harmony import */ var _components_logo_cropper_logo_cropper_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/logo-cropper/logo-cropper.component */ 7993);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/auth.service */ 7556);
+/* harmony import */ var _services_connect_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/connect.service */ 4543);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 124);
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ 2508);
@@ -975,8 +979,8 @@ function AuthSignupOrganizationComponent_div_52_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", ctx_r12.errorMsg, " ");
 } }
 class AuthSignupOrganizationComponent {
-    constructor(authService, router, modalService) {
-        this.authService = authService;
+    constructor(connectService, router, modalService) {
+        this.connectService = connectService;
         this.router = router;
         this.modalService = modalService;
         this.gridImages = [
@@ -1078,6 +1082,14 @@ class AuthSignupOrganizationComponent {
         this.loading = true;
         this.submitted = true;
         console.log("starting signup process...", this.newOrg);
+        this.connectService.createOrg(this.newOrg).then((resp) => {
+            console.log("Organization Created", resp);
+            this.router.navigate(['/dashboard']);
+        }, (err) => {
+            console.error("Error creating Organization", err);
+            this.errorMsg = err.error.message;
+            this.loading = false;
+        });
     }
     openLogoCropper() {
         this.modalService.open(_components_logo_cropper_logo_cropper_component__WEBPACK_IMPORTED_MODULE_1__.LogoCropperComponent).result.then((result) => {
@@ -1087,7 +1099,7 @@ class AuthSignupOrganizationComponent {
         });
     }
 }
-AuthSignupOrganizationComponent.ɵfac = function AuthSignupOrganizationComponent_Factory(t) { return new (t || AuthSignupOrganizationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_2__.AuthService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModal)); };
+AuthSignupOrganizationComponent.ɵfac = function AuthSignupOrganizationComponent_Factory(t) { return new (t || AuthSignupOrganizationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_2__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbModal)); };
 AuthSignupOrganizationComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: AuthSignupOrganizationComponent, selectors: [["app-auth-signup-organization"]], decls: 53, vars: 17, consts: [[1, "row", 2, "overflow", "hidden", "height", "95vh"], ["class", "col-1 nopadding", 4, "ngFor", "ngForOf"], [1, "floating-signup", "outer-div"], [1, "inner-div"], [1, "az-signin-wrapper"], [1, "az-card-signin"], [1, "az-logo"], [1, "az-signin-header"], ["height", "150px", 1, "cursor-pointer", "mx-auto", "d-block", 3, "src", "click"], [3, "ngSubmit"], ["orgForm", "ngForm"], [1, "form-group"], ["name", "name", "required", "", "minlength", "2", "type", "text", "placeholder", "Organization Name", 1, "form-control", 3, "ngModel", "ngModelChange"], ["name", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], ["name", "website_uri", "required", "", "autocapitalize", "none", "placeholder", "Website", 1, "form-control", 3, "ngModel", "pattern", "ngModelChange"], ["website_uri", "ngModel"], ["name", "privacy_policy_uri", "required", "", "placeholder", "Privacy Policy Url", 1, "form-control", 3, "ngModel", "pattern", "ngModelChange"], ["privacy_policy_uri", "ngModel"], ["name", "terms_and_conditions_uri", "placeholder", "Terms & Conditions Url", 1, "form-control", 3, "ngModel", "pattern", "ngModelChange"], ["terms_and_conditions_uri", "ngModel"], ["name", "company_size", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["company_size", "ngModel"], ["value", "", "disabled", "", "selected", ""], ["value", "1_10"], ["value", "10_100"], ["value", "100_500"], ["value", "500_2000"], ["value", "2000_5000"], ["value", "5000_plus"], ["type", "submit", 1, "btn", "btn-az-primary", "btn-block", 3, "disabled"], ["class", "alert alert-danger mt-3", "role", "alert", 4, "ngIf"], [1, "col-1", "nopadding"], [1, "d-flex", "h-100"], [1, "mx-auto", "my-auto"], [1, "rounded", "img-fluid", "opacity-20", 3, "src"], [1, "alert", "alert-danger"], [4, "ngIf"], ["role", "alert", 1, "alert", "alert-danger", "mt-3"]], template: function AuthSignupOrganizationComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, AuthSignupOrganizationComponent_div_1_Template, 4, 1, "div", 1);
@@ -1477,7 +1489,8 @@ class AuthSignupComponent {
         this.authService.Signup(this.newUser).then((tokenResp) => {
             this.loading = false;
             console.log(tokenResp);
-            this.router.navigateByUrl('/dashboard');
+            //after creating a user, proceed to create an organization
+            this.router.navigateByUrl('/auth/signup/org');
         }, (err) => {
             this.loading = false;
             console.error("an error occured while signup", err);
@@ -1849,34 +1862,36 @@ class AuthService {
       // await this.Close()
     })();
   }
-  IsAuthenticated() {
+  GetJWTPayload() {
     var _this4 = this;
     return (0,_home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let authToken = _this4.getCookie(FASTEN_AUTH_COOKIE_NAME);
-      let hasAuthToken = !!authToken;
-      if (!hasAuthToken) {
-        _this4.publishAuthenticationState(false);
-        return false;
+      if (!authToken) {
+        return null;
       }
-      // TODO: check if the authToken is valid
       let jwks = jose__WEBPACK_IMPORTED_MODULE_3__.createRemoteJWKSet(new URL(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.jwks_uri));
       let issuerHost = _environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base;
       try {
-        console.log("expecting issuer:", issuerHost);
         const {
           payload,
           protectedHeader
         } = yield jose__WEBPACK_IMPORTED_MODULE_3__.jwtVerify(authToken, jwks, {
           issuer: issuerHost
         });
-        console.log(payload, protectedHeader);
-        _this4.publishAuthenticationState(true);
-        return true;
+        return payload;
       } catch (e) {
         console.error(e);
-        _this4.publishAuthenticationState(false);
-        return false;
+        return null;
       }
+    })();
+  }
+  IsAuthenticated() {
+    var _this5 = this;
+    return (0,_home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      let payload = yield _this5.GetJWTPayload();
+      let isAuthenticated = payload != null;
+      _this5.publishAuthenticationState(isAuthenticated);
+      return isAuthenticated;
     })();
   }
   //https://stackoverflow.com/questions/34298133/angular-cookies
@@ -1915,6 +1930,53 @@ AuthService.ɵfac = function AuthService_Factory(t) {
 AuthService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjectable"]({
   token: AuthService,
   factory: AuthService.ɵfac,
+  providedIn: 'root'
+});
+
+/***/ }),
+
+/***/ 4543:
+/*!*********************************************!*\
+  !*** ./src/app/services/connect.service.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ConnectService": () => (/* binding */ ConnectService)
+/* harmony export */ });
+/* harmony import */ var _home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 8987);
+
+
+
+
+class ConnectService {
+  constructor(_httpClient) {
+    this._httpClient = _httpClient;
+  }
+  /**
+   * Create a new organization and associate it with the current User
+   * @param newOrg
+   * @constructor
+   */
+  createOrg(newOrg) {
+    var _this = this;
+    return (0,_home_runner_work_fasten_connect_portal_fasten_connect_portal_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      let resp = yield _this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.connect_api_endpoint_base}/org`, newOrg).toPromise();
+      console.log(resp);
+      return resp;
+    })();
+  }
+}
+ConnectService.ɵfac = function ConnectService_Factory(t) {
+  return new (t || ConnectService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient));
+};
+ConnectService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+  token: ConnectService,
+  factory: ConnectService.ɵfac,
   providedIn: 'root'
 });
 

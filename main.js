@@ -2002,13 +2002,13 @@ DevelopersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Default");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "pub_test_abcsdfsdfsdfsdfsdfsdf");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "public_test_d4f7ow52zsqu9hekyx6v84qqir5ru523bj8nqh7la59ik");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "private_test_abcsdfsdfsdfsdfsdfsdf");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "private_test_vIDIqkEeczBAGHGjHkjtBeEBdnnfDcvnlGdFaBmFBrswA");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Nov 10, 2024");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Feb 10, 2024");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 4)(41, "h5", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " Webhooks ");

@@ -2239,7 +2239,7 @@ function DevelopersComponent_ng_template_56_div_10_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, " If you don't have an environment to receive webhooks, you can use ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "a", 42);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](5, "https://public.requestbin.com");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](5, "requestbin.com");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](6, " to test. ");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();

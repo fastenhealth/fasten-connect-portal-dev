@@ -3111,9 +3111,9 @@ const environment = {
     connect_api_endpoint_base: 'https://api.connect-dev.fastenhealth.com/v1',
     jwks_uri: 'https://cdn.fastenhealth.com/jwks/fasten-connect/dev.json',
     //Stripe pricing table (Test mode in Dev)
-    stripe_pricing_table: 'prctbl_1P1u2eIFLNuhRPAOWMoGnTby',
-    stripe_public_key: 'pk_test_51Lu66OIFLNuhRPAO6owW1GzX2g6BlmhLlB6q8JeYSv9R8OWnSsKVCIUkBNWeyc6oj4b76HGIIY2XLOdJeZS9rAfI0089vX1xz5',
-    stripe_customer_portal: 'https://billing.stripe.com/p/login/test_bIY7thbZL5g6gXC000'
+    stripe_pricing_table: 'prctbl_1P21pjIFLNuhRPAO0Y2swCvZ',
+    stripe_public_key: 'pk_live_51Lu66OIFLNuhRPAOdj1Z7GGu8H7LXLiqZzIPsm9mxtBWFMJezICT9VM8cRBlyxAqX6hxsPOFxEpcCE7VamBFXJvh00dCxySPpr',
+    stripe_customer_portal: 'https://billing.stripe.com/p/login/dR6aEYe5h4AYe2I144'
 };
 
 

@@ -55382,5 +55382,9 @@ ng-fullcalendar .fc-list-empty {
   width: 450px;
   box-shadow: 0 0 50px 0 rgba(207, 207, 207, 0.5);
 }
+.az-img-logo {
+  width: 88px;
+  height: 33px;
+}
 
 /*# sourceMappingURL=styles.css.map*/

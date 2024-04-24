@@ -2657,7 +2657,7 @@ class DevelopersComponent {
         let orgCredentialEditorModal = this.modalService.open(_components_org_credentials_editor_org_credentials_editor_component__WEBPACK_IMPORTED_MODULE_1__.OrgCredentialsEditorComponent, { ariaLabelledBy: 'modal-basic-title' });
         orgCredentialEditorModal.componentInstance.org = this.portalConfig.config$.org;
         orgCredentialEditorModal.componentInstance.apiMode = this.portalConfig.config$.apiMode;
-        orgCredentialEditorModal.componentInstance.editorMode = 'edit';
+        orgCredentialEditorModal.componentInstance.editorMode = editorMode;
         if (editorMode === 'edit') {
             orgCredentialEditorModal.componentInstance.orgCredential = orgCredential;
         }

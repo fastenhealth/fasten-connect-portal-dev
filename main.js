@@ -146,6 +146,7 @@ AppComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["�
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ApiMode": () => (/* binding */ ApiMode),
+/* harmony export */   "CRUDMode": () => (/* binding */ CRUDMode),
 /* harmony export */   "CredentialStatus": () => (/* binding */ CredentialStatus),
 /* harmony export */   "STRONG_PASSWORD_PATTERN": () => (/* binding */ STRONG_PASSWORD_PATTERN),
 /* harmony export */   "URL_PATTERN": () => (/* binding */ URL_PATTERN),
@@ -174,6 +175,12 @@ var WebhookStatus;
     WebhookStatus["Active"] = "active";
     WebhookStatus["Inactive"] = "inactive";
 })(WebhookStatus || (WebhookStatus = {}));
+var CRUDMode;
+(function (CRUDMode) {
+    CRUDMode["Create"] = "create";
+    CRUDMode["Update"] = "update";
+    CRUDMode["Delete"] = "delete";
+})(CRUDMode || (CRUDMode = {}));
 
 
 /***/ }),
@@ -689,9 +696,9 @@ function OrgCredentialsEditorComponent_div_18_div_2_Template(rf, ctx) { if (rf &
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } }
 function OrgCredentialsEditorComponent_div_18_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, OrgCredentialsEditorComponent_div_18_div_1_Template, 2, 0, "div", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, OrgCredentialsEditorComponent_div_18_div_2_Template, 2, 0, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, OrgCredentialsEditorComponent_div_18_div_1_Template, 2, 0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, OrgCredentialsEditorComponent_div_18_div_2_Template, 2, 0, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
@@ -702,7 +709,7 @@ function OrgCredentialsEditorComponent_div_18_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _r0.errors == null ? null : _r0.errors["pattern"]);
 } }
 function OrgCredentialsEditorComponent_div_19_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -710,40 +717,46 @@ function OrgCredentialsEditorComponent_div_19_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r2.submitOrgCredentialError, " ");
 } }
-function OrgCredentialsEditorComponent_ng_container_21_span_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 18);
+function OrgCredentialsEditorComponent_ng_container_22_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 19);
 } }
-function OrgCredentialsEditorComponent_ng_container_21_Template(rf, ctx) { if (rf & 1) {
-    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+function OrgCredentialsEditorComponent_ng_container_22_span_6_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 19);
+} }
+function OrgCredentialsEditorComponent_ng_container_22_Template(rf, ctx) { if (rf & 1) {
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_21_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r9); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r8.activeModal.dismiss("Cancel click")); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "Cancel");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_22_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r10); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r9.deleteOrgCredential()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Delete ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_22_span_3_Template, 1, 0, "span", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "button", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_21_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r9); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r10.updateOrgCredential()); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, " Update ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](5, OrgCredentialsEditorComponent_ng_container_21_span_5_Template, 1, 0, "span", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "button", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_22_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r10); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r11.updateOrgCredential()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, " Update ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, OrgCredentialsEditorComponent_ng_container_22_span_6_Template, 1, 0, "span", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
     const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](17);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r3.deleteOrgCredentialLoading);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", !_r0.dirty || ctx_r3.submitOrgCredentialLoading);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r3.submitOrgCredentialLoading);
 } }
-function OrgCredentialsEditorComponent_ng_container_22_span_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 18);
+function OrgCredentialsEditorComponent_ng_container_23_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 19);
 } }
-function OrgCredentialsEditorComponent_ng_container_22_Template(rf, ctx) { if (rf & 1) {
-    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+function OrgCredentialsEditorComponent_ng_container_23_Template(rf, ctx) { if (rf & 1) {
+    const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_22_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r13); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r12.createOrgCredential()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_23_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r14); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r13.createOrgCredential()); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Create ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_22_span_3_Template, 1, 0, "span", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_23_span_3_Template, 1, 0, "span", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
@@ -763,12 +776,35 @@ class OrgCredentialsEditorComponent {
         this.apiMode = _app_constants__WEBPACK_IMPORTED_MODULE_0__.ApiMode.Test;
         this.orgCredential = null; //only set when editing
         this.submitOrgCredentialLoading = false;
+        this.deleteOrgCredentialLoading = false;
         this.redirectUri = "";
         this.submitOrgCredentialError = '';
     }
     ngOnInit() {
         if (this.editorMode === 'edit' && this.orgCredential) {
             this.redirectUri = this.orgCredential.redirect_uri;
+        }
+    }
+    deleteOrgCredential() {
+        if (confirm("Are you sure you'd like to delete these API Credentials?") == true) {
+            this.deleteOrgCredentialLoading = true;
+            if (!this.orgCredential?.id) {
+                this.deleteOrgCredentialLoading = false;
+                this.submitOrgCredentialError = "Unknown Organization Credential ID";
+                return;
+            }
+            this.connectService.deleteOrgCredential(this.org.id, this.orgCredential.id).subscribe((result) => {
+                console.log("Updated Org Credential", result);
+                this.deleteOrgCredentialLoading = false;
+                this.activeModal.close(result);
+            }, (error) => {
+                console.log("Error Updating Org Credential", error);
+                this.deleteOrgCredentialLoading = false;
+                this.submitOrgCredentialError = JSON.stringify(error);
+            }, () => {
+                console.log("Completed Deleting Org Credential");
+                this.deleteOrgCredentialLoading = false;
+            });
         }
     }
     updateOrgCredential() {
@@ -783,7 +819,7 @@ class OrgCredentialsEditorComponent {
             this.submitOrgCredentialLoading = false;
             this.submitOrgCredentialError = "Redirect URI has not changed";
         }
-        this.connectService.updateOrgCredentials(this.org.id, this.orgCredential.id, this.redirectUri).subscribe((result) => {
+        this.connectService.updateOrgCredential(this.org.id, this.orgCredential.id, this.redirectUri).subscribe((result) => {
             console.log("Updated Org Credential", result);
             this.submitOrgCredentialLoading = false;
             this.activeModal.close(result);
@@ -819,7 +855,7 @@ class OrgCredentialsEditorComponent {
     }
 }
 OrgCredentialsEditorComponent.ɵfac = function OrgCredentialsEditorComponent_Factory(t) { return new (t || OrgCredentialsEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_1__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbActiveModal)); };
-OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: OrgCredentialsEditorComponent, selectors: [["app-org-credentials-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgCredential: "orgCredential" }, decls: 23, vars: 7, consts: [[1, "modal-header"], ["id", "modal-credential-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], [1, "mb-3"], ["for", "redirectUri"], ["ngbTooltip", "required", 1, "text-danger"], [1, "input-group"], ["required", "", "id", "redirectUri", "placeholder", "https://example.com/...", "name", "redirectUri", "type", "url", 1, "form-control", 3, "pattern", "ngModel", "ngModelChange"], ["redirectUriField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "modal-footer"], [4, "ngIf"], [1, "alert", "alert-danger"], ["type", "button", 1, "btn", "btn-outline-secondary", 3, "click"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"]], template: function OrgCredentialsEditorComponent_Template(rf, ctx) { if (rf & 1) {
+OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: OrgCredentialsEditorComponent, selectors: [["app-org-credentials-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgCredential: "orgCredential" }, decls: 24, vars: 7, consts: [[1, "modal-header"], ["id", "modal-credential-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], [1, "mb-3"], ["for", "redirectUri"], ["ngbTooltip", "required", 1, "text-danger"], [1, "input-group"], ["required", "", "id", "redirectUri", "placeholder", "https://example.com/...", "name", "redirectUri", "type", "url", 1, "form-control", 3, "pattern", "ngModel", "ngModelChange"], ["redirectUriField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], [1, "alert", "alert-danger"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgCredentialsEditorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h4", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -842,10 +878,10 @@ OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](18, OrgCredentialsEditorComponent_div_18_Template, 3, 2, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](19, OrgCredentialsEditorComponent_div_19_Template, 2, 1, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](20, "div", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](21, OrgCredentialsEditorComponent_ng_container_21_Template, 6, 2, "ng-container", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](22, OrgCredentialsEditorComponent_ng_container_22_Template, 4, 2, "ng-container", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](20, "div", 12)(21, "div", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](22, OrgCredentialsEditorComponent_ng_container_22_Template, 7, 3, "ng-container", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](23, OrgCredentialsEditorComponent_ng_container_23_Template, 4, 2, "ng-container", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
     } if (rf & 2) {
         const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](17);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
@@ -856,7 +892,7 @@ OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _r0.invalid && (_r0.dirty || _r0.touched));
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.submitOrgCredentialError);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.editorMode == "edit");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.editorMode == "create");
@@ -1004,7 +1040,7 @@ class OrgWebhooksEditorComponent {
             this.submitOrgWebhookLoading = false;
             this.submitOrgWebhookError = "Endpoint URI has not changed";
         }
-        this.connectService.updateOrgWebhooks(this.org.id, this.orgWebhook.id, this.endpointUri).subscribe((result) => {
+        this.connectService.updateOrgWebhook(this.org.id, this.orgWebhook.id, this.endpointUri).subscribe((result) => {
             console.log("Updated Org Webhook", result);
             this.submitOrgWebhookLoading = false;
             this.activeModal.close(result);
@@ -2807,12 +2843,19 @@ class DevelopersComponent {
                 this.newCredential = result;
             }
             else {
-                //find the credential and update it
+                //find the credential and update it or delete it
                 let apiMode = result.org_credential.api_mode;
                 for (let i = 0; i < this.orgCredentials[apiMode].length; i++) {
                     if (this.orgCredentials[apiMode][i].id == result.org_credential.id) {
-                        this.orgCredentials[apiMode][i] = result.org_credential;
-                        break;
+                        if (result.action == _app_constants__WEBPACK_IMPORTED_MODULE_0__.CRUDMode.Delete) {
+                            this.orgCredentials[apiMode].splice(i, 1);
+                            break;
+                        }
+                        else {
+                            //update the credential
+                            this.orgCredentials[apiMode][i] = result.org_credential;
+                            break;
+                        }
                     }
                 }
             }
@@ -3324,9 +3367,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ConnectService": () => (/* binding */ ConnectService)
 /* harmony export */ });
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 635);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 8987);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 635);
+/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../app.constants */ 2976);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 8987);
+
 
 
 
@@ -3356,7 +3401,7 @@ class ConnectService {
     }
     getOrg(orgId) {
         return this._httpClient.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}`)
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization", response);
             return response.data;
         }));
@@ -3366,23 +3411,31 @@ class ConnectService {
             api_mode: apiMode,
             redirect_uri: redirectUrl
         })
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Credential", response);
+            response.data.action = _app_constants__WEBPACK_IMPORTED_MODULE_1__.CRUDMode.Create;
             return response.data;
         }));
     }
-    updateOrgCredentials(orgId, orgCredentialId, redirectUrl) {
+    updateOrgCredential(orgId, orgCredentialId, redirectUrl) {
         return this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/credentials/${orgCredentialId}`, {
             redirect_uri: redirectUrl
         })
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Credential", response);
-            return { org_credential: response.data };
+            return { action: _app_constants__WEBPACK_IMPORTED_MODULE_1__.CRUDMode.Update, org_credential: response.data };
+        }));
+    }
+    deleteOrgCredential(orgId, orgCredentialId) {
+        return this._httpClient.delete(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/credentials/${orgCredentialId}`)
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
+            console.log("Deleted Organization Credential", response);
+            return { action: _app_constants__WEBPACK_IMPORTED_MODULE_1__.CRUDMode.Delete, org_credential: response.data };
         }));
     }
     getOrgCredentials(orgId) {
         return this._httpClient.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/credentials`)
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Credentials", response);
             return response.data;
         }));
@@ -3392,23 +3445,30 @@ class ConnectService {
             api_mode: apiMode,
             endpoint_uri: endpointUri
         })
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Credential", response);
             return response.data;
         }));
     }
-    updateOrgWebhooks(orgId, orgWebhookId, endpointUri) {
+    deleteOrgWebhook(orgId, orgWebhookId) {
+        return this._httpClient.delete(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/webhooks/${orgWebhookId}`)
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
+            console.log("Deleted Organization Webhook", response);
+            return response.data;
+        }));
+    }
+    updateOrgWebhook(orgId, orgWebhookId, endpointUri) {
         return this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/webhooks/${orgWebhookId}`, {
             endpoint_uri: endpointUri
         })
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Webhook", response);
             return response.data;
         }));
     }
     getOrgWebhooks(orgId) {
         return this._httpClient.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/webhooks`)
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Webhooks", response);
             return response.data;
         }));
@@ -3420,7 +3480,7 @@ class ConnectService {
      */
     upgradePlanCheckoutRedirect() {
         return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/store/checkout`, {})
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("redirect URL", response);
             let redirectData = response.data;
             window.location.href = redirectData.redirect_url;
@@ -3428,8 +3488,8 @@ class ConnectService {
         }));
     }
 }
-ConnectService.ɵfac = function ConnectService_Factory(t) { return new (t || ConnectService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient)); };
-ConnectService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: ConnectService, factory: ConnectService.ɵfac, providedIn: 'root' });
+ConnectService.ɵfac = function ConnectService_Factory(t) { return new (t || ConnectService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpClient)); };
+ConnectService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: ConnectService, factory: ConnectService.ɵfac, providedIn: 'root' });
 
 
 /***/ }),

@@ -3518,8 +3518,11 @@ class OrgSettingsComponent {
         this.loading = true;
         this.submitted = true;
         console.log("starting update process...", this.updateOrg);
-        this.connectService.updateOrg(this.portalConfig.config$.org?.id, this.updateOrg, this.croppedImageEvent?.blob).subscribe((resp) => {
-            console.log("Organization Updated", resp);
+        this.connectService.updateOrg(this.portalConfig.config$.org?.id, this.updateOrg, this.croppedImageEvent?.blob).subscribe((org) => {
+            console.log("Organization Updated", org);
+            this.loading = false;
+            //update the org in the portal config
+            this.portalConfig.config = { org: org };
         }, (err) => {
             console.error("Error updating Organization", err);
             this.errorMsg = err.error.message;
@@ -4153,9 +4156,11 @@ class ConnectService {
         if (logoBlob) {
             formData.append("logo", logoBlob);
         }
-        let resp = this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}`, formData);
-        console.log(resp);
-        return resp;
+        return this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}`, formData)
+            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
+            console.log("Updated Organization", response);
+            return response.data;
+        }));
     }
     getOrg(orgId) {
         return this._httpClient.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}`)

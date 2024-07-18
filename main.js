@@ -4153,7 +4153,7 @@ class ConnectService {
         if (logoBlob) {
             formData.append("logo", logoBlob);
         }
-        let resp = this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}`, formData);
+        let resp = this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}`, formData);
         console.log(resp);
         return resp;
     }

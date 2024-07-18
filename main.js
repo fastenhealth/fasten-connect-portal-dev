@@ -3345,7 +3345,7 @@ class OrgMembersComponent {
     }
 }
 OrgMembersComponent.ɵfac = function OrgMembersComponent_Factory(t) { return new (t || OrgMembersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbModal)); };
-OrgMembersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: OrgMembersComponent, selectors: [["app-org-members"]], decls: 27, vars: 0, consts: [[1, "mg-t-10", "container"], [1, "mg-l-auto", "nav", "nav-pills", "flex-column", "flex-md-row"], ["data-bs-toggle", "tab", "routerLink", "/org/settings", 1, "nav-link"], ["data-bs-toggle", "tab", "routerLink", "/org/members", 1, "nav-link", "active"], ["data-bs-toggle", "tab", "routerLink", "/org/billing", 1, "nav-link"], [1, "row"], [1, "col-12"], [1, "card", "mg-t-20"], [1, "card-header", "d-flex", "justify-content-between", "align-items-center"], [1, "btn", "btn-outline-indigo", "float-right", "text-indigo", 3, "click"], [1, "card-body"], [1, "table", "mg-t-10"], ["scope", "col"]], template: function OrgMembersComponent_Template(rf, ctx) { if (rf & 1) {
+OrgMembersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: OrgMembersComponent, selectors: [["app-org-members"]], decls: 29, vars: 0, consts: [[1, "mg-t-10", "container"], [1, "mg-l-auto", "nav", "nav-pills", "flex-column", "flex-md-row"], ["data-bs-toggle", "tab", "routerLink", "/org/settings", 1, "nav-link"], ["data-bs-toggle", "tab", "routerLink", "/org/members", 1, "nav-link", "active"], ["data-bs-toggle", "tab", "routerLink", "/org/billing", 1, "nav-link"], [1, "row"], [1, "col-12"], [1, "card", "mg-t-20"], [1, "card-header", "d-flex", "justify-content-between", "align-items-center"], [1, "btn", "btn-outline-indigo", "float-right", "text-indigo", 3, "click"], [1, "card-body"], [1, "table", "mg-t-10"], ["scope", "col"]], template: function OrgMembersComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "nav", 1)(2, "a", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Details");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -3370,9 +3370,12 @@ OrgMembersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "th", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Email");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](25, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "th", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Status");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](27, "th");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](26, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](28, "tbody");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()()();
     } }, dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterLinkWithHref], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmctbWVtYmVycy5jb21wb25lbnQuc2NzcyJ9 */"] });
 

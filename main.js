@@ -4105,7 +4105,7 @@ class AuthService {
         return null;
       }
       let jwks = jose__WEBPACK_IMPORTED_MODULE_3__.createRemoteJWKSet(new URL(_environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.jwks_uri));
-      let issuerHost = _environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_endpoint_base;
+      let issuerHost = _environments_environment__WEBPACK_IMPORTED_MODULE_2__.environment.connect_api_jwt_issuer_host;
       try {
         //audience and issuer must be the same. This token is only valid on the fasten connect api
         const {
@@ -4439,6 +4439,7 @@ const environment = {
     // connect_api_endpoint_base: 'https://api.connect-dev.fastenhealth.com/v1',
     // if relative, must start with /
     connect_api_endpoint_base: 'https://api.connect-dev.fastenhealth.com/v1',
+    connect_api_jwt_issuer_host: 'https://api.connect-dev.fastenhealth.com/v1',
     jwks_uri: 'https://cdn.fastenhealth.com/jwks/fasten-connect/dev.json',
     //Stripe pricing table (Test mode in Dev)
     stripe_customer_portal: 'https://billing.stripe.com/p/login/test_bIY7thbZL5g6gXC000'

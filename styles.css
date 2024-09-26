@@ -17236,6 +17236,16 @@ ng-fullcalendar .fc-list-empty {
   color: #1c273c;
 }
 /* ###### 7.9 Signin  ###### */
+.az-signin-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  background-color: #5b47fb;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
 .az-signin-wrapper {
   flex: 1;
   display: flex;

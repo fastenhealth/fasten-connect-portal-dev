@@ -5014,20 +5014,6 @@ class ConnectService {
             return response.data;
         }));
     }
-    /**
-     * Generate Stripe Checkout Link to Upgrade Plan
-     * @param orgId
-     * @constructor
-     */
-    upgradePlanCheckoutRedirect() {
-        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/store/checkout`, {})
-            .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
-            console.log("redirect URL", response);
-            let redirectData = response.data;
-            window.location.href = redirectData.redirect_url;
-            return null;
-        }));
-    }
 }
 ConnectService.ɵfac = function ConnectService_Factory(t) { return new (t || ConnectService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpClient)); };
 ConnectService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: ConnectService, factory: ConnectService.ɵfac, providedIn: 'root' });

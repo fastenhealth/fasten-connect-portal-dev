@@ -170,7 +170,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "WebhookDeliveryStatus": () => (/* binding */ WebhookDeliveryStatus),
 /* harmony export */   "WebhookStatus": () => (/* binding */ WebhookStatus)
 /* harmony export */ });
-const URL_PATTERN = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/;
+const URL_PATTERN = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,64}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/;
 // https://medium.com/@ojiofor/angular-reactive-forms-strong-password-validation-8dbcce92eb6c
 //     Minimum Length: A strong password should have a minimum length, typically at least 8 characters.
 //     Uppercase Letters: It should contain at least one uppercase letter.

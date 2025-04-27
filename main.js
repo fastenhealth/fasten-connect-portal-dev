@@ -2284,7 +2284,7 @@ class AuthSigninComponent {
         this.authService.Signin(this.existingUser.email, this.existingUser.password)
             .then(() => {
             this.loading = false;
-            this.router.navigateByUrl('/dashboard');
+            this.router.navigateByUrl('/developers');
         })
             .catch((err) => {
             this.loading = false;
@@ -2643,7 +2643,7 @@ class AuthSignupOrganizationComponent {
         console.log("starting signup process...", this.newOrg);
         this.connectService.createOrg(this.newOrg, this.croppedImageEvent?.blob).subscribe((resp) => {
             console.log("Organization Created", resp);
-            this.router.navigate(['/dashboard']);
+            this.router.navigate(['/developers']);
         }, (err) => {
             console.error("Error creating Organization", err);
             this.errorMsg = err.error.message;

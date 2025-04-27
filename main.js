@@ -1041,10 +1041,11 @@ class OrgTeamInviteComponent {
             return;
         }
         this.connectService.sendOrgInvite(this.portalConfig.config$.org?.id, this.teamMemberEmail).subscribe((result) => {
+            console.log("Added Org Invite", result);
             this.submitOrgInviteLoading = false;
-            this.activeModal.close(true);
+            this.activeModal.close(result);
         }, (error) => {
-            console.log("Error Adding Org Webhook", error);
+            console.log("Error Adding Org Invite", error);
             this.submitOrgInviteLoading = false;
             this.submitOrgInviteError = JSON.stringify(error);
         });
@@ -1127,7 +1128,7 @@ function OrgWebhooksEditorComponent_div_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, " If you don't have an environment to receive webhooks, you can use ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "a", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, "requestbin.com");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, "webhook.site");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, " to test. ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -1305,7 +1306,7 @@ class OrgWebhooksEditorComponent {
     }
 }
 OrgWebhooksEditorComponent.ɵfac = function OrgWebhooksEditorComponent_Factory(t) { return new (t || OrgWebhooksEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_1__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbActiveModal)); };
-OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: OrgWebhooksEditorComponent, selectors: [["app-org-webhooks-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgWebhook: "orgWebhook" }, decls: 34, vars: 12, consts: [[1, "modal-header"], ["id", "modal-webhook-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], ["class", "alert alert-warning mg-t-10", "role", "alert", 4, "ngIf"], [1, "mb-3"], ["for", "endpointUri"], ["ngbTooltip", "required", 1, "text-danger"], [1, "input-group"], ["required", "", "id", "endpointUri", "placeholder", "https://example.com/...", "name", "endpointUri", "type", "url", 1, "form-control", 3, "pattern", "ngModel", "ngModelChange"], ["endpointUriField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "az-toggle", 3, "ngClass"], ["for", "webhook-active"], ["id", "webhook-active", "name", "webhook-active", "type", "checkbox", 1, "", 2, "display", "none", 3, "ngModel", "ngModelChange"], ["webhookActiveField", "ngModel"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], ["role", "alert", 1, "alert", "alert-warning", "mg-t-10"], ["target", "_blank", "href", "https://public.requestbin.com/r"], [1, "alert", "alert-danger"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgWebhooksEditorComponent_Template(rf, ctx) { if (rf & 1) {
+OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: OrgWebhooksEditorComponent, selectors: [["app-org-webhooks-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgWebhook: "orgWebhook" }, decls: 34, vars: 12, consts: [[1, "modal-header"], ["id", "modal-webhook-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], ["class", "alert alert-warning mg-t-10", "role", "alert", 4, "ngIf"], [1, "mb-3"], ["for", "endpointUri"], ["ngbTooltip", "required", 1, "text-danger"], [1, "input-group"], ["required", "", "id", "endpointUri", "placeholder", "https://example.com/...", "name", "endpointUri", "type", "url", 1, "form-control", 3, "pattern", "ngModel", "ngModelChange"], ["endpointUriField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "az-toggle", 3, "ngClass"], ["for", "webhook-active"], ["id", "webhook-active", "name", "webhook-active", "type", "checkbox", 1, "", 2, "display", "none", 3, "ngModel", "ngModelChange"], ["webhookActiveField", "ngModel"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], ["role", "alert", 1, "alert", "alert-warning", "mg-t-10"], ["target", "_blank", "href", "https://webhook.site"], [1, "alert", "alert-danger"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgWebhooksEditorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h4", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();

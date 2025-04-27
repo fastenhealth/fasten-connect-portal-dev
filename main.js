@@ -1043,7 +1043,7 @@ class OrgTeamInviteComponent {
         this.connectService.sendOrgInvite(this.portalConfig.config$.org?.id, this.teamMemberEmail).subscribe((result) => {
             console.log("Added Org Invite", result);
             this.submitOrgInviteLoading = false;
-            this.activeModal.close(result);
+            this.activeModal.close({ name: this.teamMemberEmail, email: this.teamMemberEmail, status: 'pending' });
         }, (error) => {
             console.log("Error Adding Org Invite", error);
             this.submitOrgInviteLoading = false;
@@ -4314,6 +4314,7 @@ class OrgTeamComponent {
     openOrgTeamInviteModal() {
         this.modalService.open(_components_org_team_invite_org_team_invite_component__WEBPACK_IMPORTED_MODULE_0__.OrgTeamInviteComponent).result.then((result) => {
             console.log(`Closed with: ${result}`);
+            this.teamMembers.push(result);
         }, (reason) => {
             console.log(`Dismissed`, reason);
         });

@@ -166,11 +166,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "CredentialStatus": () => (/* binding */ CredentialStatus),
 /* harmony export */   "EventTypes": () => (/* binding */ EventTypes),
 /* harmony export */   "STRONG_PASSWORD_PATTERN": () => (/* binding */ STRONG_PASSWORD_PATTERN),
+/* harmony export */   "URI_PATTERN": () => (/* binding */ URI_PATTERN),
 /* harmony export */   "URL_PATTERN": () => (/* binding */ URL_PATTERN),
 /* harmony export */   "WebhookDeliveryStatus": () => (/* binding */ WebhookDeliveryStatus),
 /* harmony export */   "WebhookStatus": () => (/* binding */ WebhookStatus)
 /* harmony export */ });
 const URL_PATTERN = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,64}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/;
+// HANDLE DEEPLINKING - https://snipplr.com/view/6889/regular-expressions-for-uri-validationparsing
+// acmenativeappdeeplink://item/view/12345
+// http://freecodecamp.org
+// https://www.freecodecamp.orgsdfsdf
+// http://www.freecodecamp.org
+//
+// NOT:
+// google.co.uk
+// facebook.net
+// google.com.ng
+// google.com.in
+// freecodecamp.org
+const URI_PATTERN = /^([a-z][a-z0-9+.-]*):(?:\/\/((?:(?=((?:[a-z0-9-._~!$&'()*+,;=:]|%[0-9A-F]{2})*))(\3)@)?(?=(\[[0-9A-F:.]{2,}\]|(?:[a-z0-9-._~!$&'()*+,;=]|%[0-9A-F]{2})*))\5(?::(?=(\d*))\6)?)(\/(?=((?:[a-z0-9-._~!$&'()*+,;=:@\/]|%[0-9A-F]{2})*))\8)?|(\/?(?!\/)(?=((?:[a-z0-9-._~!$&'()*+,;=:@\/]|%[0-9A-F]{2})*))\10)?)(?:\?(?=((?:[a-z0-9-._~!$&'()*+,;=:@\/?]|%[0-9A-F]{2})*))\11)?(?:#(?=((?:[a-z0-9-._~!$&'()*+,;=:@\/?]|%[0-9A-F]{2})*))\12)?$/i;
 // https://medium.com/@ojiofor/angular-reactive-forms-strong-password-validation-8dbcce92eb6c
 //     Minimum Length: A strong password should have a minimum length, typically at least 8 characters.
 //     Uppercase Letters: It should contain at least one uppercase letter.
@@ -829,7 +843,7 @@ class OrgCredentialsEditorComponent {
     constructor(connectService, activeModal) {
         this.connectService = connectService;
         this.activeModal = activeModal;
-        this.urlPattern = _app_constants__WEBPACK_IMPORTED_MODULE_0__.URL_PATTERN;
+        this.urlPattern = _app_constants__WEBPACK_IMPORTED_MODULE_0__.URI_PATTERN;
         this.editorMode = 'create';
         this.org = null;
         this.apiMode = _app_constants__WEBPACK_IMPORTED_MODULE_0__.ApiMode.Test;

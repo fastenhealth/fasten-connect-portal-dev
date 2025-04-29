@@ -764,7 +764,7 @@ function OrgCredentialsEditorComponent_div_24_div_1_Template(rf, ctx) { if (rf &
 } }
 function OrgCredentialsEditorComponent_div_24_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, " Redirect Url must be a valid url starting with https:// ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, " Redirect Url must be a valid url starting with https:// or a custom scheme ");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } }
 function OrgCredentialsEditorComponent_div_24_Template(rf, ctx) { if (rf & 1) {

@@ -884,7 +884,9 @@ class OrgCredentialsEditorComponent {
     }
     ngOnInit() {
         if (this.editorMode === 'edit' && this.orgCredential) {
-            this.redirectUris = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormArray([new _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControl(this.orgCredential.redirect_uri, [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern(_app_constants__WEBPACK_IMPORTED_MODULE_0__.URI_PATTERN)])]);
+            for (let uri of this.orgCredential.redirect_uris) {
+                this.redirectUris.push(new _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControl(uri, [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern(_app_constants__WEBPACK_IMPORTED_MODULE_0__.URI_PATTERN)]));
+            }
             this.note = this.orgCredential.note;
         }
     }
@@ -918,7 +920,7 @@ class OrgCredentialsEditorComponent {
             this.submitOrgCredentialError = "Unknown Organization Credential ID";
             return;
         }
-        if ((0,lodash__WEBPACK_IMPORTED_MODULE_1__.isEqual)(this.redirectUris.getRawValue(), [this.orgCredential.redirect_uri])) {
+        if ((0,lodash__WEBPACK_IMPORTED_MODULE_1__.isEqual)(this.redirectUris.getRawValue(), this.orgCredential.redirect_uris)) {
             this.submitOrgCredentialLoading = false;
             this.submitOrgCredentialError = "Redirect URI has not changed";
         }

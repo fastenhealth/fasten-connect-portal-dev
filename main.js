@@ -884,6 +884,8 @@ class OrgCredentialsEditorComponent {
     }
     ngOnInit() {
         if (this.editorMode === 'edit' && this.orgCredential) {
+            //reset formArray (empty it)
+            this.redirectUris.clear();
             for (let uri of this.orgCredential.redirect_uris) {
                 this.redirectUris.push(new _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControl(uri, [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern(_app_constants__WEBPACK_IMPORTED_MODULE_0__.URI_PATTERN)]));
             }

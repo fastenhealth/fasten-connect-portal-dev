@@ -927,7 +927,7 @@ class OrgCredentialsEditorComponent {
             this.submitOrgCredentialError = "Redirect URI has not changed";
         }
         //TODO: we're not currently checking if the redirectUris array is empty, because the frontend will validate it. However the backend will verify it as well.
-        this.connectService.updateOrgCredential(this.org.id, this.orgCredential.id, (this.redirectUris.getRawValue()[0] || ""), this.note).subscribe((result) => {
+        this.connectService.updateOrgCredential(this.org.id, this.orgCredential.id, this.redirectUris.getRawValue(), this.note).subscribe((result) => {
             console.log("Updated Org Credential", result);
             this.submitOrgCredentialLoading = false;
             this.activeModal.close(result);
@@ -949,7 +949,7 @@ class OrgCredentialsEditorComponent {
             return;
         }
         //TODO: we're not currently checking if the redirectUris array is empty, because the frontend will validate it. However the backend will verify it as well.
-        this.connectService.createOrgCredentials(this.org.id, this.apiMode, (this.redirectUris.getRawValue()[0] || ""), this.note).subscribe((result) => {
+        this.connectService.createOrgCredentials(this.org.id, this.apiMode, this.redirectUris.getRawValue(), this.note).subscribe((result) => {
             console.log("Added Org Credential", result);
             this.submitOrgCredentialLoading = false;
             this.activeModal.close(result);
@@ -5007,10 +5007,10 @@ class ConnectService {
             return response.data;
         }));
     }
-    createOrgCredentials(orgId, apiMode, redirectUrl, note) {
+    createOrgCredentials(orgId, apiMode, redirectUrls, note) {
         return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/credentials`, {
             api_mode: apiMode,
-            redirect_uri: redirectUrl,
+            redirect_uris: redirectUrls,
             note: note
         })
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
@@ -5019,9 +5019,9 @@ class ConnectService {
             return response.data;
         }));
     }
-    updateOrgCredential(orgId, orgCredentialId, redirectUrl, note) {
+    updateOrgCredential(orgId, orgCredentialId, redirectUrls, note) {
         return this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/credentials/${orgCredentialId}`, {
-            redirect_uri: redirectUrl,
+            redirect_uris: redirectUrls,
             note: note
         })
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {

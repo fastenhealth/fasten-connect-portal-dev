@@ -761,57 +761,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function OrgCredentialsEditorComponent_div_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "input", 16);
+function OrgCredentialsEditorComponent_div_16_div_2_Template(rf, ctx) { if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 20)(1, "i", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_div_16_div_2_Template_i_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r11); const i_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r9.removeRedirectUri(i_r7)); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
+} }
+function OrgCredentialsEditorComponent_div_16_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "input", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, OrgCredentialsEditorComponent_div_16_div_2_Template, 2, 0, "div", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const i_r7 = ctx.index;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("formControl", ctx_r0.redirectUris.controls[i_r7]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", i_r7 >= 1);
 } }
-function OrgCredentialsEditorComponent_div_22_ng_container_1_div_1_Template(rf, ctx) { if (rf & 1) {
+function OrgCredentialsEditorComponent_div_23_ng_container_1_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const i_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().index;
+    const i_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().index;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" Redirect Url (", i_r10 + 1, ") is required. ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" Redirect Url (", i_r14 + 1, ") is required. ");
 } }
-function OrgCredentialsEditorComponent_div_22_ng_container_1_div_2_Template(rf, ctx) { if (rf & 1) {
+function OrgCredentialsEditorComponent_div_23_ng_container_1_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const i_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().index;
+    const i_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().index;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" Redirect Url (", i_r10 + 1, ") must be a valid url starting with https:// or a custom scheme ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" Redirect Url (", i_r14 + 1, ") must be a valid url starting with https:// or a custom scheme ");
 } }
-function OrgCredentialsEditorComponent_div_22_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+function OrgCredentialsEditorComponent_div_23_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, OrgCredentialsEditorComponent_div_22_ng_container_1_div_1_Template, 2, 1, "div", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, OrgCredentialsEditorComponent_div_22_ng_container_1_div_2_Template, 2, 1, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, OrgCredentialsEditorComponent_div_23_ng_container_1_div_1_Template, 2, 1, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, OrgCredentialsEditorComponent_div_23_ng_container_1_div_2_Template, 2, 1, "div", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const control_r9 = ctx.$implicit;
+    const control_r13 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", control_r9.errors == null ? null : control_r9.errors["required"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", control_r13.errors == null ? null : control_r13.errors["required"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", control_r9.errors == null ? null : control_r9.errors["pattern"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", control_r13.errors == null ? null : control_r13.errors["pattern"]);
 } }
-function OrgCredentialsEditorComponent_div_22_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, OrgCredentialsEditorComponent_div_22_ng_container_1_Template, 3, 2, "ng-container", 18);
+function OrgCredentialsEditorComponent_div_23_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, OrgCredentialsEditorComponent_div_23_ng_container_1_Template, 3, 2, "ng-container", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx_r2.redirectUris.controls);
 } }
-function OrgCredentialsEditorComponent_div_23_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 17);
+function OrgCredentialsEditorComponent_div_24_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -819,29 +828,29 @@ function OrgCredentialsEditorComponent_div_23_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", ctx_r3.submitOrgCredentialError, " ");
 } }
-function OrgCredentialsEditorComponent_ng_container_26_span_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 22);
+function OrgCredentialsEditorComponent_ng_container_27_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 27);
 } }
-function OrgCredentialsEditorComponent_ng_container_26_span_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 22);
+function OrgCredentialsEditorComponent_ng_container_27_span_6_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 27);
 } }
-function OrgCredentialsEditorComponent_ng_container_26_Template(rf, ctx) { if (rf & 1) {
-    const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+function OrgCredentialsEditorComponent_ng_container_27_Template(rf, ctx) { if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "button", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_26_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r18); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r17.deleteOrgCredential()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "button", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_27_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r22); const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r21.deleteOrgCredential()); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](2, "Delete ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_26_span_3_Template, 1, 0, "span", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_27_span_3_Template, 1, 0, "span", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_26_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r18); const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r19.updateOrgCredential()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_27_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r22); const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r23.updateOrgCredential()); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](5, "Update ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, OrgCredentialsEditorComponent_ng_container_26_span_6_Template, 1, 0, "span", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, OrgCredentialsEditorComponent_ng_container_27_span_6_Template, 1, 0, "span", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](21);
+    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](22);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r4.deleteOrgCredentialLoading);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
@@ -849,16 +858,16 @@ function OrgCredentialsEditorComponent_ng_container_26_Template(rf, ctx) { if (r
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r4.submitOrgCredentialLoading);
 } }
-function OrgCredentialsEditorComponent_ng_container_27_span_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 22);
+function OrgCredentialsEditorComponent_ng_container_28_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 27);
 } }
-function OrgCredentialsEditorComponent_ng_container_27_Template(rf, ctx) { if (rf & 1) {
-    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+function OrgCredentialsEditorComponent_ng_container_28_Template(rf, ctx) { if (rf & 1) {
+    const _r26 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "button", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_27_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r22); const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r21.createOrgCredential()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "button", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_ng_container_28_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r26); const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r25.createOrgCredential()); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](2, "Create ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_27_span_3_Template, 1, 0, "span", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, OrgCredentialsEditorComponent_ng_container_28_span_3_Template, 1, 0, "span", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
@@ -914,6 +923,21 @@ class OrgCredentialsEditorComponent {
             });
         }
     }
+    addRedirectUri() {
+        if (this.redirectUris.length >= 10) {
+            alert("You can only add up to 10 redirect URIs");
+            return;
+        }
+        this.redirectUris.push(new _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern(_app_constants__WEBPACK_IMPORTED_MODULE_0__.URI_PATTERN)]));
+    }
+    removeRedirectUri(index) {
+        if (this.redirectUris.length > 1) {
+            this.redirectUris.removeAt(index);
+        }
+        else {
+            alert("At least one redirect URI is required.");
+        }
+    }
     updateOrgCredential() {
         this.submitOrgCredentialLoading = true;
         this.submitOrgCredentialError = '';
@@ -922,12 +946,15 @@ class OrgCredentialsEditorComponent {
             this.submitOrgCredentialError = "Unknown Organization Credential ID";
             return;
         }
-        if ((0,lodash__WEBPACK_IMPORTED_MODULE_1__.isEqual)(this.redirectUris.getRawValue(), this.orgCredential.redirect_uris)) {
+        //sort, compact & remove duplicates from the redirectUris array
+        let redirectUris = this.redirectUris.getRawValue();
+        redirectUris = (0,lodash__WEBPACK_IMPORTED_MODULE_1__.uniq)((0,lodash__WEBPACK_IMPORTED_MODULE_1__.compact)(redirectUris)).sort((a, b) => a.localeCompare(b));
+        if ((0,lodash__WEBPACK_IMPORTED_MODULE_1__.isEqual)(redirectUris, this.orgCredential.redirect_uris)) {
             this.submitOrgCredentialLoading = false;
             this.submitOrgCredentialError = "Redirect URI has not changed";
         }
         //TODO: we're not currently checking if the redirectUris array is empty, because the frontend will validate it. However the backend will verify it as well.
-        this.connectService.updateOrgCredential(this.org.id, this.orgCredential.id, this.redirectUris.getRawValue(), this.note).subscribe((result) => {
+        this.connectService.updateOrgCredential(this.org.id, this.orgCredential.id, redirectUris, this.note).subscribe((result) => {
             console.log("Updated Org Credential", result);
             this.submitOrgCredentialLoading = false;
             this.activeModal.close(result);
@@ -964,7 +991,7 @@ class OrgCredentialsEditorComponent {
     }
 }
 OrgCredentialsEditorComponent.ɵfac = function OrgCredentialsEditorComponent_Factory(t) { return new (t || OrgCredentialsEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_2__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__.NgbActiveModal)); };
-OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: OrgCredentialsEditorComponent, selectors: [["app-org-credentials-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgCredential: "orgCredential" }, decls: 28, vars: 7, consts: [[1, "modal-header"], ["id", "modal-credential-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], [1, "mb-3"], ["ngbTooltip", "required", 1, "text-danger"], ["class", "input-group", 4, "ngFor", "ngForOf"], ["for", "note"], [1, "input-group"], ["id", "note", "placeholder", "Additional Note", "name", "note", "type", "text", 1, "form-control", 3, "ngModel", "ngModelChange"], ["noteField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], ["required", "", "placeholder", "https://example.com/...", "name", "redirectUri", "type", "url", 1, "form-control", 3, "formControl"], [1, "alert", "alert-danger"], [4, "ngFor", "ngForOf"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgCredentialsEditorComponent_Template(rf, ctx) { if (rf & 1) {
+OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: OrgCredentialsEditorComponent, selectors: [["app-org-credentials-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgCredential: "orgCredential" }, decls: 29, vars: 7, consts: [[1, "modal-header"], ["id", "modal-credential-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], [1, "mb-3"], ["ngbTooltip", "required", 1, "text-danger"], [1, "fa", "fa-plus-circle", "text-indigo", "ml-2", 2, "cursor", "pointer", 3, "click"], ["class", "input-group pb-1", 4, "ngFor", "ngForOf"], ["for", "note"], [1, "input-group"], ["id", "note", "placeholder", "Additional Note", "name", "note", "type", "text", 1, "form-control", 3, "ngModel", "ngModelChange"], ["noteField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], [1, "input-group", "pb-1"], ["required", "", "placeholder", "https://example.com/...", "name", "redirectUri", "type", "url", 1, "form-control", 3, "formControl"], ["class", "input-group-append d-flex align-items-center", 4, "ngIf"], [1, "input-group-append", "d-flex", "align-items-center"], [1, "fa", "fa-minus-circle", "text-indigo", "ml-2", 2, "cursor", "pointer", 3, "click"], [1, "alert", "alert-danger"], [4, "ngFor", "ngForOf"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgCredentialsEditorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "h4", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -977,29 +1004,32 @@ OrgCredentialsEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](8, " API Credentials are used by your application to access the Fasten Connect API ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](9, "form")(10, "div", 5)(11, "label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](12, "Redirect Url");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](12, " Redirect Url");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](13, "span", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](14, "*");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](15, "i", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgCredentialsEditorComponent_Template_i_click_15_listener() { return ctx.addRedirectUri(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](15, OrgCredentialsEditorComponent_div_15_Template, 2, 1, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](16, OrgCredentialsEditorComponent_div_16_Template, 3, 2, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "div", 5)(17, "label", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](18, "Note");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](17, "div", 5)(18, "label", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](19, "Note");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](19, "div", 9)(20, "input", 10, 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngModelChange", function OrgCredentialsEditorComponent_Template_input_ngModelChange_20_listener($event) { return ctx.note = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](20, "div", 10)(21, "input", 11, 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngModelChange", function OrgCredentialsEditorComponent_Template_input_ngModelChange_21_listener($event) { return ctx.note = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](22, OrgCredentialsEditorComponent_div_22_Template, 2, 1, "div", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](23, OrgCredentialsEditorComponent_div_23_Template, 2, 1, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](23, OrgCredentialsEditorComponent_div_23_Template, 2, 1, "div", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](24, OrgCredentialsEditorComponent_div_24_Template, 2, 1, "div", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](24, "div", 13)(25, "div", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](26, OrgCredentialsEditorComponent_ng_container_26_Template, 7, 3, "ng-container", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](27, OrgCredentialsEditorComponent_ng_container_27_Template, 4, 2, "ng-container", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](25, "div", 14)(26, "div", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](27, OrgCredentialsEditorComponent_ng_container_27_Template, 7, 3, "ng-container", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](28, OrgCredentialsEditorComponent_ng_container_28_Template, 4, 2, "ng-container", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", ctx.editorMode == "create" ? "Create" : "Update", " Credential ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.redirectUris.controls);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngModel", ctx.note);

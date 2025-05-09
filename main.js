@@ -894,6 +894,7 @@ function OrgCredentialsEditorComponent_ng_container_29_Template(rf, ctx) { if (r
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r6.submitOrgCredentialLoading);
 } }
+const MAX_REDIRECT_URIS = 25;
 class OrgCredentialsEditorComponent {
     constructor(connectService, activeModal) {
         this.connectService = connectService;
@@ -941,8 +942,8 @@ class OrgCredentialsEditorComponent {
         }
     }
     addRedirectUri() {
-        if (this.redirectUris.length >= 10) {
-            alert("You can only add up to 10 redirect URIs");
+        if (this.redirectUris.length >= MAX_REDIRECT_URIS) {
+            alert(`You can only add up to ${MAX_REDIRECT_URIS} redirect URIs`);
             return;
         }
         this.redirectUris.push(new _angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormControl('', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.pattern(_app_constants__WEBPACK_IMPORTED_MODULE_0__.URI_PATTERN)]));

@@ -240,7 +240,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @angular/platform-browser */ 34497);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @angular/platform-browser */ 34497);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/forms */ 2508);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/common/http */ 58987);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 90158);
@@ -248,8 +248,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
 /* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ 2898);
 /* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ngx-highlightjs */ 97101);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
-/* harmony import */ var ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ngx-infinite-scroll */ 47364);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
+/* harmony import */ var ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ngx-infinite-scroll */ 47364);
 /* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 19200);
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header.component */ 43646);
 /* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/footer/footer.component */ 64662);
@@ -263,10 +263,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/router */ 60124);
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/auth.service */ 37556);
 /* harmony import */ var _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/auth-interceptor.service */ 32993);
-/* harmony import */ var ngx_image_cropper__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ngx-image-cropper */ 10649);
+/* harmony import */ var ngx_image_cropper__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ngx-image-cropper */ 10649);
 /* harmony import */ var _components_logo_cropper_logo_cropper_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/logo-cropper/logo-cropper.component */ 57993);
-/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ng2-charts */ 31208);
-/* harmony import */ var ngx_moment__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ngx-moment */ 20728);
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ng2-charts */ 31208);
+/* harmony import */ var ngx_moment__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ngx-moment */ 20728);
 /* harmony import */ var _pages_org_settings_org_settings_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/org-settings/org-settings.component */ 16226);
 /* harmony import */ var _pages_account_settings_account_settings_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/account-settings/account-settings.component */ 84411);
 /* harmony import */ var _components_org_credentials_editor_org_credentials_editor_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/org-credentials-editor/org-credentials-editor.component */ 39302);
@@ -277,7 +277,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_org_team_invite_org_team_invite_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/org-team-invite/org-team-invite.component */ 93172);
 /* harmony import */ var _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/auth-reset-request/auth-reset-request.component */ 38540);
 /* harmony import */ var _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/auth-reset/auth-reset.component */ 48453);
+/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @ng-select/ng-select */ 73054);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/core */ 22560);
+
 
 
 
@@ -339,16 +341,17 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_26__["ɵ�
             }
         }
     ], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_31__.FormsModule,
+        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_32__.NgSelectModule,
         _angular_forms__WEBPACK_IMPORTED_MODULE_31__.ReactiveFormsModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_32__.BrowserModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_33__.BrowserModule,
         _angular_common_http__WEBPACK_IMPORTED_MODULE_28__.HttpClientModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__.NgbModule,
-        ng2_charts__WEBPACK_IMPORTED_MODULE_34__.NgChartsModule,
-        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_35__.InfiniteScrollModule,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_34__.NgbModule,
+        ng2_charts__WEBPACK_IMPORTED_MODULE_35__.NgChartsModule,
+        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_36__.InfiniteScrollModule,
         _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_27__.FontAwesomeModule,
-        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_36__.ImageCropperModule,
-        ngx_moment__WEBPACK_IMPORTED_MODULE_37__.MomentModule,
+        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_37__.ImageCropperModule,
+        ngx_moment__WEBPACK_IMPORTED_MODULE_38__.MomentModule,
         ngx_highlightjs__WEBPACK_IMPORTED_MODULE_30__.HighlightModule] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_26__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
         _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__.HeaderComponent,
@@ -369,17 +372,18 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_26__["ɵ�
         _components_org_team_invite_org_team_invite_component__WEBPACK_IMPORTED_MODULE_21__.OrgTeamInviteComponent,
         _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_22__.AuthResetRequestComponent,
         _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_23__.AuthResetComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_31__.FormsModule,
+        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_32__.NgSelectModule,
         _angular_forms__WEBPACK_IMPORTED_MODULE_31__.ReactiveFormsModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_32__.BrowserModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_33__.BrowserModule,
         _angular_common_http__WEBPACK_IMPORTED_MODULE_28__.HttpClientModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _directives_password_confirm_validator_directive__WEBPACK_IMPORTED_MODULE_9__.PasswordConfirmValidatorDirective,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__.NgbModule,
-        ng2_charts__WEBPACK_IMPORTED_MODULE_34__.NgChartsModule,
-        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_35__.InfiniteScrollModule,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_34__.NgbModule,
+        ng2_charts__WEBPACK_IMPORTED_MODULE_35__.NgChartsModule,
+        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_36__.InfiniteScrollModule,
         _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_27__.FontAwesomeModule,
-        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_36__.ImageCropperModule,
-        ngx_moment__WEBPACK_IMPORTED_MODULE_37__.MomentModule,
+        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_37__.ImageCropperModule,
+        ngx_moment__WEBPACK_IMPORTED_MODULE_38__.MomentModule,
         ngx_highlightjs__WEBPACK_IMPORTED_MODULE_30__.HighlightModule] }); })();
 
 
@@ -1213,7 +1217,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_connect_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/connect.service */ 84543);
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 94666);
+/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-select/ng-select */ 73054);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 94666);
+
 
 
 
@@ -1221,11 +1227,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function OrgWebhooksEditorComponent_div_10_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 20)(1, "strong");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 23)(1, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "Testing");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, " If you don't have an environment to receive webhooks, you can use ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "a", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "a", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, "webhook.site");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, " to test. ");
@@ -1242,9 +1248,9 @@ function OrgWebhooksEditorComponent_div_20_div_2_Template(rf, ctx) { if (rf & 1)
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } }
 function OrgWebhooksEditorComponent_div_20_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 22);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, OrgWebhooksEditorComponent_div_20_div_1_Template, 2, 0, "div", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, OrgWebhooksEditorComponent_div_20_div_2_Template, 2, 0, "div", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, OrgWebhooksEditorComponent_div_20_div_1_Template, 2, 0, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, OrgWebhooksEditorComponent_div_20_div_2_Template, 2, 0, "div", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
@@ -1254,64 +1260,78 @@ function OrgWebhooksEditorComponent_div_20_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _r1.errors == null ? null : _r1.errors["pattern"]);
 } }
-function OrgWebhooksEditorComponent_div_29_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 22);
+function OrgWebhooksEditorComponent_ng_template_25_span_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, " (required)");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} }
+function OrgWebhooksEditorComponent_ng_template_25_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, OrgWebhooksEditorComponent_ng_template_25_span_1_Template, 2, 0, "span", 22);
+} if (rf & 2) {
+    const item_r10 = ctx.item;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", item_r10.label, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", item_r10.required);
+} }
+function OrgWebhooksEditorComponent_div_34_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r4.submitOrgWebhookError, " ");
-} }
-function OrgWebhooksEditorComponent_ng_container_32_span_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 26);
-} }
-function OrgWebhooksEditorComponent_ng_container_32_span_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 26);
-} }
-function OrgWebhooksEditorComponent_ng_container_32_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgWebhooksEditorComponent_ng_container_32_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r11.deleteOrgWebhook()); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Delete ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgWebhooksEditorComponent_ng_container_32_span_3_Template, 1, 0, "span", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "button", 25);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgWebhooksEditorComponent_ng_container_32_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r12); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r13.updateOrgWebhook()); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, " Update ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, OrgWebhooksEditorComponent_ng_container_32_span_6_Template, 1, 0, "span", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
     const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](19);
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](28);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r5.deleteOrgWebhookLoading);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", !_r1.dirty && !_r3.dirty || ctx_r5.submitOrgWebhookLoading);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r5.submitOrgWebhookLoading);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r5.submitOrgWebhookError, " ");
 } }
-function OrgWebhooksEditorComponent_ng_container_33_span_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 26);
+function OrgWebhooksEditorComponent_ng_container_37_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 29);
 } }
-function OrgWebhooksEditorComponent_ng_container_33_Template(rf, ctx) { if (rf & 1) {
+function OrgWebhooksEditorComponent_ng_container_37_span_6_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 29);
+} }
+function OrgWebhooksEditorComponent_ng_container_37_Template(rf, ctx) { if (rf & 1) {
     const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 27);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgWebhooksEditorComponent_ng_container_33_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r15.createOrgWebhook()); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Create ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgWebhooksEditorComponent_ng_container_33_span_3_Template, 1, 0, "span", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgWebhooksEditorComponent_ng_container_37_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r15.deleteOrgWebhook()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Delete ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgWebhooksEditorComponent_ng_container_37_span_3_Template, 1, 0, "span", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "button", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgWebhooksEditorComponent_ng_container_37_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r17.updateOrgWebhook()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, " Update ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, OrgWebhooksEditorComponent_ng_container_37_span_6_Template, 1, 0, "span", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](19);
+    const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r6.deleteOrgWebhookLoading);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", ctx_r6.submitOrgWebhookLoading);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", !_r1.dirty && !_r4.dirty && !ctx_r6.eventTypesChanged || ctx_r6.submitOrgWebhookLoading);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r6.submitOrgWebhookLoading);
+} }
+function OrgWebhooksEditorComponent_ng_container_38_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "span", 29);
+} }
+function OrgWebhooksEditorComponent_ng_container_38_Template(rf, ctx) { if (rf & 1) {
+    const _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function OrgWebhooksEditorComponent_ng_container_38_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r20); const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r19.createOrgWebhook()); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Create ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, OrgWebhooksEditorComponent_ng_container_38_span_3_Template, 1, 0, "span", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", ctx_r7.submitOrgWebhookLoading);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r7.submitOrgWebhookLoading);
 } }
 const _c0 = function (a0) { return { "on": a0 }; };
 class OrgWebhooksEditorComponent {
@@ -1325,15 +1345,47 @@ class OrgWebhooksEditorComponent {
         this.orgWebhook = null; //only set when editing
         this.submitOrgWebhookLoading = false;
         this.deleteOrgWebhookLoading = false;
+        this.eventTypesChanged = false;
         this.endpointUri = "";
         this.submitOrgWebhookError = '';
         this.active = true;
+        // Event
+        this.availableEventTypes = [
+            { value: 'patient.ehi_export_failed', label: 'patient.ehi_export_failed', required: true },
+            { value: 'patient.ehi_export_success', label: 'patient.ehi_export_success', required: true },
+            { value: 'patient.authorization_revoked', label: 'patient.authorization_revoked', required: false },
+            { value: 'patient.connection_success', label: 'patient.connection_success', required: false },
+            { value: 'webhook.test', label: 'webhook.test', required: true }
+        ];
+        this.selectedEventTypes = [];
     }
     ngOnInit() {
+        // Always include required events
+        const requiredEvents = this.availableEventTypes.filter(e => e.required).map(e => e.value);
         if (this.editorMode === 'edit' && this.orgWebhook) {
             this.endpointUri = this.orgWebhook.endpoint_uri;
             this.active = this.orgWebhook.status === 'active';
+            this.selectedEventTypes = [...new Set([...requiredEvents, ...(this.orgWebhook.event_types || [])])];
         }
+        else {
+            // For create mode, start with just required events
+            this.selectedEventTypes = [...requiredEvents];
+        }
+    }
+    validateRequiredEvents() {
+        const requiredEvents = this.availableEventTypes
+            .filter(e => e.required)
+            .map(e => e.value);
+        const missing = requiredEvents.filter(req => !this.selectedEventTypes.includes(req));
+        if (missing.length > 0) {
+            this.submitOrgWebhookError = 'Required event types must be selected.';
+            return false;
+        }
+        this.submitOrgWebhookError = '';
+        return true;
+    }
+    onEventTypesChanged() {
+        this.eventTypesChanged = true;
     }
     deleteOrgWebhook() {
         if (confirm("Are you sure you'd like to delete this Webhook?") == true) {
@@ -1358,6 +1410,7 @@ class OrgWebhooksEditorComponent {
         }
     }
     updateOrgWebhook() {
+        this.eventTypesChanged = false;
         this.submitOrgWebhookLoading = true;
         this.submitOrgWebhookError = '';
         if (!this.orgWebhook?.id) {
@@ -1369,7 +1422,12 @@ class OrgWebhooksEditorComponent {
             this.submitOrgWebhookLoading = false;
             this.submitOrgWebhookError = "Webhook settings have not changed";
         }
-        this.connectService.updateOrgWebhook(this.org.id, this.orgWebhook.id, this.endpointUri, this.active ? 'active' : 'inactive').subscribe((result) => {
+        if (!this.validateRequiredEvents()) {
+            this.submitOrgWebhookLoading = false;
+            return;
+        }
+        console.log('Submitting event types:', this.selectedEventTypes);
+        this.connectService.updateOrgWebhook(this.org.id, this.orgWebhook.id, this.endpointUri, this.active ? 'active' : 'inactive', this.selectedEventTypes).subscribe((result) => {
             console.log("Updated Org Webhook", result);
             this.submitOrgWebhookLoading = false;
             this.activeModal.close(result);
@@ -1390,7 +1448,11 @@ class OrgWebhooksEditorComponent {
             this.submitOrgWebhookError = "Unknown Organization ID";
             return;
         }
-        this.connectService.createOrgWebhooks(this.org.id, this.apiMode, this.endpointUri, this.active ? 'active' : 'inactive').subscribe((result) => {
+        if (!this.validateRequiredEvents()) {
+            this.submitOrgWebhookLoading = false;
+            return;
+        }
+        this.connectService.createOrgWebhooks(this.org.id, this.apiMode, this.endpointUri, this.active ? 'active' : 'inactive', this.selectedEventTypes).subscribe((result) => {
             this.submitOrgWebhookLoading = false;
             this.activeModal.close(result);
         }, (error) => {
@@ -1404,7 +1466,7 @@ class OrgWebhooksEditorComponent {
     }
 }
 OrgWebhooksEditorComponent.ɵfac = function OrgWebhooksEditorComponent_Factory(t) { return new (t || OrgWebhooksEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_1__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbActiveModal)); };
-OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: OrgWebhooksEditorComponent, selectors: [["app-org-webhooks-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgWebhook: "orgWebhook" }, decls: 34, vars: 12, consts: [[1, "modal-header"], ["id", "modal-webhook-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], ["class", "alert alert-warning mg-t-10", "role", "alert", 4, "ngIf"], [1, "mb-3"], ["for", "endpointUri"], ["ngbTooltip", "required", 1, "text-danger"], [1, "input-group"], ["required", "", "id", "endpointUri", "placeholder", "https://example.com/...", "name", "endpointUri", "type", "url", 1, "form-control", 3, "pattern", "ngModel", "ngModelChange"], ["endpointUriField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], [1, "az-toggle", 3, "ngClass"], ["for", "webhook-active"], ["id", "webhook-active", "name", "webhook-active", "type", "checkbox", 1, "", 2, "display", "none", 3, "ngModel", "ngModelChange"], ["webhookActiveField", "ngModel"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], ["role", "alert", 1, "alert", "alert-warning", "mg-t-10"], ["target", "_blank", "href", "https://webhook.site"], [1, "alert", "alert-danger"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgWebhooksEditorComponent_Template(rf, ctx) { if (rf & 1) {
+OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: OrgWebhooksEditorComponent, selectors: [["app-org-webhooks-editor"]], inputs: { editorMode: "editorMode", org: "org", apiMode: "apiMode", orgWebhook: "orgWebhook" }, decls: 39, vars: 15, consts: [[1, "modal-header"], ["id", "modal-webhook-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], ["class", "alert alert-warning mg-t-10", "role", "alert", 4, "ngIf"], [1, "mb-3"], ["for", "endpointUri"], ["ngbTooltip", "required", 1, "text-danger"], [1, "input-group"], ["required", "", "id", "endpointUri", "placeholder", "https://example.com/...", "name", "endpointUri", "type", "url", 1, "form-control", 3, "pattern", "ngModel", "ngModelChange"], ["endpointUriField", "ngModel"], ["class", "alert alert-danger", 4, "ngIf"], ["for", "event-types"], ["name", "webhookEventTypes", "bindLabel", "label", "bindValue", "value", "placeholder", "Select event types...", 3, "items", "ngModel", "multiple", "ngModelChange", "change"], ["ng-option-tmp", ""], [1, "az-toggle", 3, "ngClass"], ["for", "webhook-active"], ["id", "webhook-active", "name", "webhook-active", "type", "checkbox", 1, "", 2, "display", "none", 3, "ngModel", "ngModelChange"], ["webhookActiveField", "ngModel"], [1, "modal-footer"], [2, "display", "block", "width", "100%"], [4, "ngIf"], ["role", "alert", 1, "alert", "alert-warning", "mg-t-10"], ["target", "_blank", "href", "https://webhook.site"], [1, "alert", "alert-danger"], ["type", "button", 1, "float-left", "btn", "btn-outline-danger", 3, "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["type", "button", 1, "float-right", "btn", "btn-outline-indigo", 3, "disabled", "click"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"]], template: function OrgWebhooksEditorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h4", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -1427,20 +1489,27 @@ OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function OrgWebhooksEditorComponent_Template_input_ngModelChange_18_listener($event) { return ctx.endpointUri = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](20, OrgWebhooksEditorComponent_div_20_Template, 3, 2, "div", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "div", 6)(22, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](23, "Webhook Status");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "div", 6)(22, "label", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](23, "Webhook Event Types");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](24, "div", 13)(25, "label", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](26, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](24, "ng-select", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function OrgWebhooksEditorComponent_Template_ng_select_ngModelChange_24_listener($event) { return ctx.selectedEventTypes = $event; })("change", function OrgWebhooksEditorComponent_Template_ng_select_change_24_listener() { return ctx.onEventTypesChanged(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](25, OrgWebhooksEditorComponent_ng_template_25_Template, 2, 2, "ng-template", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](27, "input", 15, 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function OrgWebhooksEditorComponent_Template_input_ngModelChange_27_listener($event) { return ctx.active = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](26, "div", 6)(27, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](28, "Webhook Status");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](29, "div", 16)(30, "label", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](31, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](29, OrgWebhooksEditorComponent_div_29_Template, 2, 1, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](32, "input", 18, 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function OrgWebhooksEditorComponent_Template_input_ngModelChange_32_listener($event) { return ctx.active = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](30, "div", 17)(31, "div", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](32, OrgWebhooksEditorComponent_ng_container_32_Template, 7, 3, "ng-container", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](33, OrgWebhooksEditorComponent_ng_container_33_Template, 4, 2, "ng-container", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](34, OrgWebhooksEditorComponent_div_34_Template, 2, 1, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](35, "div", 20)(36, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](37, OrgWebhooksEditorComponent_ng_container_37_Template, 7, 3, "ng-container", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](38, OrgWebhooksEditorComponent_ng_container_38_Template, 4, 2, "ng-container", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
     } if (rf & 2) {
         const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](19);
@@ -1453,7 +1522,9 @@ OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _r1.invalid && (_r1.dirty || _r1.touched));
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](10, _c0, ctx.active));
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("items", ctx.availableEventTypes)("ngModel", ctx.selectedEventTypes)("multiple", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](13, _c0, ctx.active));
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.active);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
@@ -1462,7 +1533,7 @@ OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.editorMode == "edit");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.editorMode == "create");
-    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.CheckboxControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.PatternValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgForm, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbTooltip], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmctd2ViaG9va3MtZWRpdG9yLmNvbXBvbmVudC5zY3NzIn0= */"] });
+    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.CheckboxControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.PatternValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgForm, _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_5__.NgSelectComponent, _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_5__.NgOptionTemplateDirective, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgIf, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbTooltip], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmctd2ViaG9va3MtZWRpdG9yLmNvbXBvbmVudC5zY3NzIn0= */"] });
 
 
 /***/ }),
@@ -5095,11 +5166,12 @@ class ConnectService {
             return response.data;
         }));
     }
-    createOrgWebhooks(orgId, apiMode, endpointUri, status) {
+    createOrgWebhooks(orgId, apiMode, endpointUri, status, eventTypes) {
         return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/webhooks`, {
             api_mode: apiMode,
             endpoint_uri: endpointUri,
-            status: status
+            status: status,
+            event_types: eventTypes
         })
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Credential", response);
@@ -5113,10 +5185,11 @@ class ConnectService {
             return { action: _app_constants__WEBPACK_IMPORTED_MODULE_1__.CRUDMode.Delete, org_webhook: response.data };
         }));
     }
-    updateOrgWebhook(orgId, orgWebhookId, endpointUri, status) {
+    updateOrgWebhook(orgId, orgWebhookId, endpointUri, status, eventTypes) {
         return this._httpClient.put(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/webhooks/${orgWebhookId}`, {
             endpoint_uri: endpointUri,
-            status: status
+            status: status,
+            event_types: eventTypes
         })
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.map)((response) => {
             console.log("Organization Webhook", response);

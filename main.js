@@ -1353,7 +1353,7 @@ class OrgWebhooksEditorComponent {
         this.availableEventTypes = [
             { value: 'patient.ehi_export_failed', label: 'patient.ehi_export_failed', required: true },
             { value: 'patient.ehi_export_success', label: 'patient.ehi_export_success', required: true },
-            { value: 'patient.authorization_revoked', label: 'patient.authorization_revoked', required: false },
+            // { value: 'patient.authorization_revoked', label: 'patient.authorization_revoked', required: false },
             { value: 'patient.connection_success', label: 'patient.connection_success', required: false },
             { value: 'webhook.test', label: 'webhook.test', required: true }
         ];

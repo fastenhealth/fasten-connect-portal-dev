@@ -1086,11 +1086,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "OrgTeamInviteMultipleComponent": () => (/* binding */ OrgTeamInviteMultipleComponent)
 /* harmony export */ });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 91640);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 91640);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 22560);
 /* harmony import */ var _services_connect_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/connect.service */ 84543);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 94666);
 
 
@@ -1098,20 +1098,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function OrgTeamInviteMultipleComponent_div_10_Template(rf, ctx) { if (rf & 1) {
-    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 11)(1, "input", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function OrgTeamInviteMultipleComponent_div_10_Template_input_ngModelChange_1_listener($event) { const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const i_r4 = restoredCtx.index; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"]((ctx_r5.teamMemberEmails[i_r4] = $event)); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "input", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const i_r4 = ctx.index;
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpropertyInterpolate1"]("name", "email", i_r4, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx_r0.teamMemberEmails[i_r4]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formControlName", i_r4);
 } }
 function OrgTeamInviteMultipleComponent_div_11_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -1120,30 +1118,35 @@ function OrgTeamInviteMultipleComponent_div_11_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r1.submitOrgInviteError, " ");
 } }
 function OrgTeamInviteMultipleComponent_span_17_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "span", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "span", 15);
 } }
 class OrgTeamInviteMultipleComponent {
-    constructor(connectService, activeModal) {
+    constructor(fb, connectService, activeModal) {
+        this.fb = fb;
         this.connectService = connectService;
         this.activeModal = activeModal;
         this.orgId = '';
-        this.teamMemberEmails = ['', '', '', ''];
         this.submitOrgInviteLoading = false;
         this.submitOrgInviteError = '';
+        this.inviteForm = this.fb.group({
+            emails: this.fb.array(Array(4).fill('').map(() => this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__.Validators.email])))
+        });
     }
-    ngOnInit() {
+    ngOnInit() { }
+    get emails() {
+        return this.inviteForm.get('emails');
     }
     sendOrgTeamInvites() {
-        const emails = this.teamMemberEmails
-            .map(e => e.trim())
-            .filter(e => e.length > 0);
+        const emails = this.emails.value
+            .map((e) => e.trim())
+            .filter((e) => e.length > 0);
         if (emails.length === 0) {
             this.activeModal.close([]);
             return;
         }
         this.submitOrgInviteLoading = true;
         this.submitOrgInviteError = '';
-        (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.forkJoin)(emails.map(email => this.connectService.sendOrgInvite(this.orgId, email))).subscribe({
+        (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.forkJoin)(emails.map((email) => this.connectService.sendOrgInvite(this.orgId, email))).subscribe({
             next: () => {
                 this.submitOrgInviteLoading = false;
                 this.activeModal.close(emails);
@@ -1156,8 +1159,8 @@ class OrgTeamInviteMultipleComponent {
         });
     }
 }
-OrgTeamInviteMultipleComponent.ɵfac = function OrgTeamInviteMultipleComponent_Factory(t) { return new (t || OrgTeamInviteMultipleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_0__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbActiveModal)); };
-OrgTeamInviteMultipleComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: OrgTeamInviteMultipleComponent, selectors: [["app-org-team-invite-multiple"]], inputs: { orgId: "orgId" }, decls: 18, vars: 5, consts: [[1, "modal-header"], ["id", "modal-team-invite-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], ["class", "mb-3", 4, "ngFor", "ngForOf"], ["class", "alert alert-danger", 4, "ngIf"], [1, "modal-footer"], ["type", "button", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], [1, "mb-3"], ["type", "email", "placeholder", "team_member@example.com", 1, "form-control", 3, "ngModel", "name", "ngModelChange"], [1, "alert", "alert-danger"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"]], template: function OrgTeamInviteMultipleComponent_Template(rf, ctx) { if (rf & 1) {
+OrgTeamInviteMultipleComponent.ɵfac = function OrgTeamInviteMultipleComponent_Factory(t) { return new (t || OrgTeamInviteMultipleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_0__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__.NgbActiveModal)); };
+OrgTeamInviteMultipleComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: OrgTeamInviteMultipleComponent, selectors: [["app-org-team-invite-multiple"]], inputs: { orgId: "orgId" }, decls: 18, vars: 6, consts: [[1, "modal-header"], ["id", "modal-team-invite-title", 1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], [3, "formGroup"], ["formArrayName", "emails", "class", "mb-3", 4, "ngFor", "ngForOf"], ["class", "alert alert-danger", 4, "ngIf"], [1, "modal-footer"], ["type", "button", 1, "btn", "btn-outline-secondary", 3, "disabled", "click"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "disabled", "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["formArrayName", "emails", 1, "mb-3"], ["type", "email", "placeholder", "team_member@example.com", 1, "form-control", 3, "formControlName"], [1, "alert", "alert-danger"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"]], template: function OrgTeamInviteMultipleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "h4", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2, "Invite Team Members");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -1169,31 +1172,33 @@ OrgTeamInviteMultipleComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPO
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "div", 4)(7, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, "You can invite up to four team members now or skip this step.");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "form");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, OrgTeamInviteMultipleComponent_div_10_Template, 2, 2, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, OrgTeamInviteMultipleComponent_div_11_Template, 2, 1, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "form", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, OrgTeamInviteMultipleComponent_div_10_Template, 2, 1, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, OrgTeamInviteMultipleComponent_div_11_Template, 2, 1, "div", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "div", 7)(13, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "div", 8)(13, "button", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function OrgTeamInviteMultipleComponent_Template_button_click_13_listener() { return ctx.activeModal.dismiss("skip"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "Skip");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "button", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "button", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function OrgTeamInviteMultipleComponent_Template_button_click_15_listener() { return ctx.sendOrgTeamInvites(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](16, " Send Invites ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, OrgTeamInviteMultipleComponent_span_17_Template, 1, 0, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](17, OrgTeamInviteMultipleComponent_span_17_Template, 1, 0, "span", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.teamMemberEmails);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.inviteForm);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.emails.controls);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.submitOrgInviteError);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.submitOrgInviteLoading);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.submitOrgInviteLoading);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.submitOrgInviteLoading || ctx.inviteForm.invalid);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.submitOrgInviteLoading);
-    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgForm, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm9yZy10ZWFtLWludml0ZS1tdWx0aXBsZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4Q0FBQSIsImZpbGUiOiJvcmctdGVhbS1pbnZpdGUtbXVsdGlwbGUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBTdHlsZXMgZm9yIE9yZ1RlYW1JbnZpdGVNdWx0aXBsZUNvbXBvbmVudCAqL1xuIl19 */"] });
+    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlName, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormArrayName, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm9yZy10ZWFtLWludml0ZS1tdWx0aXBsZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4Q0FBQSIsImZpbGUiOiJvcmctdGVhbS1pbnZpdGUtbXVsdGlwbGUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBTdHlsZXMgZm9yIE9yZ1RlYW1JbnZpdGVNdWx0aXBsZUNvbXBvbmVudCAqL1xuIl19 */"] });
 
 
 /***/ }),

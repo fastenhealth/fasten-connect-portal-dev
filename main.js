@@ -223,6 +223,7 @@ var EventTypes;
     EventTypes["EventTypesPatientEHIExportFailed"] = "patient.ehi_export_failed";
     EventTypes["EventTypesPatientEHIExportSuccess"] = "patient.ehi_export_success";
     EventTypes["EventTypesPatientAuthorizationRevoked"] = "patient.authorization_revoked";
+    EventTypes["EventTypesPatientConnectionSuccess"] = "patient.connection_success";
     EventTypes["EventTypesWebhookTest"] = "webhook.test";
 })(EventTypes || (EventTypes = {}));
 
@@ -1482,11 +1483,11 @@ class OrgWebhooksEditorComponent {
         this.active = true;
         // Event
         this.availableEventTypes = [
-            { value: 'patient.ehi_export_failed', label: 'patient.ehi_export_failed', required: true },
-            { value: 'patient.ehi_export_success', label: 'patient.ehi_export_success', required: true },
-            // { value: 'patient.authorization_revoked', label: 'patient.authorization_revoked', required: false },
-            { value: 'patient.connection_success', label: 'patient.connection_success', required: false },
-            { value: 'webhook.test', label: 'webhook.test', required: true }
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientEHIExportFailed, label: 'patient.ehi_export_failed', required: true },
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientEHIExportSuccess, label: 'patient.ehi_export_success', required: true },
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientAuthorizationRevoked, label: 'patient.authorization_revoked (beta)', required: false },
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientConnectionSuccess, label: 'patient.connection_success (beta)', required: false },
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesWebhookTest, label: 'webhook.test', required: true }
         ];
         this.selectedEventTypes = [];
     }

@@ -2079,10 +2079,14 @@ class AuthorizationRevokedPayload {
 class WebhookTestPayload {
     constructor() {
         this.hello = 'world';
-        this.random = '';
+        this.random = '12345';
     }
 }
 const requiredFields = {
+    'webhook.test': [
+        'hello',
+        'random'
+    ],
     'patient.ehi_export_success': [
         'download_link',
         'stats'

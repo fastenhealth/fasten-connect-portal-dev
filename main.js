@@ -6659,7 +6659,7 @@ class AuthInterceptorService {
         if (((reqUrl.origin == apiUrl.origin && reqUrl.pathname.startsWith(apiUrl.pathname)) ||
             (reqUrl.origin == lighthouseUrl.origin && reqUrl.pathname.startsWith(lighthouseUrl.pathname)))) {
             let authReq;
-            if (reqUrl.pathname.startsWith('v1/admin/')) { //admin request
+            if (reqUrl.pathname.startsWith('/v1/admin/')) { //admin request
                 // Clone the request and ensure that admin JWT token is sent, not cookies.
                 authReq = req.clone({ withCredentials: false, headers: req.headers.set('Authorization', `Bearer ${this.adminService.readAdminToken()}`) });
             }

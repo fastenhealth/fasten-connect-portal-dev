@@ -1302,6 +1302,11 @@ class OrganizationDetailsComponent {
     trackByEnvironment(_index, row) {
         return row.environment;
     }
+    //statuses:
+    // valid - `paid` plan + active subscription (green)
+    // missing - `paid` plan + (no customer id or no active subscription) (red)
+    // unpaid - `paid` plan + expired subscription or missing CC (red)
+    // free - `free` plan (grey)
     getSubscriptionBadge(planType) {
         switch (planType) {
             case 'paid':
@@ -1376,7 +1381,7 @@ PaymentMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MO
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "span", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Planned Q4 release");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-    } }, styles: [".payment-placeholder[_ngcontent-%COMP%] {\n  background: linear-gradient(160deg, rgba(91, 71, 251, 0.08), rgba(91, 71, 251, 0));\n  border-radius: 16px;\n  border: 1px dashed rgba(91, 71, 251, 0.35);\n}\n.payment-placeholder[_ngcontent-%COMP%]   .badge[_ngcontent-%COMP%] {\n  font-weight: 600;\n  letter-spacing: 0.04em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBheW1lbnQtbWV0cmljcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtGQUFBO0VBQ0EsbUJBQUE7RUFDQSwwQ0FBQTtBQUNGO0FBQ0U7RUFDRSxnQkFBQTtFQUNBLHNCQUFBO0FBQ0oiLCJmaWxlIjoicGF5bWVudC1tZXRyaWNzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBheW1lbnQtcGxhY2Vob2xkZXIge1xuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTYwZGVnLCByZ2JhKDkxLCA3MSwgMjUxLCAwLjA4KSwgcmdiYSg5MSwgNzEsIDI1MSwgMCkpO1xuICBib3JkZXItcmFkaXVzOiAxNnB4O1xuICBib3JkZXI6IDFweCBkYXNoZWQgcmdiYSg5MSwgNzEsIDI1MSwgMC4zNSk7XG5cbiAgLmJhZGdlIHtcbiAgICBmb250LXdlaWdodDogNjAwO1xuICAgIGxldHRlci1zcGFjaW5nOiAwLjA0ZW07XG4gIH1cbn1cbiJdfQ== */"] });
+    } }, styles: [".payment-placeholder[_ngcontent-%COMP%] {\n  background: linear-gradient(160deg, rgba(91, 71, 251, 0.08), rgba(91, 71, 251, 0));\n  border: 1px dashed rgba(91, 71, 251, 0.35);\n}\n.payment-placeholder[_ngcontent-%COMP%]   .badge[_ngcontent-%COMP%] {\n  font-weight: 600;\n  letter-spacing: 0.04em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBheW1lbnQtbWV0cmljcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtGQUFBO0VBQ0EsMENBQUE7QUFDRjtBQUNFO0VBQ0UsZ0JBQUE7RUFDQSxzQkFBQTtBQUNKIiwiZmlsZSI6InBheW1lbnQtbWV0cmljcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wYXltZW50LXBsYWNlaG9sZGVyIHtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE2MGRlZywgcmdiYSg5MSwgNzEsIDI1MSwgMC4wOCksIHJnYmEoOTEsIDcxLCAyNTEsIDApKTtcbiAgYm9yZGVyOiAxcHggZGFzaGVkIHJnYmEoOTEsIDcxLCAyNTEsIDAuMzUpO1xuXG4gIC5iYWRnZSB7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBsZXR0ZXItc3BhY2luZzogMC4wNGVtO1xuICB9XG59XG4iXX0= */"] });
 
 
 /***/ }),

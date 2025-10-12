@@ -617,9 +617,9 @@ function ConsentMetricsComponent_div_15_option_6_Template(rf, ctx) { if (rf & 1)
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const option_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", option_r6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", option_r6.value);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](option_r6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](option_r6.name);
 } }
 function ConsentMetricsComponent_div_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 28)(1, "label", 29);
@@ -668,43 +668,89 @@ class ConsentMetricsComponent {
                 key: 'org_id',
                 label: 'Org ID',
                 placeholder: 'All orgs',
-                options: ['fasten-pilot', 'fasten-production', 'fasten-sandbox']
+                options: [
+                    {
+                        name: 'fasten-pilot',
+                        value: 'fasten-pilot'
+                    }, {
+                        name: 'fasten-production',
+                        value: 'fasten-production'
+                    }, {
+                        name: 'fasten-internal',
+                        value: 'fasten-internal'
+                    }
+                ]
             },
             {
                 key: 'api_mode',
                 label: 'API Mode',
                 placeholder: 'Any mode',
-                options: ['sandbox', 'production']
+                options: [{
+                        name: 'test',
+                        value: 'test'
+                    }, {
+                        name: 'live',
+                        value: 'live'
+                    }]
             },
             {
                 key: 'platform_type',
                 label: 'Platform Type',
                 placeholder: 'Any platform',
-                options: ['FHIR', 'Direct', 'CCDA']
+                options: [
+                    { name: 'AdvancedMD', value: 'advancedmd' },
+                    { name: 'Aetna', value: 'aetna' },
+                    { name: 'Allscripts', value: 'allscripts' },
+                    { name: 'Anthem', value: 'anthem' },
+                    { name: 'Athena', value: 'athena' },
+                    { name: 'Cerner', value: 'cerner' },
+                    { name: 'CHBase', value: 'chbase' },
+                    { name: 'DrChrono', value: 'Drchrono' },
+                    { name: 'eCW/Healow', value: 'eclinicalworks' },
+                    { name: 'Edifecs', value: 'edifecs' },
+                    { name: 'Epic', value: 'epic' },
+                    { name: 'Flatiron', value: 'flatiron' },
+                    { name: 'Humana', value: 'humana' },
+                    { name: 'Kaiser', value: 'kaiser' },
+                    { name: 'Maximeyes', value: 'maximeyes' },
+                    { name: 'Medhost', value: 'medhost' },
+                    { name: 'Medicare', value: 'medicare' },
+                    // {key: 'Meditech', value: 'meditech'},
+                    // meldrx.yaml
+                    { name: 'Netsmart', value: 'netsmart' },
+                    { name: 'Nextgen', value: 'nextgen' },
+                    // nhs.yaml
+                    { name: 'OneMedical', value: 'onemedical' },
+                    { name: 'PracticeFusion', value: 'practicefusion' },
+                    { name: 'Qualifacts Carelogic', value: 'qualifacts-carelogic' },
+                    { name: 'Qualifacts Credible', value: 'qualifacts-credible' },
+                    { name: 'Qualifacts Insync', value: 'qualifacts-insync' },
+                    { name: 'Quest Diagnostics', value: 'questdiagnostics' },
+                    // {key: 'Tefca', value: 'tefca'}
+                    { name: 'United Healthcare', value: 'unitedhealthcare' },
+                    { name: 'VA Health', value: 'vahealth' },
+                ]
             },
             {
                 key: 'brand_id',
                 label: 'Brand',
                 placeholder: 'Any brand',
-                options: ['Acme Health', 'Bright Medical', 'Wellness Co', 'CareNow', 'OneHealth']
-            },
-            {
-                key: 'portal_id',
-                label: 'Portal',
-                placeholder: 'Any portal',
-                options: ['consumer-portal', 'provider-portal']
-            },
-            {
-                key: 'endpoint_id',
-                label: 'Endpoint',
-                placeholder: 'Any endpoint',
-                options: ['ehr-primary', 'ehr-secondary', 'direct-mailbox']
-            },
-            {
-                key: 'tefca_root_id',
-                label: 'TEFCA Root',
-                placeholder: 'Any root',
-                options: ['tefca-east', 'tefca-west']
+                options: [{
+                        name: 'EpicCare',
+                        value: 'EpicCare'
+                    }, {
+                        name: 'CernerOne',
+                        value: 'CernerOne'
+                    }, {
+                        name: 'AthenaClinicals',
+                        value: 'AthenaClinicals'
+                    }, {
+                        name: 'eCW/Healow',
+                        value: 'eclinicalworks'
+                    }, {
+                        name: 'NextGen',
+                        value: 'NextGen'
+                    }]
             },
         ];
         this.currentTimeframe = 'week';
@@ -713,11 +759,37 @@ class ConsentMetricsComponent {
         this.treemapSeries = [];
         this.treemapOptions = this.createTreemapOptions();
         this.treemapHasData = false;
-        const controls = this.filters.reduce((acc, filter) => {
+        this.filterForm = this.fb.group(this.setupFilterControls());
+        this.filterFormSubscription = this.filterForm.valueChanges.subscribe(value => {
+            console.log('Form value changed:', value);
+            this.adminService.getConsentSummary(value).subscribe((data) => {
+                this.rebuildVisuals(data);
+            });
+        });
+        this.adminService.listOrgs().subscribe((orgs) => {
+            const orgOptions = orgs.map((org) => {
+                return { name: org.name, value: org.id };
+            }).sort((a, b) => a.name.localeCompare(b.name));
+            const orgFilter = this.filters.find((f) => f.key === 'org_id');
+            if (orgFilter) {
+                orgFilter.options = orgOptions;
+            }
+            let controls = this.setupFilterControls();
+            for (let key in controls) {
+                if (!this.filterForm.contains(key)) {
+                    this.filterForm.addControl(key, this.fb.control(controls[key]));
+                }
+                else {
+                    this.filterForm.setControl(key, this.fb.control(controls[key]));
+                }
+            }
+        });
+    }
+    setupFilterControls() {
+        return this.filters.reduce((acc, filter) => {
             acc[filter.key] = '';
             return acc;
         }, {});
-        this.filterForm = this.fb.group(controls);
     }
     ngOnInit() {
         //call consent service
@@ -6980,8 +7052,8 @@ class AdminService {
     readAdminToken() {
         return localStorage.getItem('fasten_connect_admin_jwt');
     }
-    getConsentSummary() {
-        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/admin/consent/summary`, {})
+    getConsentSummary(filterData) {
+        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/admin/consent/summary`, filterData || {})
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
             console.log("Consent Summary", response);
             return response.data;

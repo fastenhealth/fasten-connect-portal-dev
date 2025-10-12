@@ -1293,6 +1293,7 @@ class OrganizationDetailsComponent {
         //call consent service
         this.adminService.listOrgs().subscribe((data) => {
             this.organizations = data;
+            this.organizations.sort((a, b) => a.name.localeCompare(b.name));
         });
     }
     get selectedOrganization() {

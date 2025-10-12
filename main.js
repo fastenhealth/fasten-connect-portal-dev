@@ -7052,16 +7052,22 @@ class AdminService {
     readAdminToken() {
         return localStorage.getItem('fasten_connect_admin_jwt');
     }
-    getConsentSummary(filterData) {
-        filterData = filterData || {};
+    getConsentSummary(filterData, timeframeData) {
+        let requestPayload = {};
         //always add timeframe data if not present
-        if (!filterData.timeframe) {
-            filterData.timeframe = {
+        if (!timeframeData) {
+            requestPayload.timeframe = {
                 year: new Date().getFullYear(),
                 month: new Date().getMonth() + 1 //0 indexed, this is the current month.
             };
         }
-        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/admin/consent/summary`, filterData)
+        else {
+            requestPayload.timeframe = timeframeData;
+        }
+        if (filterData) {
+            requestPayload.filters = filterData;
+        }
+        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/admin/consent/summary`, requestPayload)
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
             console.log("Consent Summary", response);
             return response.data;

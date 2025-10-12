@@ -598,21 +598,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ConsentMetricsComponent": () => (/* binding */ ConsentMetricsComponent)
 /* harmony export */ });
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ 92938);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 22560);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _services_admin_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/admin.service */ 87501);
+/* harmony import */ var _services_admin_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/admin.service */ 87501);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 94666);
-/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-apexcharts */ 93239);
+/* harmony import */ var ngx_echarts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-echarts */ 31548);
+/* harmony import */ var _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/week-month-picker/week-month-picker.component */ 37093);
 
 
 
 
 
 
-function ConsentMetricsComponent_div_15_option_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "option", 33);
+function ConsentMetricsComponent_div_9_option_6_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "option", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -621,14 +620,14 @@ function ConsentMetricsComponent_div_15_option_6_Template(rf, ctx) { if (rf & 1)
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](option_r6.name);
 } }
-function ConsentMetricsComponent_div_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 28)(1, "label", 29);
+function ConsentMetricsComponent_div_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 24)(1, "label", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "select", 30)(4, "option", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "select", 26)(4, "option", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, ConsentMetricsComponent_div_15_option_6_Template, 2, 2, "option", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, ConsentMetricsComponent_div_9_option_6_Template, 2, 2, "option", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
 } if (rf & 2) {
     const filter_r4 = ctx.$implicit;
@@ -643,19 +642,19 @@ function ConsentMetricsComponent_div_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", filter_r4.options);
 } }
-function ConsentMetricsComponent_ng_container_46_Template(rf, ctx) { if (rf & 1) {
+function ConsentMetricsComponent_ng_container_40_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](2, "apx-chart", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](2, "div", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("series", ctx_r1.treemapSeries)("chart", ctx_r1.treemapOptions.chart)("plotOptions", ctx_r1.treemapOptions.plotOptions)("dataLabels", ctx_r1.treemapOptions.dataLabels)("legend", ctx_r1.treemapOptions.legend)("tooltip", ctx_r1.treemapOptions.tooltip);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("options", ctx_r1.treemapOptions);
 } }
-function ConsentMetricsComponent_ng_template_47_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 35)(1, "p", 36);
+function ConsentMetricsComponent_ng_template_41_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 30)(1, "p", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "No consent data available for the selected filters.");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
 } }
@@ -753,11 +752,8 @@ class ConsentMetricsComponent {
                     }]
             },
         ];
-        this.currentTimeframe = 'week';
-        this.divergingChartSeries = [];
-        this.divergingChartOptions = this.createDivergingOptions(200, []);
-        this.treemapSeries = [];
-        this.treemapOptions = this.createTreemapOptions();
+        this.divergingChartOptions = {};
+        this.treemapOptions = {};
         this.treemapHasData = false;
         this.filterForm = this.fb.group(this.setupFilterControls());
         this.filterFormSubscription = this.filterForm.valueChanges.subscribe(value => {
@@ -797,189 +793,265 @@ class ConsentMetricsComponent {
             this.rebuildVisuals(data);
         });
     }
-    setTimeframe(timeframe) {
-        if (this.currentTimeframe === timeframe) {
-            return;
-        }
-        this.currentTimeframe = timeframe;
-        // this.rebuildVisuals();
-    }
     rebuildVisuals(data) {
-        const diverging = this.buildDivergingChart(data.chart);
-        this.divergingChartSeries = diverging.series;
-        this.divergingChartOptions = this.createDivergingOptions(diverging.range, diverging.categories);
-        // const treemapSource = this.currentTimeframe === 'week' ? WEEKLY_TREEMAP : MONTHLY_TREEMAP;
-        const treemap = this.buildTreemap(data.treemap);
-        this.treemapSeries = treemap.series;
+        this.divergingChartOptions = this.buildDivergingChartOptions(data.chart);
+        const treemap = this.buildTreemapOptions(data.treemap);
+        this.treemapOptions = treemap.options;
         this.treemapHasData = treemap.hasData;
     }
-    buildDivergingChart(entries) {
-        const records = (0,lodash__WEBPACK_IMPORTED_MODULE_0__.values)(entries).sort((a, b) => new Date(a.bucket_start).getTime() - new Date(b.bucket_start).getTime());
+    buildDivergingChartOptions(entries) {
+        const records = Object.values(entries).sort((a, b) => new Date(a.bucket_start).getTime() - new Date(b.bucket_start).getTime());
         if (!records.length) {
             return {
-                series: [
-                    { name: 'Failed', data: [] },
-                    { name: 'Missing', data: [] },
-                    { name: 'Success', data: [] },
-                ],
-                categories: [],
-                range: 100,
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { type: 'shadow' },
+                },
+                xAxis: { type: 'value' },
+                yAxis: { type: 'category', data: [] },
+                series: [],
             };
         }
-        const labels = records.map((record) => record.bucket_start);
+        const categories = records.map((record) => record.bucket_start);
         const missing = records.map((record) => -record.missing);
         const failed = records.map((record) => -record.failed);
         const success = records.map((record) => record.success);
         const maxNegative = Math.max(...records.map((record) => record.missing + record.failed));
         const maxPositive = Math.max(...records.map((record) => record.success));
         const range = this.roundToNearestTen(Math.max(maxNegative, maxPositive));
+        const absoluteRange = Math.max(range, 50);
         return {
+            color: ['#dc2626', '#f97316', '#16a34a'],
+            grid: {
+                left: 16,
+                right: 24,
+                top: 16,
+                bottom: 48,
+                containLabel: true,
+            },
+            legend: {
+                bottom: 8,
+                icon: 'circle',
+                itemWidth: 10,
+                textStyle: {
+                    color: '#495057',
+                },
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: (params) => this.formatDivergingTooltip(params),
+            },
+            xAxis: {
+                type: 'value',
+                min: -absoluteRange,
+                max: absoluteRange,
+                axisLine: {
+                    lineStyle: {
+                        color: '#dee2e6',
+                    },
+                },
+                axisLabel: {
+                    color: '#6c757d',
+                    formatter: (value) => `${Math.abs(value)}`,
+                },
+                splitLine: {
+                    lineStyle: {
+                        type: 'dashed',
+                        color: '#f1f3f5',
+                    },
+                },
+            },
+            yAxis: {
+                type: 'category',
+                data: categories,
+                axisLine: { show: false },
+                axisTick: { show: false },
+                axisLabel: {
+                    color: '#343a40',
+                    fontSize: 12,
+                },
+            },
             series: [
                 {
                     name: 'Failed',
+                    type: 'bar',
+                    stack: 'total',
+                    barWidth: 18,
+                    itemStyle: { color: '#dc2626' },
+                    emphasis: { focus: 'series' },
                     data: failed,
                 },
                 {
                     name: 'Missing',
+                    type: 'bar',
+                    stack: 'total',
+                    barWidth: 18,
+                    itemStyle: { color: '#f97316' },
+                    emphasis: { focus: 'series' },
                     data: missing,
                 },
                 {
                     name: 'Success',
+                    type: 'bar',
+                    stack: 'total',
+                    barWidth: 18,
+                    itemStyle: { color: '#16a34a' },
+                    emphasis: { focus: 'series' },
                     data: success,
                 },
             ],
-            categories: labels,
-            range,
         };
     }
-    createDivergingOptions(range, categories) {
-        const absoluteRange = Math.max(range, 50);
-        return {
-            chart: {
-                type: 'bar',
-                height: 340,
-                stacked: true,
-                toolbar: {
-                    show: false,
+    buildTreemapOptions(entries) {
+        const platforms = [];
+        Object.entries(entries).forEach(([platform, brands]) => {
+            const children = Object.values(brands)
+                .map((record) => {
+                const total = record.missing + record.failed + record.success;
+                if (total === 0) {
+                    return null;
+                }
+                const issues = record.missing + record.failed;
+                const failureRatio = total === 0 ? 0 : issues / total;
+                return {
+                    name: record.brand_id,
+                    value: total,
+                    platform: record.platform_type,
+                    success: record.success,
+                    issues,
+                    failureRatio,
+                    itemStyle: { color: this.getFailureFillColor(failureRatio) },
+                };
+            })
+                .filter((child) => child !== null)
+                .sort((a, b) => b.value - a.value);
+            const totalValue = children.reduce((sum, child) => sum + child.value, 0);
+            if (children.length) {
+                platforms.push({
+                    name: platform,
+                    value: totalValue,
+                    children,
+                });
+            }
+        });
+        platforms.sort((a, b) => b.value - a.value);
+        const hasData = platforms.length > 0;
+        const options = hasData
+            ? {
+                tooltip: {
+                    trigger: 'item',
+                    renderMode: 'html',
+                    formatter: (params) => this.formatTreemapTooltip(params),
                 },
-            },
-            plotOptions: {
-                bar: {
-                    horizontal: true,
-                    barHeight: '60%',
-                },
-            },
-            colors: ['#c92a2a', '#f08c00', '#2f9e44'],
-            dataLabels: {
-                enabled: false,
-            },
-            xaxis: {
-                categories,
-                min: -absoluteRange,
-                max: absoluteRange,
-                labels: {
-                    style: {
-                        colors: '#6c757d',
+                series: [
+                    {
+                        type: 'treemap',
+                        data: platforms,
+                        roam: false,
+                        nodeClick: false,
+                        breadcrumb: {
+                            show: false,
+                        },
+                        label: {
+                            formatter: (params) => this.formatTreemapLabel(params),
+                            color: '#ffffff',
+                            fontSize: 12,
+                            rich: {
+                                name: {
+                                    fontWeight: 600,
+                                    fontSize: 12,
+                                    lineHeight: 16,
+                                },
+                                value: {
+                                    fontSize: 11,
+                                    lineHeight: 14,
+                                },
+                            },
+                        },
+                        upperLabel: {
+                            show: true,
+                            height: 28,
+                            color: '#1f2348',
+                            fontWeight: 600,
+                            fontSize: 13,
+                        },
+                        levels: [
+                            {
+                                itemStyle: {
+                                    borderColor: '#ffffff',
+                                    borderWidth: 2,
+                                    gapWidth: 4,
+                                },
+                            },
+                            {
+                                itemStyle: {
+                                    borderColor: 'rgba(255, 255, 255, 0.6)',
+                                    borderWidth: 1,
+                                    gapWidth: 2,
+                                },
+                            },
+                        ],
                     },
-                    formatter: (value) => `${Math.abs(Number(value))}`,
-                },
-                axisBorder: {
-                    show: false,
-                },
-                axisTicks: {
-                    show: false,
-                },
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: '#343a40',
-                        fontSize: '12px',
-                    },
-                },
-            },
-            grid: {
-                strokeDashArray: 4,
-                xaxis: {
-                    lines: {
-                        show: true,
-                    },
-                },
-                yaxis: {
-                    lines: {
-                        show: false,
-                    },
-                },
-            },
-            legend: {
-                position: 'bottom',
-            },
-            tooltip: {
-                shared: true,
-                intersect: false,
-                y: {
-                    formatter: (value, opts) => {
-                        const seriesIndex = opts?.seriesIndex ?? 0;
-                        const seriesNames = opts?.w?.globals?.seriesNames ?? [];
-                        const name = seriesNames[seriesIndex] ?? '';
-                        return `${name}: ${Math.abs(value)}`;
-                    },
-                },
-            },
-        };
+                ],
+            }
+            : {};
+        return { options, hasData };
     }
-    createTreemapOptions() {
-        return {
-            chart: {
-                type: 'treemap',
-                height: 340,
-                toolbar: {
-                    show: false,
-                },
-            },
-            plotOptions: {
-                treemap: {
-                    enableShades: false,
-                    useFillColorAsStroke: true,
-                },
-            },
-            dataLabels: {
-                enabled: true,
-                style: {
-                    colors: ['#ffffff'],
-                    fontSize: '12px',
-                    fontWeight: '600',
-                },
-                formatter: (_value, opts) => this.formatTreemapDataLabel(opts),
-            },
-            legend: {
-                show: false,
-            },
-            tooltip: {
-                custom: (options) => this.buildTreemapTooltip(options),
-            },
-        };
-    }
-    formatTreemapDataLabel(opts) {
-        const point = this.lookupTreemapPoint(opts);
-        if (!point) {
+    formatDivergingTooltip(params) {
+        if (!Array.isArray(params) || params.length === 0) {
             return '';
         }
-        const failurePercent = Math.round(point.meta.failureRatio * 100);
-        return `${point.meta.platform}`;
-    }
-    buildTreemapTooltip(options) {
-        const point = this.lookupTreemapPoint(options);
-        if (!point) {
-            return '';
-        }
-        const failurePercent = Math.round(point.meta.failureRatio * 100);
-        const success = point.meta.success.toLocaleString();
-        const issues = point.meta.issues.toLocaleString();
+        const axisLabel = params[0]?.axisValueLabel ?? '';
+        const lines = params
+            .map((item) => {
+            const marker = item.marker ?? '';
+            const name = item.seriesName ?? '';
+            const value = Math.abs(Number(item.value) ?? 0);
+            return `<div class="treemap-tooltip-line">${marker} ${name}: ${this.formatNumber(value)}</div>`;
+        })
+            .join('');
         return `
       <div class="treemap-tooltip">
-        <div class="treemap-tooltip-title">${point.x}</div>
-        <div class="treemap-tooltip-platform">${point.meta.platform}</div>
+        <div class="treemap-tooltip-title">${axisLabel}</div>
+        ${lines}
+      </div>
+    `.trim();
+    }
+    formatTreemapLabel(params) {
+        const data = params.data;
+        if (!data) {
+            return '';
+        }
+        if ('children' in data && Array.isArray(data.children)) {
+            return data.name;
+        }
+        const brand = data;
+        const failurePercent = Math.round(brand.failureRatio * 100);
+        return `{name|${brand.name}}\n{value|${failurePercent}% failure}`;
+    }
+    formatTreemapTooltip(params) {
+        const dataParams = params;
+        const data = dataParams.data;
+        if (!data) {
+            return '';
+        }
+        if ('children' in data && Array.isArray(data.children)) {
+            return `
+        <div class="treemap-tooltip">
+          <div class="treemap-tooltip-title">${data.name}</div>
+          <div class="treemap-tooltip-platform">${this.formatNumber(data.value)} total consents</div>
+        </div>
+      `.trim();
+        }
+        const brand = data;
+        const failurePercent = Math.round(brand.failureRatio * 100);
+        const success = this.formatNumber(brand.success);
+        const issues = this.formatNumber(brand.issues);
+        return `
+      <div class="treemap-tooltip">
+        <div class="treemap-tooltip-title">${brand.name}</div>
+        <div class="treemap-tooltip-platform">${brand.platform}</div>
         <div class="treemap-tooltip-metrics">
           <span class="treemap-tooltip-success">${success} success</span>
           <span class="treemap-tooltip-issues">${issues} issues</span>
@@ -988,52 +1060,8 @@ class ConsentMetricsComponent {
       </div>
     `.trim();
     }
-    lookupTreemapPoint(context) {
-        const seriesIndex = context?.seriesIndex ?? 0;
-        const dataPointIndex = context?.dataPointIndex ?? 0;
-        const series = context?.w?.config?.series?.[seriesIndex]?.data;
-        if (!series || !Array.isArray(series)) {
-            return null;
-        }
-        return series[dataPointIndex] ?? null;
-    }
-    buildTreemap(entries) {
-        const points = [];
-        (0,lodash__WEBPACK_IMPORTED_MODULE_0__.forEach)(entries, (brandEntries, platform_type) => {
-            (0,lodash__WEBPACK_IMPORTED_MODULE_0__.forEach)(brandEntries, (record, brand_id) => {
-                const total = record.missing + record.failed + record.success;
-                if (total === 0) {
-                    return null;
-                }
-                const issues = record.missing + record.failed;
-                const failureRatio = issues / total;
-                points.push({
-                    x: record.brand_id,
-                    y: total,
-                    fillColor: this.getFailureFillColor(failureRatio),
-                    meta: {
-                        platform: record.platform_type,
-                        success: record.success,
-                        issues,
-                        failureRatio,
-                    },
-                });
-                return;
-            });
-        });
-        points.filter((point) => point !== null)
-            .sort((a, b) => b.y - a.y);
-        return {
-            series: points.length
-                ? [
-                    {
-                        name: 'Consent Volume',
-                        data: points,
-                    },
-                ]
-                : [],
-            hasData: points.length > 0,
-        };
+    formatNumber(value) {
+        return Math.round(value).toLocaleString();
     }
     getFailureFillColor(ratio) {
         if (ratio >= 0.4) {
@@ -1052,74 +1080,62 @@ class ConsentMetricsComponent {
         return Math.max(rounded, 50);
     }
 }
-ConsentMetricsComponent.ɵfac = function ConsentMetricsComponent_Factory(t) { return new (t || ConsentMetricsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_admin_service__WEBPACK_IMPORTED_MODULE_1__.AdminService)); };
-ConsentMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: ConsentMetricsComponent, selectors: [["app-consent-metrics"]], decls: 49, vars: 18, consts: [[1, "card", "card-body", "mg-b-25"], [1, "d-flex", "flex-wrap", "justify-content-between", "align-items-center", "mg-b-20"], [1, "az-content-label", "mg-b-5"], [1, "az-content-text", "mg-b-0"], [1, "btn-group", "btn-group-toggle"], ["type", "text", "disabled", "disabled", 1, "form-control"], [1, "input-group-append"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "click"], [1, "row", "row-sm", "az-dashboard-filter", "mg-b-25", 3, "formGroup"], ["class", "col-12 col-sm-6 col-lg-4 col-xl-3 mg-b-15", 4, "ngFor", "ngForOf"], [1, "row", "row-sm"], [1, "col-xl-6", "mg-b-20", "mg-xl-b-0"], [1, "card", "card-dashboard-one", "ht-100p"], [1, "card-header"], [1, "card-title"], [1, "card-text"], [1, "card-body"], [1, "chart-wrapper"], [3, "series", "chart", "plotOptions", "colors", "dataLabels", "xaxis", "yaxis", "grid", "legend", "tooltip"], [1, "col-xl-6"], [1, "card-header", "d-flex", "flex-wrap", "justify-content-between", "align-items-center"], [1, "legend", "d-flex", "align-items-center", "flex-wrap"], [1, "legend-swatch", "severity-low"], [1, "legend-label"], [1, "legend-swatch", "severity-medium"], [1, "legend-swatch", "severity-high"], [4, "ngIf", "ngIfElse"], ["emptyTreemap", ""], [1, "col-12", "col-sm-6", "col-lg-4", "col-xl-3", "mg-b-15"], [1, "az-content-label", "tx-11", "text-uppercase", 3, "for"], [1, "form-control", 3, "id", "formControlName"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [3, "series", "chart", "plotOptions", "dataLabels", "legend", "tooltip"], [1, "empty-state"], [1, "tx-14", "tx-medium", "text-muted", "mb-0"]], template: function ConsentMetricsComponent_Template(rf, ctx) { if (rf & 1) {
+ConsentMetricsComponent.ɵfac = function ConsentMetricsComponent_Factory(t) { return new (t || ConsentMetricsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_admin_service__WEBPACK_IMPORTED_MODULE_0__.AdminService)); };
+ConsentMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: ConsentMetricsComponent, selectors: [["app-consent-metrics"]], decls: 43, vars: 5, consts: [[1, "card", "card-body", "mg-b-25"], [1, "d-flex", "flex-wrap", "justify-content-between", "align-items-center", "mg-b-20"], [1, "az-content-label", "mg-b-5"], [1, "az-content-text", "mg-b-0"], [1, "row", "row-sm", "az-dashboard-filter", "mg-b-25", 3, "formGroup"], ["class", "col-12 col-sm-6 col-lg-4 col-xl-3 mg-b-15", 4, "ngFor", "ngForOf"], [1, "row", "row-sm"], [1, "col-xl-6", "mg-b-20", "mg-xl-b-0"], [1, "card", "card-dashboard-one", "ht-100p"], [1, "card-header"], [1, "card-title"], [1, "card-text"], [1, "card-body"], [1, "chart-wrapper"], ["echarts", "", 1, "echart-container", 3, "options"], [1, "col-xl-6"], [1, "card-header", "d-flex", "flex-wrap", "justify-content-between", "align-items-center"], [1, "legend", "d-flex", "align-items-center", "flex-wrap"], [1, "legend-swatch", "severity-low"], [1, "legend-label"], [1, "legend-swatch", "severity-medium"], [1, "legend-swatch", "severity-high"], [4, "ngIf", "ngIfElse"], ["emptyTreemap", ""], [1, "col-12", "col-sm-6", "col-lg-4", "col-xl-3", "mg-b-15"], [1, "az-content-label", "tx-11", "text-uppercase", 3, "for"], [1, "form-control", 3, "id", "formControlName"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "empty-state"], [1, "tx-14", "tx-medium", "text-muted", "mb-0"]], template: function ConsentMetricsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div")(3, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, "Consent Metrics");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "p", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, "Track where customers authorize access and highlight friction across brands.");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](8, "input", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "div", 6)(10, "button", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ConsentMetricsComponent_Template_button_click_10_listener() { return ctx.setTimeframe("week"); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](11, " Week ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](7, "week-month-picker");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "button", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ConsentMetricsComponent_Template_button_click_12_listener() { return ctx.setTimeframe("month"); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, " Month ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](8, "form", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](9, ConsentMetricsComponent_div_9_Template, 7, 6, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](10, "div", 6)(11, "div", 7)(12, "div", 8)(13, "div", 9)(14, "h6", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](15, "Consent Outcomes by Time");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "span", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](17, "Compare missing, rejected, and successful data points.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](18, "div", 12)(19, "div", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](20, "div", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "form", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](15, ConsentMetricsComponent_div_15_Template, 7, 6, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "div", 15)(22, "div", 8)(23, "div", 16)(24, "div")(25, "h6", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](26, "Platform & Brand Effectiveness");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](27, "span", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](28, "Treemap grouped by platform and colored by consent failure rate.");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "div", 10)(17, "div", 11)(18, "div", 12)(19, "div", 13)(20, "h6", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](21, "Consent Outcomes by Time");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](29, "div", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](30, "span", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](31, "span", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](32, "Healthy (< 20%)");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](22, "span", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](23, "Compare missing, rejected, and successful data points.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](24, "div", 16)(25, "div", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](26, "apx-chart", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](27, "div", 19)(28, "div", 12)(29, "div", 20)(30, "div")(31, "h6", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](32, "Platform & Brand Effectiveness");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](33, "span", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](34, "span", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](35, "Watch (20\u201339%)");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](33, "span", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](34, "Treemap grouped by platform and colored by consent failure rate.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](35, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](36, "span", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](37, "span", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](38, "Healthy (< 20%)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](39, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](40, "span", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](41, "Watch (20\u201339%)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](42, "span", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](43, "span", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](44, "Action (\u2265 40%)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](36, "span", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](37, "span", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](38, "Action (\u2265 40%)");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](45, "div", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](46, ConsentMetricsComponent_ng_container_46_Template, 3, 6, "ng-container", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](47, ConsentMetricsComponent_ng_template_47_Template, 3, 0, "ng-template", null, 27, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](39, "div", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](40, ConsentMetricsComponent_ng_container_40_Template, 3, 1, "ng-container", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](41, ConsentMetricsComponent_ng_template_41_Template, 3, 0, "ng-template", null, 23, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
     } if (rf & 2) {
-        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](48);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("active", ctx.currentTimeframe === "week");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("active", ctx.currentTimeframe === "month");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](42);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("formGroup", ctx.filterForm);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.filters);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("series", ctx.divergingChartSeries)("chart", ctx.divergingChartOptions.chart)("plotOptions", ctx.divergingChartOptions.plotOptions)("colors", ctx.divergingChartOptions.colors)("dataLabels", ctx.divergingChartOptions.dataLabels)("xaxis", ctx.divergingChartOptions.xaxis)("yaxis", ctx.divergingChartOptions.yaxis)("grid", ctx.divergingChartOptions.grid)("legend", ctx.divergingChartOptions.legend)("tooltip", ctx.divergingChartOptions.tooltip);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("options", ctx.divergingChartOptions);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](20);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.treemapHasData)("ngIfElse", _r2);
-    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, ng_apexcharts__WEBPACK_IMPORTED_MODULE_5__.ChartComponent], styles: [".az-dashboard-filter[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  border-color: #dfe3f1;\n  background-color: #f8f9ff;\n  color: #1f2348;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%] {\n  border-bottom: 1px solid #eef1fb;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-title[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-text[_ngcontent-%COMP%] {\n  display: block;\n  margin-top: 4px;\n  font-size: 13px;\n  color: #6c7293;\n}\n\n.chart-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n  min-height: 320px;\n}\n\n.legend[_ngcontent-%COMP%] {\n  gap: 8px;\n}\n\n.legend[_ngcontent-%COMP%]   .legend-swatch[_ngcontent-%COMP%] {\n  width: 12px;\n  height: 12px;\n}\n\n.legend[_ngcontent-%COMP%]   .legend-label[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #6c7293;\n  margin-right: 12px;\n}\n\n.severity-low[_ngcontent-%COMP%] {\n  background: linear-gradient(135deg, #34d399 0%, #059669 100%);\n}\n\n.severity-medium[_ngcontent-%COMP%] {\n  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);\n}\n\n.severity-high[_ngcontent-%COMP%] {\n  background: linear-gradient(135deg, #fb7185 0%, #ef4444 100%);\n}\n\n.treemap-tooltip[_ngcontent-%COMP%] {\n  padding: 8px 12px;\n  background: #1f2348;\n  color: #fff;\n  border-radius: 6px;\n  font-size: 12px;\n  line-height: 1.4;\n  box-shadow: 0 8px 20px rgba(31, 35, 72, 0.18);\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-title[_ngcontent-%COMP%] {\n  font-weight: 600;\n  margin-bottom: 4px;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-platform[_ngcontent-%COMP%] {\n  font-size: 11px;\n  color: #cdd4f0;\n  margin-bottom: 6px;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-metrics[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  font-size: 11px;\n  margin-bottom: 4px;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-success[_ngcontent-%COMP%] {\n  color: #bbf7d0;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-issues[_ngcontent-%COMP%] {\n  color: #fee2e2;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-failure[_ngcontent-%COMP%] {\n  font-size: 11px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n}\n\n.empty-state[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 220px;\n  background: #f8f9ff;\n  border: 1px dashed #d0d7f8;\n}\n\n@media (max-width: 991.98px) {\n  .chart-wrapper[_ngcontent-%COMP%] {\n    min-height: 260px;\n  }\n}\n\n@media (max-width: 575.98px) {\n  .timeframe-group[_ngcontent-%COMP%] {\n    width: 100%;\n    margin-top: 16px;\n    justify-content: stretch;\n  }\n  .timeframe-group[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\n    flex: 1;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnNlbnQtbWV0cmljcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpQkU7RUFFRSxxQkFBQTtFQUNBLHlCQUFBO0VBQ0EsY0FBQTtBQWpCSjs7QUFzQkU7RUFDRSxnQ0FBQTtBQW5CSjs7QUFxQkk7RUFDRSxnQkFBQTtBQW5CTjs7QUFzQkk7RUFDRSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0FBcEJOOztBQXlCQTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7QUF0QkY7O0FBeUJBO0VBQ0UsUUFBQTtBQXRCRjs7QUF3QkU7RUFDRSxXQUFBO0VBQ0EsWUFBQTtBQXRCSjs7QUEwQkU7RUFDRSxlQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0FBeEJKOztBQTRCQTtFQUNFLDZEQUFBO0FBekJGOztBQTRCQTtFQUNFLDZEQUFBO0FBekJGOztBQTRCQTtFQUNFLDZEQUFBO0FBekJGOztBQTRCQTtFQUNFLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSw2Q0FBQTtBQXpCRjs7QUEyQkU7RUFDRSxnQkFBQTtFQUNBLGtCQUFBO0FBekJKOztBQTRCRTtFQUNFLGVBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUExQko7O0FBNkJFO0VBQ0UsYUFBQTtFQUNBLFNBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7QUEzQko7O0FBOEJFO0VBQ0UsY0FBQTtBQTVCSjs7QUErQkU7RUFDRSxjQUFBO0FBN0JKOztBQWdDRTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHlCQUFBO0VBQ0Esc0JBQUE7QUE5Qko7O0FBa0NBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxpQkFBQTtFQUVBLG1CQUFBO0VBQ0EsMEJBQUE7QUFoQ0Y7O0FBbUNBO0VBQ0U7SUFDRSxpQkFBQTtFQWhDRjtBQUNGOztBQW1DQTtFQUNFO0lBQ0UsV0FBQTtJQUNBLGdCQUFBO0lBQ0Esd0JBQUE7RUFqQ0Y7RUFtQ0U7SUFDRSxPQUFBO0VBakNKO0FBQ0YiLCJmaWxlIjoiY29uc2VudC1tZXRyaWNzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8udGltZWZyYW1lLWdyb3VwIHtcbi8vICAuYnRuIHtcbi8vICAgIG1pbi13aWR0aDogMTAwcHg7XG4vLyAgICBib3JkZXItcmFkaXVzOiAzMHB4O1xuLy8gICAgYm9yZGVyLWNvbG9yOiAjZGZlM2YxO1xuLy8gICAgY29sb3I6ICM1ZTYyNzg7XG4vL1xuLy8gICAgJi5hY3RpdmUsXG4vLyAgICAmOmhvdmVyIHtcbi8vICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzViNDdmYjtcbi8vICAgICAgYm9yZGVyLWNvbG9yOiAjNWI0N2ZiO1xuLy8gICAgICBjb2xvcjogI2ZmZjtcbi8vICAgIH1cbi8vICB9XG4vL31cblxuLmF6LWRhc2hib2FyZC1maWx0ZXIge1xuICAuZm9ybS1jb250cm9sIHtcbiAgICAvL2JvcmRlci1yYWRpdXM6IDhweDtcbiAgICBib3JkZXItY29sb3I6ICNkZmUzZjE7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Y4ZjlmZjtcbiAgICBjb2xvcjogIzFmMjM0ODtcbiAgfVxufVxuXG4uY2FyZC1kYXNoYm9hcmQtb25lIHtcbiAgLmNhcmQtaGVhZGVyIHtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZjFmYjtcblxuICAgIC5jYXJkLXRpdGxlIHtcbiAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgfVxuXG4gICAgLmNhcmQtdGV4dCB7XG4gICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIG1hcmdpbi10b3A6IDRweDtcbiAgICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICAgIGNvbG9yOiAjNmM3MjkzO1xuICAgIH1cbiAgfVxufVxuXG4uY2hhcnQtd3JhcHBlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgbWluLWhlaWdodDogMzIwcHg7XG59XG5cbi5sZWdlbmQge1xuICBnYXA6IDhweDtcblxuICAubGVnZW5kLXN3YXRjaCB7XG4gICAgd2lkdGg6IDEycHg7XG4gICAgaGVpZ2h0OiAxMnB4O1xuICAgIC8vYm9yZGVyLXJhZGl1czogM3B4O1xuICB9XG5cbiAgLmxlZ2VuZC1sYWJlbCB7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGNvbG9yOiAjNmM3MjkzO1xuICAgIG1hcmdpbi1yaWdodDogMTJweDtcbiAgfVxufVxuXG4uc2V2ZXJpdHktbG93IHtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzM0ZDM5OSAwJSwgIzA1OTY2OSAxMDAlKTtcbn1cblxuLnNldmVyaXR5LW1lZGl1bSB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICNmYmJmMjQgMCUsICNmNTllMGIgMTAwJSk7XG59XG5cbi5zZXZlcml0eS1oaWdoIHtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgI2ZiNzE4NSAwJSwgI2VmNDQ0NCAxMDAlKTtcbn1cblxuLnRyZWVtYXAtdG9vbHRpcCB7XG4gIHBhZGRpbmc6IDhweCAxMnB4O1xuICBiYWNrZ3JvdW5kOiAjMWYyMzQ4O1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xuICBmb250LXNpemU6IDEycHg7XG4gIGxpbmUtaGVpZ2h0OiAxLjQ7XG4gIGJveC1zaGFkb3c6IDAgOHB4IDIwcHggcmdiYSgzMSwgMzUsIDcyLCAwLjE4KTtcblxuICAudHJlZW1hcC10b29sdGlwLXRpdGxlIHtcbiAgICBmb250LXdlaWdodDogNjAwO1xuICAgIG1hcmdpbi1ib3R0b206IDRweDtcbiAgfVxuXG4gIC50cmVlbWFwLXRvb2x0aXAtcGxhdGZvcm0ge1xuICAgIGZvbnQtc2l6ZTogMTFweDtcbiAgICBjb2xvcjogI2NkZDRmMDtcbiAgICBtYXJnaW4tYm90dG9tOiA2cHg7XG4gIH1cblxuICAudHJlZW1hcC10b29sdGlwLW1ldHJpY3Mge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZ2FwOiAxMHB4O1xuICAgIGZvbnQtc2l6ZTogMTFweDtcbiAgICBtYXJnaW4tYm90dG9tOiA0cHg7XG4gIH1cblxuICAudHJlZW1hcC10b29sdGlwLXN1Y2Nlc3Mge1xuICAgIGNvbG9yOiAjYmJmN2QwO1xuICB9XG5cbiAgLnRyZWVtYXAtdG9vbHRpcC1pc3N1ZXMge1xuICAgIGNvbG9yOiAjZmVlMmUyO1xuICB9XG5cbiAgLnRyZWVtYXAtdG9vbHRpcC1mYWlsdXJlIHtcbiAgICBmb250LXNpemU6IDExcHg7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgIGxldHRlci1zcGFjaW5nOiAwLjA0ZW07XG4gIH1cbn1cblxuLmVtcHR5LXN0YXRlIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1pbi1oZWlnaHQ6IDIyMHB4O1xuICAvL2JvcmRlci1yYWRpdXM6IDEycHg7XG4gIGJhY2tncm91bmQ6ICNmOGY5ZmY7XG4gIGJvcmRlcjogMXB4IGRhc2hlZCAjZDBkN2Y4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogOTkxLjk4cHgpIHtcbiAgLmNoYXJ0LXdyYXBwZXIge1xuICAgIG1pbi1oZWlnaHQ6IDI2MHB4O1xuICB9XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA1NzUuOThweCkge1xuICAudGltZWZyYW1lLWdyb3VwIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxNnB4O1xuICAgIGp1c3RpZnktY29udGVudDogc3RyZXRjaDtcblxuICAgIC5idG4ge1xuICAgICAgZmxleDogMTtcbiAgICB9XG4gIH1cbn1cbiJdfQ== */"] });
+    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, ngx_echarts__WEBPACK_IMPORTED_MODULE_5__.NgxEchartsDirective, _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_1__.WeekMonthPickerComponent], styles: [".az-dashboard-filter[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  border-color: #dfe3f1;\n  background-color: #f8f9ff;\n  color: #1f2348;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%] {\n  border-bottom: 1px solid #eef1fb;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-title[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-text[_ngcontent-%COMP%] {\n  display: block;\n  margin-top: 4px;\n  font-size: 13px;\n  color: #6c7293;\n}\n\n.chart-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n  height: 320px;\n}\n\n.echart-container[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n}\n\n.legend[_ngcontent-%COMP%] {\n  gap: 8px;\n}\n\n.legend[_ngcontent-%COMP%]   .legend-swatch[_ngcontent-%COMP%] {\n  width: 12px;\n  height: 12px;\n}\n\n.legend[_ngcontent-%COMP%]   .legend-label[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #6c7293;\n  margin-right: 12px;\n}\n\n.severity-low[_ngcontent-%COMP%] {\n  background: linear-gradient(135deg, #34d399 0%, #059669 100%);\n}\n\n.severity-medium[_ngcontent-%COMP%] {\n  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);\n}\n\n.severity-high[_ngcontent-%COMP%] {\n  background: linear-gradient(135deg, #fb7185 0%, #ef4444 100%);\n}\n\n.treemap-tooltip[_ngcontent-%COMP%] {\n  padding: 8px 12px;\n  background: #1f2348;\n  color: #fff;\n  border-radius: 6px;\n  font-size: 12px;\n  line-height: 1.4;\n  box-shadow: 0 8px 20px rgba(31, 35, 72, 0.18);\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-title[_ngcontent-%COMP%] {\n  font-weight: 600;\n  margin-bottom: 4px;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-platform[_ngcontent-%COMP%] {\n  font-size: 11px;\n  color: #cdd4f0;\n  margin-bottom: 6px;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-metrics[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  font-size: 11px;\n  margin-bottom: 4px;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-success[_ngcontent-%COMP%] {\n  color: #bbf7d0;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-issues[_ngcontent-%COMP%] {\n  color: #fee2e2;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-failure[_ngcontent-%COMP%] {\n  font-size: 11px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n}\n\n.treemap-tooltip[_ngcontent-%COMP%]   .treemap-tooltip-line[_ngcontent-%COMP%] {\n  font-size: 11px;\n  color: rgba(255, 255, 255, 0.85);\n}\n\n.empty-state[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 220px;\n  background: #f8f9ff;\n  border: 1px dashed #d0d7f8;\n}\n\n@media (max-width: 991.98px) {\n  .chart-wrapper[_ngcontent-%COMP%] {\n    min-height: 260px;\n  }\n}\n\n@media (max-width: 575.98px) {\n  .timeframe-group[_ngcontent-%COMP%] {\n    width: 100%;\n    margin-top: 16px;\n    justify-content: stretch;\n  }\n  .timeframe-group[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\n    flex: 1;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnNlbnQtbWV0cmljcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpQkU7RUFFRSxxQkFBQTtFQUNBLHlCQUFBO0VBQ0EsY0FBQTtBQWpCSjs7QUFzQkU7RUFDRSxnQ0FBQTtBQW5CSjs7QUFxQkk7RUFDRSxnQkFBQTtBQW5CTjs7QUFzQkk7RUFDRSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0FBcEJOOztBQXlCQTtFQUNFLGtCQUFBO0VBQ0EsYUFBQTtBQXRCRjs7QUF5QkE7RUFDRSxXQUFBO0VBQ0EsWUFBQTtBQXRCRjs7QUF5QkE7RUFDRSxRQUFBO0FBdEJGOztBQXdCRTtFQUNFLFdBQUE7RUFDQSxZQUFBO0FBdEJKOztBQTBCRTtFQUNFLGVBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUF4Qko7O0FBNEJBO0VBQ0UsNkRBQUE7QUF6QkY7O0FBNEJBO0VBQ0UsNkRBQUE7QUF6QkY7O0FBNEJBO0VBQ0UsNkRBQUE7QUF6QkY7O0FBNEJBO0VBQ0UsaUJBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLDZDQUFBO0FBekJGOztBQTJCRTtFQUNFLGdCQUFBO0VBQ0Esa0JBQUE7QUF6Qko7O0FBNEJFO0VBQ0UsZUFBQTtFQUNBLGNBQUE7RUFDQSxrQkFBQTtBQTFCSjs7QUE2QkU7RUFDRSxhQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQTNCSjs7QUE4QkU7RUFDRSxjQUFBO0FBNUJKOztBQStCRTtFQUNFLGNBQUE7QUE3Qko7O0FBZ0NFO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtBQTlCSjs7QUFpQ0U7RUFDRSxlQUFBO0VBQ0EsZ0NBQUE7QUEvQko7O0FBbUNBO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxpQkFBQTtFQUVBLG1CQUFBO0VBQ0EsMEJBQUE7QUFqQ0Y7O0FBb0NBO0VBQ0U7SUFDRSxpQkFBQTtFQWpDRjtBQUNGOztBQW9DQTtFQUNFO0lBQ0UsV0FBQTtJQUNBLGdCQUFBO0lBQ0Esd0JBQUE7RUFsQ0Y7RUFvQ0U7SUFDRSxPQUFBO0VBbENKO0FBQ0YiLCJmaWxlIjoiY29uc2VudC1tZXRyaWNzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8udGltZWZyYW1lLWdyb3VwIHtcbi8vICAuYnRuIHtcbi8vICAgIG1pbi13aWR0aDogMTAwcHg7XG4vLyAgICBib3JkZXItcmFkaXVzOiAzMHB4O1xuLy8gICAgYm9yZGVyLWNvbG9yOiAjZGZlM2YxO1xuLy8gICAgY29sb3I6ICM1ZTYyNzg7XG4vL1xuLy8gICAgJi5hY3RpdmUsXG4vLyAgICAmOmhvdmVyIHtcbi8vICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzViNDdmYjtcbi8vICAgICAgYm9yZGVyLWNvbG9yOiAjNWI0N2ZiO1xuLy8gICAgICBjb2xvcjogI2ZmZjtcbi8vICAgIH1cbi8vICB9XG4vL31cblxuLmF6LWRhc2hib2FyZC1maWx0ZXIge1xuICAuZm9ybS1jb250cm9sIHtcbiAgICAvL2JvcmRlci1yYWRpdXM6IDhweDtcbiAgICBib3JkZXItY29sb3I6ICNkZmUzZjE7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Y4ZjlmZjtcbiAgICBjb2xvcjogIzFmMjM0ODtcbiAgfVxufVxuXG4uY2FyZC1kYXNoYm9hcmQtb25lIHtcbiAgLmNhcmQtaGVhZGVyIHtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZjFmYjtcblxuICAgIC5jYXJkLXRpdGxlIHtcbiAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgfVxuXG4gICAgLmNhcmQtdGV4dCB7XG4gICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIG1hcmdpbi10b3A6IDRweDtcbiAgICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICAgIGNvbG9yOiAjNmM3MjkzO1xuICAgIH1cbiAgfVxufVxuXG4uY2hhcnQtd3JhcHBlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgaGVpZ2h0OiAzMjBweDtcbn1cblxuLmVjaGFydC1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ubGVnZW5kIHtcbiAgZ2FwOiA4cHg7XG5cbiAgLmxlZ2VuZC1zd2F0Y2gge1xuICAgIHdpZHRoOiAxMnB4O1xuICAgIGhlaWdodDogMTJweDtcbiAgICAvL2JvcmRlci1yYWRpdXM6IDNweDtcbiAgfVxuXG4gIC5sZWdlbmQtbGFiZWwge1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBjb2xvcjogIzZjNzI5MztcbiAgICBtYXJnaW4tcmlnaHQ6IDEycHg7XG4gIH1cbn1cblxuLnNldmVyaXR5LWxvdyB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICMzNGQzOTkgMCUsICMwNTk2NjkgMTAwJSk7XG59XG5cbi5zZXZlcml0eS1tZWRpdW0ge1xuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjZmJiZjI0IDAlLCAjZjU5ZTBiIDEwMCUpO1xufVxuXG4uc2V2ZXJpdHktaGlnaCB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICNmYjcxODUgMCUsICNlZjQ0NDQgMTAwJSk7XG59XG5cbi50cmVlbWFwLXRvb2x0aXAge1xuICBwYWRkaW5nOiA4cHggMTJweDtcbiAgYmFja2dyb3VuZDogIzFmMjM0ODtcbiAgY29sb3I6ICNmZmY7XG4gIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBsaW5lLWhlaWdodDogMS40O1xuICBib3gtc2hhZG93OiAwIDhweCAyMHB4IHJnYmEoMzEsIDM1LCA3MiwgMC4xOCk7XG5cbiAgLnRyZWVtYXAtdG9vbHRpcC10aXRsZSB7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBtYXJnaW4tYm90dG9tOiA0cHg7XG4gIH1cblxuICAudHJlZW1hcC10b29sdGlwLXBsYXRmb3JtIHtcbiAgICBmb250LXNpemU6IDExcHg7XG4gICAgY29sb3I6ICNjZGQ0ZjA7XG4gICAgbWFyZ2luLWJvdHRvbTogNnB4O1xuICB9XG5cbiAgLnRyZWVtYXAtdG9vbHRpcC1tZXRyaWNzIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGdhcDogMTBweDtcbiAgICBmb250LXNpemU6IDExcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogNHB4O1xuICB9XG5cbiAgLnRyZWVtYXAtdG9vbHRpcC1zdWNjZXNzIHtcbiAgICBjb2xvcjogI2JiZjdkMDtcbiAgfVxuXG4gIC50cmVlbWFwLXRvb2x0aXAtaXNzdWVzIHtcbiAgICBjb2xvcjogI2ZlZTJlMjtcbiAgfVxuXG4gIC50cmVlbWFwLXRvb2x0aXAtZmFpbHVyZSB7XG4gICAgZm9udC1zaXplOiAxMXB4O1xuICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICBsZXR0ZXItc3BhY2luZzogMC4wNGVtO1xuICB9XG5cbiAgLnRyZWVtYXAtdG9vbHRpcC1saW5lIHtcbiAgICBmb250LXNpemU6IDExcHg7XG4gICAgY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC44NSk7XG4gIH1cbn1cblxuLmVtcHR5LXN0YXRlIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1pbi1oZWlnaHQ6IDIyMHB4O1xuICAvL2JvcmRlci1yYWRpdXM6IDEycHg7XG4gIGJhY2tncm91bmQ6ICNmOGY5ZmY7XG4gIGJvcmRlcjogMXB4IGRhc2hlZCAjZDBkN2Y4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogOTkxLjk4cHgpIHtcbiAgLmNoYXJ0LXdyYXBwZXIge1xuICAgIG1pbi1oZWlnaHQ6IDI2MHB4O1xuICB9XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA1NzUuOThweCkge1xuICAudGltZWZyYW1lLWdyb3VwIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxNnB4O1xuICAgIGp1c3RpZnktY29udGVudDogc3RyZXRjaDtcblxuICAgIC5idG4ge1xuICAgICAgZmxleDogMTtcbiAgICB9XG4gIH1cbn1cbiJdfQ== */"] });
 
 
 /***/ }),
@@ -1759,17 +1775,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! @angular/platform-browser */ 34497);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @angular/common/http */ 58987);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! @angular/platform-browser */ 34497);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! @angular/common/http */ 58987);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 90158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 55041);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
-/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ 2898);
-/* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ngx-highlightjs */ 97101);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
-/* harmony import */ var ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ngx-infinite-scroll */ 47364);
-/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 19200);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
+/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ 2898);
+/* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ngx-highlightjs */ 97101);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
+/* harmony import */ var ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ngx-infinite-scroll */ 47364);
+/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 19200);
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header.component */ 43646);
 /* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/footer/footer.component */ 64662);
 /* harmony import */ var _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/developers/developers.component */ 972);
@@ -1779,14 +1795,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_auth_signup_organization_auth_signup_organization_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/auth-signup-organization/auth-signup-organization.component */ 83515);
 /* harmony import */ var _directives_password_confirm_validator_directive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./directives/password-confirm-validator.directive */ 36465);
 /* harmony import */ var _auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./auth-guards/is-authenticated-auth-guard */ 16056);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @angular/router */ 60124);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/router */ 60124);
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/auth.service */ 37556);
 /* harmony import */ var _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/auth-interceptor.service */ 32993);
-/* harmony import */ var ngx_image_cropper__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ngx-image-cropper */ 10649);
+/* harmony import */ var ngx_image_cropper__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ngx-image-cropper */ 10649);
 /* harmony import */ var _components_logo_cropper_logo_cropper_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/logo-cropper/logo-cropper.component */ 57993);
-/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ng2-charts */ 31208);
-/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ng-apexcharts */ 93239);
-/* harmony import */ var ngx_moment__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ngx-moment */ 20728);
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ng2-charts */ 31208);
+/* harmony import */ var ngx_echarts__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ngx-echarts */ 31548);
+/* harmony import */ var ngx_moment__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ngx-moment */ 20728);
 /* harmony import */ var _pages_org_settings_org_settings_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/org-settings/org-settings.component */ 16226);
 /* harmony import */ var _pages_account_settings_account_settings_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/account-settings/account-settings.component */ 84411);
 /* harmony import */ var _components_org_credentials_editor_org_credentials_editor_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/org-credentials-editor/org-credentials-editor.component */ 39302);
@@ -1798,7 +1814,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_org_team_invite_multiple_org_team_invite_multiple_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/org-team-invite-multiple/org-team-invite-multiple.component */ 36890);
 /* harmony import */ var _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/auth-reset-request/auth-reset-request.component */ 38540);
 /* harmony import */ var _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/auth-reset/auth-reset.component */ 48453);
-/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @ng-select/ng-select */ 73054);
+/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! @ng-select/ng-select */ 73054);
 /* harmony import */ var _components_org_webhook_simulate_org_webhook_simulate_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/org-webhook-simulate/org-webhook-simulate.component */ 24853);
 /* harmony import */ var _directives_email_lowercase_validator_directive__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./directives/email-lowercase-validator.directive */ 97079);
 /* harmony import */ var _admin_admin_shell_admin_shell_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./admin/admin-shell/admin-shell.component */ 21322);
@@ -1809,7 +1825,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./admin/organization-details/organization-details.component */ 39409);
 /* harmony import */ var _services_admin_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./services/admin.service */ 87501);
 /* harmony import */ var _auth_guards_is_admin_auth_guard__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./auth-guards/is-admin-auth-guard */ 30187);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/week-month-picker/week-month-picker.component */ 37093);
+/* harmony import */ var _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/week-month-picker/week-picker/week-picker.component */ 86654);
+/* harmony import */ var _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/week-month-picker/month-picker/month-picker.component */ 44880);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @angular/core */ 22560);
+
+
+
+
 
 
 
@@ -1864,41 +1887,43 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
     constructor(library) {
-        library.addIconPacks(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_35__.fas, _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_36__.far);
+        library.addIconPacks(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_38__.fas, _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_39__.far);
     }
 }
-AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_37__["ɵɵinject"](_fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_38__.FaIconLibrary)); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_37__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_37__["ɵɵdefineInjector"]({ providers: [
+AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵinject"](_fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__.FaIconLibrary)); };
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵdefineInjector"]({ providers: [
         {
-            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_39__.HTTP_INTERCEPTORS,
+            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_42__.HTTP_INTERCEPTORS,
             useClass: _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_12__.AuthInterceptorService,
             multi: true,
-            deps: [_services_auth_service__WEBPACK_IMPORTED_MODULE_11__.AuthService, _services_admin_service__WEBPACK_IMPORTED_MODULE_33__.AdminService, _angular_router__WEBPACK_IMPORTED_MODULE_40__.Router]
+            deps: [_services_auth_service__WEBPACK_IMPORTED_MODULE_11__.AuthService, _services_admin_service__WEBPACK_IMPORTED_MODULE_33__.AdminService, _angular_router__WEBPACK_IMPORTED_MODULE_43__.Router]
         },
         _auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_10__.IsAuthenticatedAuthGuard,
         _auth_guards_is_admin_auth_guard__WEBPACK_IMPORTED_MODULE_34__.IsAdminAuthGuard,
         {
-            provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_41__.HIGHLIGHT_OPTIONS,
+            provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__.HIGHLIGHT_OPTIONS,
             useValue: {
                 fullLibraryLoader: () => __webpack_require__.e(/*! import() */ "node_modules_highlight_js_es_index_js").then(__webpack_require__.bind(__webpack_require__, /*! highlight.js */ 7722)),
             }
         }
-    ], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_42__.FormsModule,
-        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_43__.NgSelectModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_42__.ReactiveFormsModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_44__.BrowserModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_39__.HttpClientModule,
+    ], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_45__.FormsModule,
+        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_46__.NgSelectModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_45__.ReactiveFormsModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_47__.BrowserModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_42__.HttpClientModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_45__.NgbModule,
-        ng2_charts__WEBPACK_IMPORTED_MODULE_46__.NgChartsModule,
-        ng_apexcharts__WEBPACK_IMPORTED_MODULE_47__.NgApexchartsModule,
-        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_48__.InfiniteScrollModule,
-        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_38__.FontAwesomeModule,
-        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_49__.ImageCropperModule,
-        ngx_moment__WEBPACK_IMPORTED_MODULE_50__.MomentModule,
-        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_41__.HighlightModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_37__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_48__.NgbModule,
+        ng2_charts__WEBPACK_IMPORTED_MODULE_49__.NgChartsModule,
+        ngx_echarts__WEBPACK_IMPORTED_MODULE_50__.NgxEchartsModule.forRoot({
+            echarts: () => __webpack_require__.e(/*! import() */ "node_modules_echarts_index_js").then(__webpack_require__.bind(__webpack_require__, /*! echarts */ 84343))
+        }),
+        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_51__.InfiniteScrollModule,
+        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__.FontAwesomeModule,
+        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_52__.ImageCropperModule,
+        ngx_moment__WEBPACK_IMPORTED_MODULE_53__.MomentModule,
+        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__.HighlightModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
         _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__.HeaderComponent,
         _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__.FooterComponent,
         _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_4__.DevelopersComponent,
@@ -1924,22 +1949,23 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_37__["ɵ�
         _admin_collect_metrics_collect_metrics_component__WEBPACK_IMPORTED_MODULE_29__.CollectMetricsComponent,
         _admin_payment_metrics_payment_metrics_component__WEBPACK_IMPORTED_MODULE_30__.PaymentMetricsComponent,
         _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_31__.AdminLoginComponent,
-        _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_32__.OrganizationDetailsComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_42__.FormsModule,
-        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_43__.NgSelectModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_42__.ReactiveFormsModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_44__.BrowserModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_39__.HttpClientModule,
+        _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_32__.OrganizationDetailsComponent,
+        _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__.WeekMonthPickerComponent,
+        _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__.WeekPickerComponent,
+        _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__.MonthPickerComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_45__.FormsModule,
+        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_46__.NgSelectModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_45__.ReactiveFormsModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_47__.BrowserModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_42__.HttpClientModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _directives_password_confirm_validator_directive__WEBPACK_IMPORTED_MODULE_9__.PasswordConfirmValidatorDirective,
         _directives_email_lowercase_validator_directive__WEBPACK_IMPORTED_MODULE_26__.EmailLowercaseValidatorDirective,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_45__.NgbModule,
-        ng2_charts__WEBPACK_IMPORTED_MODULE_46__.NgChartsModule,
-        ng_apexcharts__WEBPACK_IMPORTED_MODULE_47__.NgApexchartsModule,
-        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_48__.InfiniteScrollModule,
-        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_38__.FontAwesomeModule,
-        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_49__.ImageCropperModule,
-        ngx_moment__WEBPACK_IMPORTED_MODULE_50__.MomentModule,
-        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_41__.HighlightModule] }); })();
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_48__.NgbModule,
+        ng2_charts__WEBPACK_IMPORTED_MODULE_49__.NgChartsModule, ngx_echarts__WEBPACK_IMPORTED_MODULE_50__.NgxEchartsModule, ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_51__.InfiniteScrollModule,
+        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__.FontAwesomeModule,
+        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_52__.ImageCropperModule,
+        ngx_moment__WEBPACK_IMPORTED_MODULE_53__.MomentModule,
+        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__.HighlightModule] }); })();
 
 
 /***/ }),
@@ -3536,6 +3562,605 @@ OrgWebhooksEditorComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.editorMode == "create");
     } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.CheckboxControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.PatternValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgForm, _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_5__.NgSelectComponent, _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_5__.NgOptionTemplateDirective, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgIf, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbTooltip], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmctd2ViaG9va3MtZWRpdG9yLmNvbXBvbmVudC5zY3NzIn0= */"] });
+
+
+/***/ }),
+
+/***/ 68489:
+/*!********************************************************************************************!*\
+  !*** ./src/app/components/week-month-picker/month-picker/month-picker-keyboard.service.ts ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "NgbMonthDatepickerKeyboardService": () => (/* binding */ NgbMonthDatepickerKeyboardService)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 22560);
+
+/**
+ * A service that represents the keyboard navigation.
+ *
+ * Default keyboard shortcuts [are documented in the overview](#/components/datepicker/overview#keyboard-shortcuts)
+ *
+ * @since 5.2.0
+ */
+class NgbMonthDatepickerKeyboardService {
+    /**
+     * Processes a keyboard event.
+     */
+    processKey(event, cal) {
+        const cells = cal.cells?.toArray();
+        let index = cal.isyear
+            ? cells?.findIndex((x) => x.nativeElement.dataset.year == cal.displayYear)
+            : cells?.findIndex((x) => x.nativeElement.dataset.month == cal.displayMonth);
+        if ((index || -1) < 0)
+            return;
+        switch (event.key) {
+            case 'ArrowDown':
+                if (cal.isyear) {
+                    if ((index || -1) > 8)
+                        cal.setValues(cal.initialYear + 12, cal.displayYear + 3, cal.displayMonth);
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear + 3, cal.displayMonth);
+                }
+                else {
+                    if ((index || -1) > 8) {
+                        cal.setValues(cal.initialYear, cal.displayYear + 1, ((cal.displayMonth + 2) % 12) + 1);
+                    }
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear, ((cal.displayMonth + 2) % 12) + 1);
+                }
+                cal.focus();
+                break;
+            case 'ArrowUp':
+                if (cal.isyear) {
+                    if ((index || -1) < 3)
+                        cal.setValues(cal.initialYear - 12, cal.displayYear - 3, cal.displayMonth);
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear - 3, cal.displayMonth);
+                }
+                else {
+                    if ((index || -1) < 3)
+                        cal.setValues(cal.initialYear, cal.displayYear - 1, ((cal.displayMonth + 8) % 12) + 1);
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear, ((cal.displayMonth + 8) % 12) + 1);
+                }
+                cal.focus();
+                break;
+            case 'ArrowLeft':
+                if (cal.isyear) {
+                    if (index == 0)
+                        cal.setValues(cal.initialYear - 12, cal.displayYear - 1, cal.displayMonth);
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear - 1, cal.displayMonth);
+                }
+                else {
+                    if (index == 0) {
+                        cal.setValues(cal.initialYear, cal.displayYear - 1, 12);
+                    }
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear, cal.displayMonth - 1);
+                }
+                cal.focus();
+                break;
+            case 'ArrowRight':
+                if (index == 11) {
+                    if (cal.isyear)
+                        cal.setValues(cal.initialYear + 12, cal.displayYear + 1, cal.displayMonth);
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear + 1, 1);
+                }
+                else {
+                    if (cal.isyear)
+                        cal.setValues(cal.initialYear, cal.displayYear + 1, cal.displayMonth);
+                    else
+                        cal.setValues(cal.initialYear, cal.displayYear, cal.displayMonth + 1);
+                }
+                cal.focus();
+                break;
+            case 'PageDown':
+                cal.displayYear++;
+                break;
+            case 'PageUp':
+                cal.displayYear--;
+                break;
+            case 'Enter':
+                cal.selectYearMonth((index || -1));
+                break;
+            case 'Tab':
+                const bt = cal.buttons?.find((x) => x.nativeElement.getAttribute('disabled') == null);
+                if (bt)
+                    bt.nativeElement.focus();
+                break;
+            case 'Escape':
+                if (cal.isyear) {
+                    cal.displayYear = cal.displayYearOld;
+                    cal.isyear = false;
+                    cal.focus();
+                }
+                else
+                    return;
+                break;
+            default:
+                return;
+        }
+        event.preventDefault();
+        event.stopPropagation();
+    }
+}
+NgbMonthDatepickerKeyboardService.ɵfac = function NgbMonthDatepickerKeyboardService_Factory(t) { return new (t || NgbMonthDatepickerKeyboardService)(); };
+NgbMonthDatepickerKeyboardService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: NgbMonthDatepickerKeyboardService, factory: NgbMonthDatepickerKeyboardService.ɵfac, providedIn: 'root' });
+
+
+/***/ }),
+
+/***/ 44880:
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/week-month-picker/month-picker/month-picker.component.ts ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MonthPickerComponent": () => (/* binding */ MonthPickerComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
+/* harmony import */ var _month_picker_keyboard_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./month-picker-keyboard.service */ 68489);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 94666);
+
+
+
+
+
+
+
+const _c0 = ["template"];
+const _c1 = ["calendarPanel"];
+const _c2 = ["cell"];
+const _c3 = ["btn"];
+function MonthPickerComponent_div_22_div_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainer"](0);
+} }
+const _c4 = function (a0, a1) { return { $implicit: a0, selected: a1 }; };
+function MonthPickerComponent_div_22_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 23, 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, MonthPickerComponent_div_22_div_1_ng_container_2_Template, 1, 0, "ng-container", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const i_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().index;
+    const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("selectable", ctx_r9.cellsSelectables[i_r8]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("tabindex", i_r8 + ctx_r9.initialYear == ctx_r9.displayYear ? 4 : -1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("data-year", i_r8 + ctx_r9.initialYear);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngTemplateOutlet", ctx_r9.templateData ? ctx_r9.templateData : ctx_r9.templateDef)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](6, _c4, i_r8 + ctx_r9.initialYear, i_r8 + ctx_r9.initialYear == ctx_r9.displayYear));
+} }
+function MonthPickerComponent_div_22_div_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainer"](0);
+} }
+function MonthPickerComponent_div_22_div_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 23, 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, MonthPickerComponent_div_22_div_2_ng_container_2_Template, 1, 0, "ng-container", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    const i_r8 = ctx_r16.index;
+    const month_r7 = ctx_r16.$implicit;
+    const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("selectable", ctx_r10.cellsSelectables[i_r8]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("tabindex", i_r8 + 1 == ctx_r10.displayMonth ? 0 : -1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("data-month", i_r8 + 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngTemplateOutlet", ctx_r10.templateData ? ctx_r10.templateData : ctx_r10.templateDef)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](6, _c4, month_r7, i_r8 + 1 == ctx_r10.displayMonth));
+} }
+function MonthPickerComponent_div_22_Template(rf, ctx) { if (rf & 1) {
+    const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function MonthPickerComponent_div_22_Template_div_click_0_listener() { const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r18); const i_r8 = restoredCtx.index; const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r17.cellsSelectables[i_r8] && ctx_r17.selectYearMonth(i_r8)); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, MonthPickerComponent_div_22_div_1_Template, 3, 9, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, MonthPickerComponent_div_22_div_2_Template, 3, 9, "div", 22);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r4.isyear);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx_r4.isyear);
+} }
+function MonthPickerComponent_ng_template_23_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 26)(1, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+} if (rf & 2) {
+    const data_r19 = ctx.$implicit;
+    const selected_r20 = ctx.selected;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", selected_r20 ? "btn-primary selected" : null);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](data_r19);
+} }
+class MonthPickerComponent {
+    constructor(i18n, _keyboardService) {
+        this.i18n = i18n;
+        this._keyboardService = _keyboardService;
+        this.isyear = false;
+        this._initialYear = 0;
+        this.displayMonth = new Date().getMonth();
+        this._displayYear = new Date().getFullYear();
+        this.displayYearOld = this.displayYear;
+        this.cellsSelectables = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((x) => true);
+        this.templateData = null;
+        this.months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((x) => this.i18n.getMonthShortName(x));
+        // Allow the input to be disabled, and when it is make it somewhat transparent.
+        this.disabled = false;
+        this.mask = 'mm-yyyy';
+        this.onChange = () => { };
+        this.onTouched = () => { };
+        this.separator = this.mask.replace(/m|y|M/gi, '');
+        this.monthFirst = this.mask.indexOf('y') > 0;
+        this.place = this.mask.indexOf(this.separator);
+    }
+    get displayYear() {
+        return this._displayYear;
+    }
+    set displayYear(value) {
+        this._displayYear = value;
+        this.setCellsSelectables();
+    }
+    get initialYear() {
+        return this._initialYear;
+    }
+    set initialYear(value) {
+        this._initialYear = value;
+        this.setCellsSelectables();
+    }
+    setValues(initialYear, displayYear, displayMonth) {
+        if (this.minDate && initialYear < this.getIncr(this.minDate.year))
+            return;
+        if (this.maxDate && initialYear > this.getIncr(this.maxDate.year) + 11)
+            return;
+        if (this.minDate && displayYear < this.minDate.year)
+            return;
+        if (this.maxDate && displayYear > this.maxDate.year)
+            return;
+        if (this.minDate &&
+            displayYear == this.minDate.year &&
+            displayMonth < this.minDate.month) {
+            if (this.isyear)
+                displayMonth = this.minDate.month;
+            else
+                return;
+        }
+        if (this.maxDate &&
+            displayYear == this.maxDate.year &&
+            displayMonth > this.maxDate.month) {
+            if (this.isyear)
+                displayMonth = this.maxDate.month;
+            else
+                return;
+        }
+        this.initialYear = initialYear;
+        this.displayYear = displayYear;
+        this.displayMonth = displayMonth;
+    }
+    changeYearMonth(month, year, focus) {
+        if (year < this.initialYear)
+            this.initialYear -= 12;
+        if (year > this.initialYear + 11)
+            this.initialYear += 12;
+        this.displayMonth = month;
+        this.displayYear = year;
+        if (focus)
+            this.focus();
+    }
+    get yearId() {
+        return this.buttons?.find((_, index) => index == 1);
+    }
+    setCellsSelectables() {
+        if (this.minDate || this.maxDate) {
+            if (this.isyear)
+                this.cellsSelectables = this.cellsSelectables.map((_, i) => this.selectable(i + this.initialYear, this.displayMonth));
+            else
+                this.cellsSelectables = this.cellsSelectables.map((_, i) => this.selectable(this.displayYear, i + 1));
+        }
+    }
+    selectable(year, month) {
+        let selectable = this.minDate
+            ? year > this.minDate.year ||
+                (year == this.minDate.year && month >= this.minDate.month)
+            : true;
+        if (selectable && this.maxDate)
+            selectable = this.isyear
+                ? year <= this.maxDate.year
+                : year < this.maxDate.year ||
+                    (year == this.maxDate.year && month <= this.maxDate.month);
+        return selectable;
+    }
+    /*Functions that use also keyboard*/
+    addYear(incr) {
+        this.displayYear = this.isyear
+            ? this.displayYear + 12 * incr
+            : this.displayYear + incr;
+        this.initialYear = this.getIncr(this.displayYear);
+    }
+    showYear(show) {
+        this.isyear = show;
+        this.setCellsSelectables();
+        this.focus();
+    }
+    selectYearMonth(index) {
+        if (this.isyear) {
+            this.displayYear = index + this.initialYear;
+            this.displayYearOld = this.displayYear;
+            this.isyear = false;
+            this.setCellsSelectables();
+            this.focus();
+        }
+        else {
+            this.displayMonth = index + 1;
+            this.data = { year: this.displayYear, month: this.displayMonth };
+            this.dataTxt = this.formatData(this.data);
+            this.onChange(this.data);
+            this.calendar?.close();
+        }
+    }
+    /*function open the "calendar"*/
+    open() {
+        if (this.data && this.data.month && this.data.year) {
+            this.displayMonth = this.data.month;
+            this.displayYear = this.data.year;
+            this.displayYearOld = this.displayYear;
+        }
+        this.isyear = false;
+        this.initialYear = this.getIncr(this.displayYear);
+        this.focus();
+    }
+    focus() {
+        setTimeout(() => {
+            const cell = this.isyear
+                ? this.cells?.find((x) => x.nativeElement.dataset.year == this.displayYear)
+                : this.cells?.find((x) => x.nativeElement.dataset.month == this.displayMonth);
+            if (cell)
+                cell.nativeElement.focus();
+        });
+    }
+    onKeyDown(event) {
+        this._keyboardService.processKey(event, this);
+    }
+    change(value) {
+        value =
+            this.separator == ' '
+                ? value.replace(/\.|-|\//, ' ')
+                : this.separator == '/'
+                    ? value.replace(/\.|-| /, '/')
+                    : this.separator == '-'
+                        ? value.replace(/\.| |\//, '-')
+                        : value.replace(/.| |\/ /, '-');
+        let lastchar = value.substr(value.length - 1);
+        if (lastchar == this.separator && value.length <= this.place) {
+            if (this.monthFirst) {
+                value = '0' + value;
+            }
+        }
+        if (value.length > this.place && value.indexOf(this.separator) < 0) {
+            value = value.substr(0, value.length - 1) + this.separator + lastchar;
+        }
+        this.dataTxt = value;
+        let items = value.split(this.separator);
+        if (items.length == 2) {
+            let year = this.monthFirst ? items[1] : items[0];
+            let month = this.monthFirst ? items[0] : items[1];
+            let imonth = this.months.indexOf(month);
+            if (imonth < 0)
+                imonth = parseInt(month);
+            else
+                imonth = imonth + 1;
+            let iyear = parseInt(year);
+            if (iyear < 100)
+                iyear = iyear + 2000;
+            this.data = {
+                year: iyear,
+                month: imonth,
+            };
+        }
+        this.onChange(this.data);
+    }
+    getIncr(year) {
+        return year - (year % 12) - 1;
+    }
+    formatData(data) {
+        if (!data)
+            return '';
+        let monthTxt = data.month < 10 ? '0' + data.month : '' + data.month;
+        return this.monthFirst
+            ? monthTxt + this.separator + data.year
+            : '' + data.year + this.separator + monthTxt;
+    }
+    writeValue(data) {
+        this.data = data;
+        this.dataTxt = this.formatData(this.data);
+    }
+    // Allows Angular to register a function to call when the model (rating) changes.
+    // Save the function as a property to call later here.
+    registerOnChange(fn) {
+        this.onChange = fn;
+    }
+    // Allows Angular to register a function to call when the input has been touched.
+    // Save the function as a property to call later here.
+    registerOnTouched(fn) {
+        this.onTouched = fn;
+    }
+    // Allows Angular to disable the input.
+    setDisabledState(isDisabled) {
+        this.disabled = isDisabled;
+    }
+    // @ts-ignore
+    validate({ value }) {
+        if (!value)
+            return null;
+        if (this.minDate)
+            if (value.year < this.minDate.year ||
+                (value.year == this.minDate.year && value.month < this.minDate.month))
+                return { minDate: this.minDate };
+        if (this.maxDate)
+            if (value.year > this.maxDate.year ||
+                (value.year == this.maxDate.year && value.month > this.minDate.month))
+                return { maxDate: this.maxDate };
+    }
+}
+MonthPickerComponent.ɵfac = function MonthPickerComponent_Factory(t) { return new (t || MonthPickerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbDatepickerI18n), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_month_picker_keyboard_service__WEBPACK_IMPORTED_MODULE_0__.NgbMonthDatepickerKeyboardService)); };
+MonthPickerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: MonthPickerComponent, selectors: [["app-month-picker"]], viewQuery: function MonthPickerComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵviewQuery"](_c0, 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵviewQuery"](_c1, 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵviewQuery"](_c2, 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵviewQuery"](_c3, 5);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.templateDef = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.calendar = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.cells = _t);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.buttons = _t);
+    } }, inputs: { templateData: "templateData", months: "months", disabled: "disabled", mask: "mask", minDate: "minDate", maxDate: "maxDate" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([
+            {
+                provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NG_VALUE_ACCESSOR,
+                useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => MonthPickerComponent),
+                multi: true,
+            },
+            {
+                provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NG_VALIDATORS,
+                useExisting: MonthPickerComponent,
+                multi: true,
+            },
+        ])], decls: 25, vars: 6, consts: [["ngbDropdown", "", 1, "form-group", 3, "openChange"], ["calendarPanel", "ngbDropdown"], [1, "input-group"], ["type", "text", "id", "data", "name", "data", 1, "form-control", 3, "ngModel", "placeholder", "keydown.arrowdown", "ngModelChange", "input"], ["item", ""], [1, "input-group-append"], ["ngbDropdownToggle", "", 1, "btn", "btn-outline-secondary", "dropdown-toggle-split"], ["aria-hidden", "true", 1, "calendar"], ["ngbDropdownMenu", "", 1, "dropdown-menu"], [1, "wrap-container"], [1, "btn-first"], [1, "btn", "btn-link", 3, "disabled", "click"], ["btn", ""], [1, "ngb-dp-navigation-arrow", "left"], [1, "item-center"], [1, "btn", "btn-link", 3, "click"], [1, "btn-last"], [1, "ngb-dp-navigation-arrow", "right"], [1, "wrap-container", 3, "keydown"], ["class", "item", 3, "click", 4, "ngFor", "ngForOf"], ["template", ""], [1, "item", 3, "click"], ["class", "outline-none", 3, "tabindex", "selectable", 4, "ngIf"], [1, "outline-none", 3, "tabindex"], ["cell", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "cell-body", 3, "ngClass"]], template: function MonthPickerComponent_Template(rf, ctx) { if (rf & 1) {
+        const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("openChange", function MonthPickerComponent_Template_div_openChange_0_listener($event) { return $event && ctx.open(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2)(3, "input", 3, 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("keydown.arrowdown", function MonthPickerComponent_Template_input_keydown_arrowdown_3_listener() { return ctx.calendar.open(); })("ngModelChange", function MonthPickerComponent_Template_input_ngModelChange_3_listener($event) { return ctx.dataTxt = $event; })("input", function MonthPickerComponent_Template_input_input_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r21); const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](4); return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx.change(_r1.value)); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "div", 5)(6, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](7, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "div", 8)(9, "div", 9)(10, "div", 10)(11, "button", 11, 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function MonthPickerComponent_Template_button_click_11_listener() { return ctx.addYear(-1); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](13, "span", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "div", 14)(15, "button", 15, 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function MonthPickerComponent_Template_button_click_15_listener() { return ctx.showYear(!ctx.isyear); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 16)(19, "button", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function MonthPickerComponent_Template_button_click_19_listener() { return ctx.addYear(+1); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](20, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("keydown", function MonthPickerComponent_Template_div_keydown_21_listener($event) { return ctx.onKeyDown($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](22, MonthPickerComponent_div_22_Template, 3, 2, "div", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, MonthPickerComponent_ng_template_23_Template, 3, 2, "ng-template", null, 20, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx.dataTxt)("placeholder", ctx.mask);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.minDate && (!ctx.isyear ? ctx.displayYear <= ctx.minDate.year : ctx.initialYear < ctx.minDate.year));
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", !ctx.isyear ? ctx.displayYear : ctx.initialYear + "-" + (ctx.initialYear + 11), " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx.maxDate && (!ctx.isyear ? ctx.displayYear >= ((ctx.maxDate == null ? null : ctx.maxDate.year) || 2050) : ctx.initialYear + 11 > ((ctx.minDate == null ? null : ctx.minDate.year) || 2000)));
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.months);
+    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgTemplateOutlet, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbDropdown, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbDropdownToggle, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbDropdownMenu], styles: [".dropdown-menu[_ngcontent-%COMP%] {\n  width: 15rem;\n  padding: 0 0.2rem 0.5rem 0.2rem;\n  margin-left: -13rem;\n}\n\n.cell-body[_ngcontent-%COMP%] {\n  text-align: center;\n  border-radius: 0.25rem;\n  padding: 0.5rem 0;\n}\n\n.outline-none.selectable[_ngcontent-%COMP%] {\n  cursor: pointer;\n  opacity: 1;\n}\n\n.outline-none.selectable[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]:not(.btn-primary):hover {\n  background-color: silver;\n}\n\n.dropdown-toggle[_ngcontent-%COMP%]::after {\n  display: none;\n}\n\n.ngb-dp-navigation-arrow[_ngcontent-%COMP%] {\n  border-style: solid;\n  border-width: 0.2em 0.2em 0 0;\n  display: inline-block;\n  width: 0.75em;\n  height: 0.75em;\n}\n\n.right[_ngcontent-%COMP%] {\n  transform: rotate(45deg);\n  margin-left: 0.15em;\n  margin-right: 0.25em;\n}\n\n.left[_ngcontent-%COMP%] {\n  margin-left: 0.25em;\n  margin-right: 0.15em;\n  transform: rotate(-135deg);\n  -ms-transform: rotate(-135deg);\n}\n\n.calendar[_ngcontent-%COMP%] {\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: 1rem;\n  height: 1rem;\n  width: 1rem;\n  background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-calendar' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E\");\n}\n\n.wrap-container[_ngcontent-%COMP%] {\n  padding-top: 0.25rem;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n\n.item[_ngcontent-%COMP%] {\n  flex: 0 32%;\n  margin-bottom: 2%; \n}\n\n.item-center[_ngcontent-%COMP%] {\n  flex-grow: 1;\n  text-align: center;\n}\n\n.btn-first[_ngcontent-%COMP%] {\n  margin-left: 1rem;\n}\n\n.btn-last[_ngcontent-%COMP%] {\n  margin-right: 1rem;\n}\n\n.outline-none[_ngcontent-%COMP%] {\n  border-radius: 0.25rem;\n  opacity: 0.5;\n}\n\n.outline-none[_ngcontent-%COMP%]:focus {\n  outline-width: thin;\n  outline-style: dotted;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vbnRoLXBpY2tlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFlBQUE7RUFDQSwrQkFBQTtFQUNBLG1CQUFBO0FBQ0Y7O0FBR0E7RUFDRSxrQkFBQTtFQUNBLHNCQUFBO0VBQ0EsaUJBQUE7QUFBRjs7QUFHQTtFQUVFLGVBQUE7RUFDQSxVQUFBO0FBREY7O0FBR0E7RUFDRSx3QkFBQTtBQUFGOztBQUdBO0VBQ0UsYUFBQTtBQUFGOztBQUdBO0VBQ0UsbUJBQUE7RUFDQSw2QkFBQTtFQUNBLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7QUFBRjs7QUFFQTtFQUVFLHdCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTtBQUNGOztBQUNBO0VBQ0UsbUJBQUE7RUFDQSxvQkFBQTtFQUNBLDBCQUFBO0VBQ0EsOEJBQUE7QUFFRjs7QUFBQTtFQUVFLGtDQUFBO0VBQ0EsNEJBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EseVhBQUE7QUFFRjs7QUFBQTtFQUNFLG9CQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSw4QkFBQTtBQUdGOztBQUFBO0VBQ0UsV0FBQTtFQUNBLGlCQUFBLEVBQUEsaUJBQUE7QUFHRjs7QUFEQTtFQUVFLFlBQUE7RUFDQSxrQkFBQTtBQUdGOztBQURBO0VBRUUsaUJBQUE7QUFHRjs7QUFEQTtFQUVFLGtCQUFBO0FBR0Y7O0FBQUE7RUFDRSxzQkFBQTtFQUNBLFlBQUE7QUFHRjs7QUFBQTtFQUNFLG1CQUFBO0VBQ0EscUJBQUE7QUFHRiIsImZpbGUiOiJtb250aC1waWNrZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZHJvcGRvd24tbWVudSB7XG4gIHdpZHRoOiAxNXJlbTtcbiAgcGFkZGluZzogMCAwLjJyZW0gMC41cmVtIDAuMnJlbTtcbiAgbWFyZ2luLWxlZnQ6LTEzcmVtO1xufVxuXG5cbi5jZWxsLWJvZHl7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYm9yZGVyLXJhZGl1czogLjI1cmVtO1xuICBwYWRkaW5nOi41cmVtIDA7XG59XG5cbi5vdXRsaW5lLW5vbmUuc2VsZWN0YWJsZVxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIG9wYWNpdHk6IDE7O1xufVxuLm91dGxpbmUtbm9uZS5zZWxlY3RhYmxlID5kaXY6bm90KC5idG4tcHJpbWFyeSk6aG92ZXJ7XG4gIGJhY2tncm91bmQtY29sb3I6c2lsdmVyO1xufVxuXG4uZHJvcGRvd24tdG9nZ2xlOjphZnRlciB7XG4gIGRpc3BsYXk6bm9uZTtcbn1cblxuLm5nYi1kcC1uYXZpZ2F0aW9uLWFycm93IHtcbiAgYm9yZGVyLXN0eWxlOiBzb2xpZDtcbiAgYm9yZGVyLXdpZHRoOiAwLjJlbSAwLjJlbSAwIDA7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgd2lkdGg6IDAuNzVlbTtcbiAgaGVpZ2h0OiAwLjc1ZW07XG59XG4ucmlnaHQge1xuICAtbXMtdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg0NWRlZyk7XG4gIG1hcmdpbi1sZWZ0OiAwLjE1ZW07XG4gIG1hcmdpbi1yaWdodDogMC4yNWVtO1xufVxuLmxlZnR7XG4gIG1hcmdpbi1sZWZ0OiAwLjI1ZW07XG4gIG1hcmdpbi1yaWdodDogMC4xNWVtO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSgtMTM1ZGVnKTtcbiAgLW1zLXRyYW5zZm9ybTogcm90YXRlKC0xMzVkZWcpO1xufVxuLmNhbGVuZGFyXG57XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlciBjZW50ZXI7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogMXJlbTtcbiAgaGVpZ2h0OjFyZW07XG4gIHdpZHRoOiAxcmVtO1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCJkYXRhOmltYWdlL3N2Zyt4bWwsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgd2lkdGg9JzE2JyBoZWlnaHQ9JzE2JyBmaWxsPSdjdXJyZW50Q29sb3InIGNsYXNzPSdiaSBiaS1jYWxlbmRhcicgdmlld0JveD0nMCAwIDE2IDE2JyUzRSUzQ3BhdGggZD0nTTMuNSAwYS41LjUgMCAwIDEgLjUuNVYxaDhWLjVhLjUuNSAwIDAgMSAxIDBWMWgxYTIgMiAwIDAgMSAyIDJ2MTFhMiAyIDAgMCAxLTIgMkgyYTIgMiAwIDAgMS0yLTJWM2EyIDIgMCAwIDEgMi0yaDFWLjVhLjUuNSAwIDAgMSAuNS0uNXpNMSA0djEwYTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMVY0SDF6Jy8lM0UlM0Mvc3ZnJTNFXCIpO1xufVxuLndyYXAtY29udGFpbmVyIHtcbiAgcGFkZGluZy10b3A6LjI1cmVtO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cblxuLml0ZW0ge1xuICBmbGV4OiAwIDMyJTtcbiAgbWFyZ2luLWJvdHRvbTogMiU7IC8qICgxMDAtMzIqMykvMiAqL1xufVxuLml0ZW0tY2VudGVyXG57XG4gIGZsZXgtZ3JvdzogMTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmJ0bi1maXJzdFxue1xuICBtYXJnaW4tbGVmdDoxcmVtO1xufVxuLmJ0bi1sYXN0XG57XG4gIG1hcmdpbi1yaWdodDogMXJlbTtcbn1cblxuLm91dGxpbmUtbm9uZXtcbiAgYm9yZGVyLXJhZGl1czogLjI1cmVtO1xuICBvcGFjaXR5Oi41XG59XG5cbi5vdXRsaW5lLW5vbmU6Zm9jdXN7XG4gIG91dGxpbmUtd2lkdGg6IHRoaW47XG4gIG91dGxpbmUtc3R5bGU6IGRvdHRlZDtcbn1cblxuIl19 */"] });
+
+
+/***/ }),
+
+/***/ 37093:
+/*!*****************************************************************************!*\
+  !*** ./src/app/components/week-month-picker/week-month-picker.component.ts ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "WeekMonthPickerComponent": () => (/* binding */ WeekMonthPickerComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./week-picker/week-picker.component */ 86654);
+/* harmony import */ var _month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./month-picker/month-picker.component */ 44880);
+
+
+
+class WeekMonthPickerComponent {
+    constructor() {
+        this.currentTimeframe = 'week';
+    }
+    ngOnInit() {
+    }
+    setTimeframe(timeframe) {
+        if (this.currentTimeframe === timeframe) {
+            return;
+        }
+        console.log("Timeframe changed to:", timeframe);
+        this.currentTimeframe = timeframe;
+        // this.rebuildVisuals();
+    }
+}
+WeekMonthPickerComponent.ɵfac = function WeekMonthPickerComponent_Factory(t) { return new (t || WeekMonthPickerComponent)(); };
+WeekMonthPickerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: WeekMonthPickerComponent, selectors: [["week-month-picker"]], decls: 6, vars: 1, consts: [[1, "btn-group", "btn-group-toggle"], ["type", "text", "disabled", "disabled", 1, "form-control"], ["targetEl", ""], [1, "input-group-append"], [3, "targetEl"]], template: function WeekMonthPickerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "input", 1, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](4, "app-week-picker", 4)(5, "app-month-picker");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("targetEl", _r0);
+    } }, dependencies: [_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_0__.WeekPickerComponent, _month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_1__.MonthPickerComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ3ZWVrLW1vbnRoLXBpY2tlci5jb21wb25lbnQuc2NzcyJ9 */"] });
+
+
+/***/ }),
+
+/***/ 86654:
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/week-month-picker/week-picker/week-picker.component.ts ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "WeekPickerComponent": () => (/* binding */ WeekPickerComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
+
+
+
+class WeekPickerComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+WeekPickerComponent.ɵfac = function WeekPickerComponent_Factory(t) { return new (t || WeekPickerComponent)(); };
+WeekPickerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WeekPickerComponent, selectors: [["app-week-picker"]], inputs: { targetEl: "targetEl" }, decls: 5, vars: 3, consts: [["placeholder", "yyyy-mm-dd", "name", "dp", "ngbDatepicker", "", 2, "display", "none", 3, "ngModel", "placement", "positionTarget", "ngModelChange"], ["d", "ngbDatepicker"], ["type", "button", 1, "btn", "btn-outline-indigo", 3, "click"], ["buttonEl", ""]], template: function WeekPickerComponent_Template(rf, ctx) { if (rf & 1) {
+        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "input", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function WeekPickerComponent_Template_input_ngModelChange_0_listener($event) { return ctx.model = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function WeekPickerComponent_Template_button_click_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1); return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](_r0.toggle()); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Week");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.model)("placement", "bottom")("positionTarget", ctx.targetEl);
+    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgModel, _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbInputDatepicker], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ3ZWVrLXBpY2tlci5jb21wb25lbnQuc2NzcyJ9 */"] });
 
 
 /***/ }),

@@ -7053,7 +7053,15 @@ class AdminService {
         return localStorage.getItem('fasten_connect_admin_jwt');
     }
     getConsentSummary(filterData) {
-        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/admin/consent/summary`, filterData || {})
+        filterData = filterData || {};
+        //always add timeframe data if not present
+        if (!filterData.timeframe) {
+            filterData.timeframe = {
+                year: new Date().getFullYear(),
+                month: new Date().getMonth() + 1 //0 indexed, this is the current month.
+            };
+        }
+        return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/admin/consent/summary`, filterData)
             .pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)((response) => {
             console.log("Consent Summary", response);
             return response.data;

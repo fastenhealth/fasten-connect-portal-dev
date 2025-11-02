@@ -666,7 +666,9 @@ function ConsentMetricsComponent_ng_container_52_Template(rf, ctx) { if (rf & 1)
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("height", ctx_r4.sankeyHeight, "px");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("options", ctx_r4.sankeyOptions);
 } }
 function ConsentMetricsComponent_ng_template_53_Template(rf, ctx) { if (rf & 1) {
@@ -678,6 +680,8 @@ class ConsentMetricsComponent {
     constructor(fb, adminService) {
         this.fb = fb;
         this.adminService = adminService;
+        this.DEFAULT_SANKEY_HEIGHT = 360;
+        this.SANKEY_NODE_HEIGHT = 48;
         this.filters = [
             {
                 key: 'org_id',
@@ -773,6 +777,7 @@ class ConsentMetricsComponent {
         this.treemapHasData = false;
         this.sankeyOptions = {};
         this.sankeyHasData = false;
+        this.sankeyHeight = this.DEFAULT_SANKEY_HEIGHT;
         this.filterForm = this.fb.group(this.setupFilterControls());
         this.filterFormSubscription = this.filterForm.valueChanges.subscribe(value => {
             console.log('Form value changed:', value);
@@ -819,6 +824,7 @@ class ConsentMetricsComponent {
         const sankey = this.buildSankeyOptions(data.sankey);
         this.sankeyOptions = sankey.options;
         this.sankeyHasData = sankey.hasData;
+        this.sankeyHeight = sankey.height;
     }
     buildDivergingChartOptions(entries) {
         const records = Object.values(entries).sort((a, b) => new Date(a.bucket_start).getTime() - new Date(b.bucket_start).getTime());
@@ -1024,8 +1030,9 @@ class ConsentMetricsComponent {
         const links = (sankey?.links ?? []).filter((link) => link.value > 0);
         const hasData = nodes.length > 0 && links.length > 0;
         if (!hasData) {
-            return { options: {}, hasData: false };
+            return { options: {}, hasData: false, height: this.DEFAULT_SANKEY_HEIGHT };
         }
+        const estimatedHeight = Math.max(this.DEFAULT_SANKEY_HEIGHT, nodes.length * this.SANKEY_NODE_HEIGHT);
         const options = {
             color: [
                 '#3b82f6',
@@ -1066,7 +1073,7 @@ class ConsentMetricsComponent {
                 },
             ],
         };
-        return { options, hasData: true };
+        return { options, hasData: true, height: estimatedHeight };
     }
     formatDivergingTooltip(params) {
         if (!Array.isArray(params) || params.length === 0) {
@@ -1218,7 +1225,7 @@ ConsentMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MO
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](50, "Visualize how consents progress across platforms and brands.");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](51, "div", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](52, ConsentMetricsComponent_ng_container_52_Template, 3, 1, "ng-container", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](52, ConsentMetricsComponent_ng_container_52_Template, 3, 3, "ng-container", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](53, ConsentMetricsComponent_ng_template_53_Template, 3, 0, "ng-template", null, 26, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
     } if (rf & 2) {

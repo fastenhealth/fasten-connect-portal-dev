@@ -174,12 +174,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ 2508);
 /* harmony import */ var _services_admin_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/admin.service */ 87501);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 94666);
+/* harmony import */ var ngx_echarts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-echarts */ 31548);
+
 
 
 
 
 function CollectMetricsComponent_div_15_option_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "option", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "option", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -189,13 +191,13 @@ function CollectMetricsComponent_div_15_option_6_Template(rf, ctx) { if (rf & 1)
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](option_r6);
 } }
 function CollectMetricsComponent_div_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 25)(1, "label", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 24)(1, "label", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "select", 27)(4, "option", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "select", 26)(4, "option", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, CollectMetricsComponent_div_15_option_6_Template, 2, 2, "option", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, CollectMetricsComponent_div_15_option_6_Template, 2, 2, "option", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
 } if (rf & 2) {
     const filter_r4 = ctx.$implicit;
@@ -210,118 +212,80 @@ function CollectMetricsComponent_div_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", filter_r4.options);
 } }
-function CollectMetricsComponent_ng_container_36_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "th", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+function CollectMetricsComponent_th_29_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "th", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const bucket_r7 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](bucket_r7);
 } }
-function CollectMetricsComponent_ng_container_38_tr_1_td_1_Template(rf, ctx) { if (rf & 1) {
+function CollectMetricsComponent_tr_31_td_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "div", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const bucket_r10 = ctx.$implicit;
+    const row_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+    const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("height", ctx_r9.pieChartHeight, "px");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("empty", !row_r8.buckets[bucket_r10]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("options", row_r8.buckets[bucket_r10])("autoResize", true);
+} }
+function CollectMetricsComponent_tr_31_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr")(1, "td", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, CollectMetricsComponent_tr_31_td_3_Template, 2, 6, "td", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const row_r8 = ctx.$implicit;
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](row_r8.platform);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.bucketLabels);
+} }
+function CollectMetricsComponent_ng_container_51_tr_1_td_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 37);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const row_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2).$implicit;
-    const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("rowspan", ctx_r13.outcomeKeys.length);
+    const group_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2).$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("rowspan", group_r12.resources.length);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", row_r8.platform, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](group_r12.platform);
 } }
-function CollectMetricsComponent_ng_container_38_tr_1_td_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](2, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const bucket_r16 = ctx.$implicit;
-    const outcome_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
-    const row_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
-    const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](2, 1, ctx_r14.outcomeForBucket(row_r8, bucket_r16, outcome_r11)));
-} }
-const _c0 = function (a1, a2) { return ["outcome-row", a1, a2]; };
-function CollectMetricsComponent_ng_container_38_tr_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, CollectMetricsComponent_ng_container_38_tr_1_td_1_Template, 2, 2, "td", 33);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "td", 34);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "td", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](6, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, CollectMetricsComponent_ng_container_38_tr_1_td_7_Template, 3, 3, "td", 36);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const outcome_r11 = ctx.$implicit;
-    const idx_r12 = ctx.index;
-    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    const isFirstGroup_r9 = ctx_r19.first;
-    const row_r8 = ctx_r19.$implicit;
-    const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction2"](7, _c0, "outcome-" + outcome_r11, !isFirstGroup_r9 && idx_r12 === 0 ? "outcome-group-start" : ""));
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", idx_r12 === 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r10.displayOutcomeLabel(outcome_r11));
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](6, 5, ctx_r10.outcomeTotal(row_r8, outcome_r11)));
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r10.bucketLabels);
-} }
-function CollectMetricsComponent_ng_container_38_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, CollectMetricsComponent_ng_container_38_tr_1_Template, 8, 10, "tr", 31);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.outcomeKeys);
-} }
-function CollectMetricsComponent_ng_container_58_tr_1_td_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 34);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const group_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2).$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("rowspan", group_r20.resources.length);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](group_r20.platform);
-} }
-function CollectMetricsComponent_ng_container_58_tr_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr", 39);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, CollectMetricsComponent_ng_container_58_tr_1_td_1_Template, 2, 2, "td", 40);
+function CollectMetricsComponent_ng_container_51_tr_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, CollectMetricsComponent_ng_container_51_tr_1_td_1_Template, 2, 2, "td", 35);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "td", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "td", 36);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](6, "number");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
 } if (rf & 2) {
-    const resource_r22 = ctx.$implicit;
-    const idx_r23 = ctx.index;
+    const resource_r14 = ctx.$implicit;
+    const idx_r15 = ctx.index;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", idx_r23 === 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", idx_r15 === 0);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](resource_r22.name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](resource_r14.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](6, 3, resource_r22.count));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](6, 3, resource_r14.count));
 } }
-function CollectMetricsComponent_ng_container_58_Template(rf, ctx) { if (rf & 1) {
+function CollectMetricsComponent_ng_container_51_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, CollectMetricsComponent_ng_container_58_tr_1_Template, 7, 5, "tr", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, CollectMetricsComponent_ng_container_51_tr_1_Template, 7, 5, "tr", 33);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const group_r20 = ctx.$implicit;
+    const group_r12 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", group_r20.resources);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", group_r12.resources);
 } }
 class CollectMetricsComponent {
     constructor(fb, adminService) {
@@ -365,19 +329,10 @@ class CollectMetricsComponent {
                 options: ['tefca-east', 'tefca-west']
             },
         ];
-        this.requestRows = [];
         this.bucketLabels = [];
-        this.outcomeKeys = [];
-        this.outcomeLabels = {
-            success: 'Successful',
-            rejected: 'Rejected',
-            missing: 'Missing',
-            token_refresh_failure: 'Token refresh failed',
-            resource_patient_failure: 'Patient lookup failed',
-            scope_patient_missing: 'Scope missing patient',
-            suppressed_please_contact: 'Suppressed — contact platform',
-        };
+        this.platformPies = [];
         this.resourceBreakdowns = [];
+        this.pieChartHeight = 220;
         const controls = this.filters.reduce((acc, filter) => {
             acc[filter.key] = '';
             return acc;
@@ -390,21 +345,6 @@ class CollectMetricsComponent {
     ngOnInit() {
         this.fetchCollectSummary();
     }
-    outcomeTotal(row, key) {
-        return row.totals[key] ?? 0;
-    }
-    outcomeForBucket(row, bucket, key) {
-        const entry = row.buckets[bucket];
-        return entry ? entry[key] : 0;
-    }
-    displayOutcomeLabel(key) {
-        if (this.outcomeLabels[key]) {
-            return this.outcomeLabels[key];
-        }
-        return key
-            .replace(/_/g, ' ')
-            .replace(/\b\w/g, (char) => char.toUpperCase());
-    }
     fetchCollectSummary(filters) {
         const params = this.cleanFilters(filters);
         this.adminService.getCollectSummary(params).subscribe((data) => {
@@ -412,44 +352,10 @@ class CollectMetricsComponent {
         });
     }
     rebuildFromSummary(summary) {
-        const outcomeKeys = this.buildOutcomeKeys(summary);
         const bucketLabels = this.buildBucketLabels(summary);
-        this.requestRows = this.buildRequestRows(summary, outcomeKeys, bucketLabels);
+        this.platformPies = this.buildPieMatrix(summary, bucketLabels);
         this.resourceBreakdowns = this.buildResourceData(summary);
-        this.outcomeKeys = outcomeKeys;
         this.bucketLabels = bucketLabels;
-    }
-    buildOutcomeKeys(summary) {
-        const keys = new Set();
-        Object.values(summary.outcomes.platforms).forEach((platform) => {
-            platform.buckets?.monthly?.forEach((bucket) => {
-                Object.keys(bucket.status || {}).forEach((key) => keys.add(key));
-            });
-            Object.keys(platform.totals || {}).forEach((key) => keys.add(key));
-        });
-        const preferredOrder = [
-            'success',
-            'rejected',
-            'missing',
-            'token_refresh_failure',
-            'resource_patient_failure',
-            'scope_patient_missing',
-            'suppressed_please_contact',
-        ];
-        return Array.from(keys).sort((a, b) => {
-            const aIndex = preferredOrder.indexOf(a);
-            const bIndex = preferredOrder.indexOf(b);
-            if (aIndex === -1 && bIndex === -1) {
-                return a.localeCompare(b);
-            }
-            if (aIndex === -1) {
-                return 1;
-            }
-            if (bIndex === -1) {
-                return -1;
-            }
-            return aIndex - bIndex;
-        });
     }
     buildBucketLabels(summary) {
         const buckets = new Set();
@@ -460,49 +366,6 @@ class CollectMetricsComponent {
             const aDate = new Date(`${a}-01`).getTime();
             const bDate = new Date(`${b}-01`).getTime();
             return aDate - bDate;
-        });
-    }
-    buildRequestRows(summary, outcomeKeys, bucketLabels) {
-        return Object.entries(summary.outcomes.platforms).map(([platform, details]) => {
-            const bucketMap = {};
-            bucketLabels.forEach((label) => {
-                const bucket = details.buckets?.monthly?.find((item) => item.bucket_start === label);
-                bucketMap[label] = this.createOutcomeRecord(outcomeKeys, bucket?.status);
-            });
-            const totalsFromBuckets = this.sumOutcomeTotals(outcomeKeys, details.buckets?.monthly);
-            this.applyPlatformTotals(totalsFromBuckets, details.totals);
-            return {
-                platform: this.formatPlatformName(platform),
-                totals: totalsFromBuckets,
-                buckets: bucketMap,
-            };
-        }).sort((a, b) => a.platform.localeCompare(b.platform));
-    }
-    sumOutcomeTotals(outcomeKeys, buckets) {
-        const totals = this.createOutcomeRecord(outcomeKeys);
-        buckets?.forEach((bucket) => {
-            outcomeKeys.forEach((key) => {
-                totals[key] += bucket.status?.[key] ?? 0;
-            });
-        });
-        return totals;
-    }
-    applyPlatformTotals(target, totals) {
-        if (!totals) {
-            return;
-        }
-        Object.entries(totals).forEach(([key, value]) => {
-            const outcomeKey = key;
-            if (typeof value !== 'number') {
-                target[outcomeKey] = 0;
-                return;
-            }
-            if (Number.isFinite(target[outcomeKey])) {
-                target[outcomeKey] = Math.max(target[outcomeKey], value);
-            }
-            else {
-                target[outcomeKey] = value;
-            }
         });
     }
     buildResourceData(summary) {
@@ -521,11 +384,92 @@ class CollectMetricsComponent {
             .filter((entry) => entry.resources.length > 0)
             .sort((a, b) => b.total - a.total || a.platform.localeCompare(b.platform));
     }
-    createOutcomeRecord(outcomeKeys, status) {
-        return outcomeKeys.reduce((acc, key) => {
-            acc[key] = status?.[key] ?? 0;
+    buildPieMatrix(summary, bucketLabels) {
+        const platforms = Object.entries(summary.outcomes.platforms).map(([platformKey, details]) => {
+            const bucketOptions = {};
+            bucketLabels.forEach((label) => {
+                const bucket = details.buckets?.monthly?.find((item) => item.bucket_start === label);
+                bucketOptions[label] = this.buildPieOption(this.formatPlatformName(platformKey), label, bucket?.status);
+            });
+            return {
+                platform: this.formatPlatformName(platformKey),
+                buckets: bucketOptions,
+            };
+        });
+        return platforms.sort((a, b) => a.platform.localeCompare(b.platform));
+    }
+    buildPieOption(platform, bucket, status) {
+        const safeStatus = status || {};
+        const success = safeStatus["success"] ?? 0;
+        const missing = safeStatus["missing"] ?? 0;
+        const failureBreakdownKeys = [
+            'rejected',
+            'token_refresh_failure',
+            'resource_patient_failure',
+            'scope_patient_missing',
+            'suppressed_please_contact',
+            'resource_invalid_content',
+        ];
+        const failureBreakdown = failureBreakdownKeys.reduce((acc, key) => {
+            acc[key] = safeStatus[key] ?? 0;
             return acc;
         }, {});
+        const failed = Object.entries(safeStatus).reduce((acc, [key, value]) => {
+            if (key === 'success' || key === 'missing') {
+                return acc;
+            }
+            return acc + (value ?? 0);
+        }, 0);
+        const total = success + failed + missing;
+        return {
+            title: {
+                text: `${platform}\n${bucket}`,
+                left: 'center',
+                top: 4,
+                textStyle: {
+                    fontSize: 12,
+                    lineHeight: 16,
+                    color: '#475569',
+                    fontWeight: 600,
+                },
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: (params) => {
+                    const data = params?.data;
+                    if (params?.name === 'Failed' && data?.breakdown) {
+                        const rows = Object.entries(data.breakdown)
+                            .filter(([, value]) => value && value > 0)
+                            .map(([key, value]) => `${this.formatOutcomeLabel(key)}: ${value}`);
+                        const extra = rows.length ? `<br/>${rows.join('<br/>')}` : '';
+                        return `${params.marker}${params.name}: ${params.value}${extra}`;
+                    }
+                    return `${params?.marker ?? ''}${params?.name ?? ''}: ${params?.value ?? 0}`;
+                },
+            },
+            series: [
+                {
+                    type: 'pie',
+                    radius: ['45%', '75%'],
+                    center: ['50%', '60%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                        formatter: total ? '{d}%\n{c}' : '0',
+                        fontSize: 12,
+                    },
+                    data: [
+                        { value: success, name: 'Success', itemStyle: { color: '#16a34a' } },
+                        { value: failed, name: 'Failed', itemStyle: { color: '#dc2626' }, breakdown: failureBreakdown },
+                        { value: missing, name: 'Missing', itemStyle: { color: '#f59e0b' } },
+                    ],
+                },
+            ],
+        };
+    }
+    formatOutcomeLabel(key) {
+        return key
+            .replace(/_/g, ' ')
+            .replace(/\b\w/g, (char) => char.toUpperCase());
     }
     formatPlatformName(platform) {
         return platform
@@ -546,7 +490,7 @@ class CollectMetricsComponent {
     }
 }
 CollectMetricsComponent.ɵfac = function CollectMetricsComponent_Factory(t) { return new (t || CollectMetricsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_admin_service__WEBPACK_IMPORTED_MODULE_0__.AdminService)); };
-CollectMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: CollectMetricsComponent, selectors: [["app-collect-metrics"]], decls: 59, vars: 6, consts: [[1, "card", "card-body", "mg-b-25"], [1, "d-flex", "flex-wrap", "justify-content-between", "align-items-center", "mg-b-20"], [1, "az-content-label", "mg-b-5"], [1, "az-content-text", "mg-b-0"], [1, "btn-group", "btn-group-toggle"], ["type", "text", "disabled", "disabled", 1, "form-control"], [1, "input-group-append"], ["type", "button", 1, "btn", "btn-outline-indigo"], [1, "row", "row-sm", "az-dashboard-filter", "mg-b-25", 3, "formGroup"], ["class", "col-12 col-sm-6 col-lg-4 col-xl-3 mg-b-15", 4, "ngFor", "ngForOf"], [1, "card", "card-dashboard-one", "mg-b-25"], [1, "card-header"], [1, "card-title"], [1, "card-text"], [1, "card-body"], [1, "table-responsive"], [1, "table", "table-dashboard", "mg-b-0"], ["rowspan", "2"], ["rowspan", "2", 1, "wd-20p"], [1, "text-center"], [4, "ngFor", "ngForOf"], [1, "card", "card-dashboard-one"], [1, "card-header", "d-flex", "flex-wrap", "justify-content-between", "align-items-center"], [1, "table", "table-striped", "mg-b-0", "resource-table"], [1, "text-right"], [1, "col-12", "col-sm-6", "col-lg-4", "col-xl-3", "mg-b-15"], [1, "az-content-label", "tx-11", "text-uppercase", 3, "for"], [1, "form-control", 3, "id", "formControlName"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass"], ["class", "tx-medium align-middle platform-cell", 4, "ngIf"], [1, "tx-medium"], [1, "text-right", "tx-semibold"], ["class", "text-center", 4, "ngFor", "ngForOf"], [1, "tx-medium", "align-middle", "platform-cell"], ["class", "align-middle", 4, "ngFor", "ngForOf"], [1, "align-middle"], ["class", "tx-medium", 4, "ngIf"]], template: function CollectMetricsComponent_Template(rf, ctx) { if (rf & 1) {
+CollectMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: CollectMetricsComponent, selectors: [["app-collect-metrics"]], decls: 52, vars: 5, consts: [[1, "card", "card-body", "mg-b-25"], [1, "d-flex", "flex-wrap", "justify-content-between", "align-items-center", "mg-b-20"], [1, "az-content-label", "mg-b-5"], [1, "az-content-text", "mg-b-0"], [1, "btn-group", "btn-group-toggle"], ["type", "text", "disabled", "disabled", 1, "form-control"], [1, "input-group-append"], ["type", "button", 1, "btn", "btn-outline-indigo"], [1, "row", "row-sm", "az-dashboard-filter", "mg-b-25", 3, "formGroup"], ["class", "col-12 col-sm-6 col-lg-4 col-xl-3 mg-b-15", 4, "ngFor", "ngForOf"], [1, "card", "card-dashboard-one", "mg-b-25"], [1, "card-header"], [1, "card-title"], [1, "card-text"], [1, "card-body"], [1, "table-responsive", "pie-matrix"], [1, "table", "table-dashboard", "mg-b-0"], ["class", "text-center", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], [1, "card", "card-dashboard-one"], [1, "card-header", "d-flex", "flex-wrap", "justify-content-between", "align-items-center"], [1, "table-responsive"], [1, "table", "table-striped", "mg-b-0", "resource-table"], [1, "text-right"], [1, "col-12", "col-sm-6", "col-lg-4", "col-xl-3", "mg-b-15"], [1, "az-content-label", "tx-11", "text-uppercase", 3, "for"], [1, "form-control", 3, "id", "formControlName"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], [1, "text-center"], [1, "tx-medium", "align-middle"], ["echarts", "", 1, "pie-cell", 3, "options", "autoResize"], ["class", "align-middle", 4, "ngFor", "ngForOf"], [1, "align-middle"], ["class", "tx-medium", 4, "ngIf"], [1, "text-right", "tx-semibold"], [1, "tx-medium"]], template: function CollectMetricsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div")(3, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "Collect Metrics");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -568,58 +512,46 @@ CollectMetricsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MO
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](19, "eHI Export Outcomes");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "span", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Total versus daily success and error counts per platform type.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Monthly outcome split per platform.");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "div", 14)(23, "div", 15)(24, "table", 16)(25, "thead")(26, "tr")(27, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "div", 14)(23, "div", 15)(24, "table", 16)(25, "thead")(26, "tr")(27, "th");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Platform");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "th", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Outcome");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "th", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Totals");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "th", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Monthly Breakdown");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](29, CollectMetricsComponent_th_29_Template, 2, 1, "th", 17);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](35, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](36, CollectMetricsComponent_ng_container_36_Template, 3, 1, "ng-container", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](38, CollectMetricsComponent_ng_container_38_Template, 2, 1, "ng-container", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](31, CollectMetricsComponent_tr_31_Template, 4, 2, "tr", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "div", 21)(40, "div", 22)(41, "div")(42, "h6", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](43, "Resources Collected");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "div", 19)(33, "div", 20)(34, "div")(35, "h6", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Resources Collected");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "span", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, "Top resource types captured per platform.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "span", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Top resource types captured per platform.");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](46, "div", 14)(47, "div", 15)(48, "table", 23)(49, "thead")(50, "tr")(51, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52, "Platform");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "div", 14)(40, "div", 21)(41, "table", 22)(42, "thead")(43, "tr")(44, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, "Platform");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](54, "Resource");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](46, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](47, "Resource");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](55, "th", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](56, "Records");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "th", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](49, "Records");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](58, CollectMetricsComponent_ng_container_58_Template, 2, 1, "ng-container", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](50, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](51, CollectMetricsComponent_ng_container_51_Template, 2, 1, "ng-container", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("formGroup", ctx.filterForm);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.filters);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("colspan", ctx.bucketLabels.length);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.bucketLabels);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.requestRows);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.platformPies);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](20);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.resourceBreakdowns);
-    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_3__.DecimalPipe], styles: [".az-dashboard-filter[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  border-color: #dfe3f1;\n  background-color: #f8f9ff;\n  color: #1f2348;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%] {\n  border-bottom: 1px solid #eef1fb;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-title[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-text[_ngcontent-%COMP%] {\n  display: block;\n  margin-top: 4px;\n  font-size: 13px;\n  color: #6c7293;\n}\n\n.table-dashboard[_ngcontent-%COMP%]   thead[_ngcontent-%COMP%]   th[_ngcontent-%COMP%] {\n  border-top: 0;\n  border-bottom: 1px solid #eef1fb;\n  font-size: 12px;\n  color: #6c7293;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n}\n\n.table-dashboard[_ngcontent-%COMP%]   tbody[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] {\n  border-color: #eef1fb;\n}\n\n.outcome-row[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] {\n  border-color: transparent;\n}\n\n.outcome-row[_ngcontent-%COMP%]   .platform-cell[_ngcontent-%COMP%] {\n  color: #1f2348;\n  background-color: #fff;\n}\n\n.outcome-row.outcome-missing[_ngcontent-%COMP%] {\n  background-color: #fef9c3;\n  color: #854d0e;\n}\n\n.outcome-row.outcome-rejected[_ngcontent-%COMP%] {\n  background-color: #fee2e2;\n  color: #b91c1c;\n}\n\n.outcome-row.outcome-success[_ngcontent-%COMP%] {\n  background-color: #dcfce7;\n  color: #047857;\n}\n\n.outcome-row.outcome-group-start[_ngcontent-%COMP%] {\n  border-top: 4px solid #ddd8d5;\n}\n\n.outcome-row.outcome-group-start[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] {\n  border-top: 2px solid #c7d2fe;\n}\n\n.outcome-pills[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px;\n}\n\n.outcome-pill[_ngcontent-%COMP%] {\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  padding: 6px 12px;\n  font-size: 12px;\n  font-weight: 600;\n  background-color: #f1f3ff;\n  color: #4c4f6b;\n}\n\n.outcome-pill[_ngcontent-%COMP%]   .value[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 700;\n}\n\n.outcome-pill.missing[_ngcontent-%COMP%] {\n  background: rgba(239, 68, 68, 0.12);\n  color: #b91c1c;\n}\n\n.outcome-pill.rejected[_ngcontent-%COMP%] {\n  background: rgba(245, 158, 11, 0.15);\n  color: #b45309;\n}\n\n.outcome-pill.success[_ngcontent-%COMP%] {\n  background: rgba(16, 185, 129, 0.15);\n  color: #047857;\n}\n\n.outcome-day[_ngcontent-%COMP%] {\n  display: inline-flex;\n  flex-direction: column;\n  gap: 6px;\n  align-items: stretch;\n  font-size: 12px;\n  font-weight: 600;\n}\n\n.outcome-day[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  padding: 3px 6px;\n  min-width: 32px;\n  text-align: center;\n}\n\n.outcome-day[_ngcontent-%COMP%]   .missing[_ngcontent-%COMP%] {\n  background: rgba(239, 68, 68, 0.1);\n  color: #b91c1c;\n}\n\n.outcome-day[_ngcontent-%COMP%]   .rejected[_ngcontent-%COMP%] {\n  background: rgba(245, 158, 11, 0.12);\n  color: #b45309;\n}\n\n.outcome-day[_ngcontent-%COMP%]   .success[_ngcontent-%COMP%] {\n  background: rgba(16, 185, 129, 0.12);\n  color: #047857;\n}\n\n.timeframe-group[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\n  min-width: 100px;\n  border-color: #dfe3f1;\n  color: #5e6278;\n}\n\n.timeframe-group[_ngcontent-%COMP%]   .btn.active[_ngcontent-%COMP%], .timeframe-group[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%]:hover {\n  background-color: #5b47fb;\n  border-color: #5b47fb;\n  color: #fff;\n}\n\n.resource-table[_ngcontent-%COMP%]   tbody[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] {\n  vertical-align: middle;\n}\n\n@media (max-width: 991.98px) {\n  .outcome-pills[_ngcontent-%COMP%] {\n    gap: 8px;\n  }\n}\n\n@media (max-width: 575.98px) {\n  .outcome-day[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n  .timeframe-group[_ngcontent-%COMP%] {\n    width: 100%;\n    margin-top: 16px;\n  }\n  .timeframe-group[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\n    flex: 1;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbGxlY3QtbWV0cmljcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUVFLHFCQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0FBREo7O0FBTUU7RUFDRSxnQ0FBQTtBQUhKOztBQUtJO0VBQ0UsZ0JBQUE7QUFITjs7QUFNSTtFQUNFLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLGNBQUE7QUFKTjs7QUFVRTtFQUNFLGFBQUE7RUFDQSxnQ0FBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtBQVBKOztBQVVFO0VBQ0UscUJBQUE7QUFSSjs7QUFhRTtFQUNFLHlCQUFBO0FBVko7O0FBYUU7RUFDRSxjQUFBO0VBQ0Esc0JBQUE7QUFYSjs7QUFjRTtFQUNFLHlCQUFBO0VBQ0EsY0FBQTtBQVpKOztBQWVFO0VBQ0UseUJBQUE7RUFDQSxjQUFBO0FBYko7O0FBZ0JFO0VBQ0UseUJBQUE7RUFDQSxjQUFBO0FBZEo7O0FBaUJFO0VBQ0UsNkJBQUE7QUFmSjs7QUFpQkk7RUFDRSw2QkFBQTtBQWZOOztBQW9CQTtFQUNFLGFBQUE7RUFDQSxlQUFBO0VBQ0EsU0FBQTtBQWpCRjs7QUFvQkE7RUFDRSxvQkFBQTtFQUNBLG1CQUFBO0VBQ0EsUUFBQTtFQUNBLGlCQUFBO0VBRUEsZUFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0FBbEJGOztBQW9CRTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQWxCSjs7QUFxQkU7RUFDRSxtQ0FBQTtFQUNBLGNBQUE7QUFuQko7O0FBc0JFO0VBQ0Usb0NBQUE7RUFDQSxjQUFBO0FBcEJKOztBQXVCRTtFQUNFLG9DQUFBO0VBQ0EsY0FBQTtBQXJCSjs7QUF5QkE7RUFDRSxvQkFBQTtFQUNBLHNCQUFBO0VBQ0EsUUFBQTtFQUNBLG9CQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FBdEJGOztBQXdCRTtFQUNFLGdCQUFBO0VBRUEsZUFBQTtFQUNBLGtCQUFBO0FBdkJKOztBQTBCRTtFQUNFLGtDQUFBO0VBQ0EsY0FBQTtBQXhCSjs7QUEyQkU7RUFDRSxvQ0FBQTtFQUNBLGNBQUE7QUF6Qko7O0FBNEJFO0VBQ0Usb0NBQUE7RUFDQSxjQUFBO0FBMUJKOztBQStCRTtFQUNFLGdCQUFBO0VBRUEscUJBQUE7RUFDQSxjQUFBO0FBN0JKOztBQStCSTtFQUVFLHlCQUFBO0VBQ0EscUJBQUE7RUFDQSxXQUFBO0FBOUJOOztBQW9DRTtFQUNFLHNCQUFBO0FBakNKOztBQXFDQTtFQUNFO0lBQ0UsUUFBQTtFQWxDRjtBQUNGOztBQXFDQTtFQUNFO0lBQ0UsV0FBQTtFQW5DRjtFQXNDQTtJQUNFLFdBQUE7SUFDQSxnQkFBQTtFQXBDRjtFQXNDRTtJQUNFLE9BQUE7RUFwQ0o7QUFDRiIsImZpbGUiOiJjb2xsZWN0LW1ldHJpY3MuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXotZGFzaGJvYXJkLWZpbHRlciB7XG4gIC5mb3JtLWNvbnRyb2wge1xuICAgIC8vYm9yZGVyLXJhZGl1czogOHB4O1xuICAgIGJvcmRlci1jb2xvcjogI2RmZTNmMTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjhmOWZmO1xuICAgIGNvbG9yOiAjMWYyMzQ4O1xuICB9XG59XG5cbi5jYXJkLWRhc2hib2FyZC1vbmUge1xuICAuY2FyZC1oZWFkZXIge1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZWVmMWZiO1xuXG4gICAgLmNhcmQtdGl0bGUge1xuICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICB9XG5cbiAgICAuY2FyZC10ZXh0IHtcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgbWFyZ2luLXRvcDogNHB4O1xuICAgICAgZm9udC1zaXplOiAxM3B4O1xuICAgICAgY29sb3I6ICM2YzcyOTM7XG4gICAgfVxuICB9XG59XG5cbi50YWJsZS1kYXNoYm9hcmQge1xuICB0aGVhZCB0aCB7XG4gICAgYm9yZGVyLXRvcDogMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZjFmYjtcbiAgICBmb250LXNpemU6IDEycHg7XG4gICAgY29sb3I6ICM2YzcyOTM7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICBsZXR0ZXItc3BhY2luZzogMC4wNGVtO1xuICB9XG5cbiAgdGJvZHkgdGQge1xuICAgIGJvcmRlci1jb2xvcjogI2VlZjFmYjtcbiAgfVxufVxuXG4ub3V0Y29tZS1yb3cge1xuICB0ZCB7XG4gICAgYm9yZGVyLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgfVxuXG4gIC5wbGF0Zm9ybS1jZWxsIHtcbiAgICBjb2xvcjogIzFmMjM0ODtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICB9XG5cbiAgJi5vdXRjb21lLW1pc3Npbmcge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZWY5YzM7XG4gICAgY29sb3I6ICM4NTRkMGU7XG4gIH1cblxuICAmLm91dGNvbWUtcmVqZWN0ZWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZWUyZTI7XG4gICAgY29sb3I6ICNiOTFjMWM7XG4gIH1cblxuICAmLm91dGNvbWUtc3VjY2VzcyB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2RjZmNlNztcbiAgICBjb2xvcjogIzA0Nzg1NztcbiAgfVxuXG4gICYub3V0Y29tZS1ncm91cC1zdGFydCB7XG4gICAgYm9yZGVyLXRvcDogNHB4IHNvbGlkICNkZGQ4ZDU7XG5cbiAgICB0ZCB7XG4gICAgICBib3JkZXItdG9wOiAycHggc29saWQgI2M3ZDJmZTtcbiAgICB9XG4gIH1cbn1cblxuLm91dGNvbWUtcGlsbHMge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGdhcDogMTBweDtcbn1cblxuLm91dGNvbWUtcGlsbCB7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBnYXA6IDhweDtcbiAgcGFkZGluZzogNnB4IDEycHg7XG4gIC8vYm9yZGVyLXJhZGl1czogOTk5cHg7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YxZjNmZjtcbiAgY29sb3I6ICM0YzRmNmI7XG5cbiAgLnZhbHVlIHtcbiAgICBmb250LXNpemU6IDE0cHg7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgfVxuXG4gICYubWlzc2luZyB7XG4gICAgYmFja2dyb3VuZDogcmdiYSgyMzksIDY4LCA2OCwgMC4xMik7XG4gICAgY29sb3I6ICNiOTFjMWM7XG4gIH1cblxuICAmLnJlamVjdGVkIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDI0NSwgMTU4LCAxMSwgMC4xNSk7XG4gICAgY29sb3I6ICNiNDUzMDk7XG4gIH1cblxuICAmLnN1Y2Nlc3Mge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMTYsIDE4NSwgMTI5LCAwLjE1KTtcbiAgICBjb2xvcjogIzA0Nzg1NztcbiAgfVxufVxuXG4ub3V0Y29tZS1kYXkge1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgZ2FwOiA2cHg7XG4gIGFsaWduLWl0ZW1zOiBzdHJldGNoO1xuICBmb250LXNpemU6IDEycHg7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG5cbiAgc3BhbiB7XG4gICAgcGFkZGluZzogM3B4IDZweDtcbiAgICAvL2JvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtaW4td2lkdGg6IDMycHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG5cbiAgLm1pc3Npbmcge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMjM5LCA2OCwgNjgsIDAuMSk7XG4gICAgY29sb3I6ICNiOTFjMWM7XG4gIH1cblxuICAucmVqZWN0ZWQge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMjQ1LCAxNTgsIDExLCAwLjEyKTtcbiAgICBjb2xvcjogI2I0NTMwOTtcbiAgfVxuXG4gIC5zdWNjZXNzIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDE2LCAxODUsIDEyOSwgMC4xMik7XG4gICAgY29sb3I6ICMwNDc4NTc7XG4gIH1cbn1cblxuLnRpbWVmcmFtZS1ncm91cCB7XG4gIC5idG4ge1xuICAgIG1pbi13aWR0aDogMTAwcHg7XG4gICAgLy9ib3JkZXItcmFkaXVzOiAzMHB4O1xuICAgIGJvcmRlci1jb2xvcjogI2RmZTNmMTtcbiAgICBjb2xvcjogIzVlNjI3ODtcblxuICAgICYuYWN0aXZlLFxuICAgICY6aG92ZXIge1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzViNDdmYjtcbiAgICAgIGJvcmRlci1jb2xvcjogIzViNDdmYjtcbiAgICAgIGNvbG9yOiAjZmZmO1xuICAgIH1cbiAgfVxufVxuXG4ucmVzb3VyY2UtdGFibGUge1xuICB0Ym9keSB0ZCB7XG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgfVxufVxuXG5AbWVkaWEgKG1heC13aWR0aDogOTkxLjk4cHgpIHtcbiAgLm91dGNvbWUtcGlsbHMge1xuICAgIGdhcDogOHB4O1xuICB9XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA1NzUuOThweCkge1xuICAub3V0Y29tZS1kYXkge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbiAgLnRpbWVmcmFtZS1ncm91cCB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luLXRvcDogMTZweDtcblxuICAgIC5idG4ge1xuICAgICAgZmxleDogMTtcbiAgICB9XG4gIH1cbn1cbiJdfQ== */"] });
+    } }, dependencies: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, ngx_echarts__WEBPACK_IMPORTED_MODULE_4__.NgxEchartsDirective, _angular_common__WEBPACK_IMPORTED_MODULE_3__.DecimalPipe], styles: [".az-dashboard-filter[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  border-color: #dfe3f1;\n  background-color: #f8f9ff;\n  color: #1f2348;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%] {\n  border-bottom: 1px solid #eef1fb;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-title[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.card-dashboard-one[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-text[_ngcontent-%COMP%] {\n  display: block;\n  margin-top: 4px;\n  font-size: 13px;\n  color: #6c7293;\n}\n\n.table-dashboard[_ngcontent-%COMP%]   thead[_ngcontent-%COMP%]   th[_ngcontent-%COMP%] {\n  border-top: 0;\n  border-bottom: 1px solid #eef1fb;\n  font-size: 12px;\n  color: #6c7293;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n}\n\n.table-dashboard[_ngcontent-%COMP%]   tbody[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] {\n  border-color: #eef1fb;\n}\n\n.pie-matrix[_ngcontent-%COMP%]   .pie-cell[_ngcontent-%COMP%] {\n  min-width: 180px;\n  height: 220px;\n  margin: 0 auto;\n}\n\n.pie-matrix[_ngcontent-%COMP%]   .empty[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #94a3b8;\n  background: #f8fafc;\n  border: 1px dashed #e2e8f0;\n}\n\n.resource-table[_ngcontent-%COMP%]   tbody[_ngcontent-%COMP%]   td[_ngcontent-%COMP%] {\n  vertical-align: middle;\n}\n\n@media (max-width: 991.98px) {\n  .outcome-pills[_ngcontent-%COMP%] {\n    gap: 8px;\n  }\n}\n\n@media (max-width: 575.98px) {\n  .outcome-day[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n  .timeframe-group[_ngcontent-%COMP%] {\n    width: 100%;\n    margin-top: 16px;\n  }\n  .timeframe-group[_ngcontent-%COMP%]   .btn[_ngcontent-%COMP%] {\n    flex: 1;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbGxlY3QtbWV0cmljcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUVFLHFCQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0FBREo7O0FBTUU7RUFDRSxnQ0FBQTtBQUhKOztBQUtJO0VBQ0UsZ0JBQUE7QUFITjs7QUFNSTtFQUNFLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLGNBQUE7QUFKTjs7QUFVRTtFQUNFLGFBQUE7RUFDQSxnQ0FBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtBQVBKOztBQVVFO0VBQ0UscUJBQUE7QUFSSjs7QUFjRTtFQUNFLGdCQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7QUFYSjs7QUFjRTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsY0FBQTtFQUNBLG1CQUFBO0VBQ0EsMEJBQUE7QUFaSjs7QUFpQkU7RUFDRSxzQkFBQTtBQWRKOztBQWtCQTtFQUNFO0lBQ0UsUUFBQTtFQWZGO0FBQ0Y7O0FBa0JBO0VBQ0U7SUFDRSxXQUFBO0VBaEJGO0VBbUJBO0lBQ0UsV0FBQTtJQUNBLGdCQUFBO0VBakJGO0VBbUJFO0lBQ0UsT0FBQTtFQWpCSjtBQUNGIiwiZmlsZSI6ImNvbGxlY3QtbWV0cmljcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hei1kYXNoYm9hcmQtZmlsdGVyIHtcbiAgLmZvcm0tY29udHJvbCB7XG4gICAgLy9ib3JkZXItcmFkaXVzOiA4cHg7XG4gICAgYm9yZGVyLWNvbG9yOiAjZGZlM2YxO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmOGY5ZmY7XG4gICAgY29sb3I6ICMxZjIzNDg7XG4gIH1cbn1cblxuLmNhcmQtZGFzaGJvYXJkLW9uZSB7XG4gIC5jYXJkLWhlYWRlciB7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlZWYxZmI7XG5cbiAgICAuY2FyZC10aXRsZSB7XG4gICAgICBmb250LXdlaWdodDogNjAwO1xuICAgIH1cblxuICAgIC5jYXJkLXRleHQge1xuICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICBtYXJnaW4tdG9wOiA0cHg7XG4gICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICBjb2xvcjogIzZjNzI5MztcbiAgICB9XG4gIH1cbn1cblxuLnRhYmxlLWRhc2hib2FyZCB7XG4gIHRoZWFkIHRoIHtcbiAgICBib3JkZXItdG9wOiAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZWVmMWZiO1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBjb2xvcjogIzZjNzI5MztcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgIGxldHRlci1zcGFjaW5nOiAwLjA0ZW07XG4gIH1cblxuICB0Ym9keSB0ZCB7XG4gICAgYm9yZGVyLWNvbG9yOiAjZWVmMWZiO1xuICB9XG59XG5cblxuLnBpZS1tYXRyaXgge1xuICAucGllLWNlbGwge1xuICAgIG1pbi13aWR0aDogMTgwcHg7XG4gICAgaGVpZ2h0OiAyMjBweDtcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgfVxuXG4gIC5lbXB0eSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGNvbG9yOiAjOTRhM2I4O1xuICAgIGJhY2tncm91bmQ6ICNmOGZhZmM7XG4gICAgYm9yZGVyOiAxcHggZGFzaGVkICNlMmU4ZjA7XG4gIH1cbn1cblxuLnJlc291cmNlLXRhYmxlIHtcbiAgdGJvZHkgdGQge1xuICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIH1cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDk5MS45OHB4KSB7XG4gIC5vdXRjb21lLXBpbGxzIHtcbiAgICBnYXA6IDhweDtcbiAgfVxufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNTc1Ljk4cHgpIHtcbiAgLm91dGNvbWUtZGF5IHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG4gIC50aW1lZnJhbWUtZ3JvdXAge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi10b3A6IDE2cHg7XG5cbiAgICAuYnRuIHtcbiAgICAgIGZsZXg6IDE7XG4gICAgfVxuICB9XG59XG4iXX0= */"] });
 
 
 /***/ }),

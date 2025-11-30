@@ -5642,9 +5642,17 @@ class AuthResetComponent {
         }
         this.loading = true;
         this.authService.UserReset(this.password, this.resetToken)
-            .then(() => {
+            .then((authResponse) => {
             this.loading = false;
-            this.router.navigateByUrl('/dashboard');
+            console.log(authResponse);
+            if (authResponse?.organization_claimed) {
+                //if the organization is already claimed, redirect to dashboard
+                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
+            }
+            else {
+                this.router.navigateByUrl('/dashboard');
+                return;
+            }
         })
             .catch((err) => {
             this.loading = false;
@@ -5852,7 +5860,7 @@ class AuthSigninComponent {
                 return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
             }
             else {
-                this.router.navigateByUrl('/developers');
+                this.router.navigateByUrl('/dashboard');
                 return;
             }
         })
@@ -6154,7 +6162,7 @@ class AuthSignupOrganizationComponent {
                 .then((orgId) => {
                 const modalRef = this.modalService.open(_components_org_team_invite_multiple_org_team_invite_multiple_component__WEBPACK_IMPORTED_MODULE_2__.OrgTeamInviteMultipleComponent);
                 modalRef.componentInstance.orgId = orgId;
-                modalRef.result.then(() => this.router.navigate(['/developers']), () => this.router.navigate(['/developers']));
+                modalRef.result.then(() => this.router.navigate(['/dashboard']), () => this.router.navigate(['/dashboard']));
             });
         }, (err) => {
             console.error("Error creating Organization", err);

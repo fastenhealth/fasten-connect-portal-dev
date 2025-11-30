@@ -1967,7 +1967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./admin/admin-login/admin-login.component */ 58636);
 /* harmony import */ var _auth_guards_is_admin_auth_guard__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth-guards/is-admin-auth-guard */ 30187);
 /* harmony import */ var _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./admin/organization-details/organization-details.component */ 39409);
-/* harmony import */ var _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-restricted.component */ 12917);
+/* harmony import */ var _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-claimed.component */ 26017);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/core */ 22560);
 
 
@@ -2000,7 +2000,7 @@ const routes = [
     { path: 'auth/signup/org', component: _pages_auth_signup_organization_auth_signup_organization_component__WEBPACK_IMPORTED_MODULE_4__.AuthSignupOrganizationComponent },
     { path: 'auth/reset/request', component: _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_11__.AuthResetRequestComponent },
     { path: 'auth/reset', component: _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_12__.AuthResetComponent },
-    { path: 'auth/restricted', component: _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_20__.AuthDomainRestrictedComponent },
+    { path: 'auth/claimed', component: _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_20__.AuthDomainClaimedComponent },
     { path: '', redirectTo: '/developers', pathMatch: 'full' },
     { path: 'dashboard', component: _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_1__.DashboardComponent, canActivate: [_auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_5__.IsAuthenticatedAuthGuard] },
     { path: 'developers', component: _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_0__.DevelopersComponent, canActivate: [_auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_5__.IsAuthenticatedAuthGuard] },
@@ -2347,7 +2347,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/week-month-picker/week-month-picker.component */ 37093);
 /* harmony import */ var _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/week-month-picker/week-picker/week-picker.component */ 86654);
 /* harmony import */ var _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/week-month-picker/month-picker/month-picker.component */ 44880);
-/* harmony import */ var _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-restricted.component */ 12917);
+/* harmony import */ var _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-claimed.component */ 26017);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @angular/core */ 22560);
 
 
@@ -2474,7 +2474,7 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_41__["ɵ�
         _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__.WeekMonthPickerComponent,
         _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__.WeekPickerComponent,
         _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__.MonthPickerComponent,
-        _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_38__.AuthDomainRestrictedComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_46__.FormsModule,
+        _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_38__.AuthDomainClaimedComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_46__.FormsModule,
         _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_47__.NgSelectModule,
         _angular_forms__WEBPACK_IMPORTED_MODULE_46__.ReactiveFormsModule,
         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_48__.BrowserModule,
@@ -5304,16 +5304,16 @@ AccountSettingsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
 
 /***/ }),
 
-/***/ 12917:
-/*!**********************************************************************************!*\
-  !*** ./src/app/pages/auth-domain-restricted/auth-domain-restricted.component.ts ***!
-  \**********************************************************************************/
+/***/ 26017:
+/*!*******************************************************************************!*\
+  !*** ./src/app/pages/auth-domain-restricted/auth-domain-claimed.component.ts ***!
+  \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AuthDomainRestrictedComponent": () => (/* binding */ AuthDomainRestrictedComponent)
+/* harmony export */   "AuthDomainClaimedComponent": () => (/* binding */ AuthDomainClaimedComponent)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 22560);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 60124);
@@ -5321,7 +5321,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function AuthDomainRestrictedComponent_ng_container_19_Template(rf, ctx) { if (rf & 1) {
+function AuthDomainClaimedComponent_ng_container_19_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 14);
@@ -5333,10 +5333,10 @@ function AuthDomainRestrictedComponent_ng_container_19_Template(rf, ctx) { if (r
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r0.orgLogo, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("alt", ctx_r0.orgName ? ctx_r0.orgName + " logo" : "Organization logo");
 } }
-function AuthDomainRestrictedComponent_ng_template_20_Template(rf, ctx) { if (rf & 1) {
+function AuthDomainClaimedComponent_ng_template_20_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 15);
 } }
-class AuthDomainRestrictedComponent {
+class AuthDomainClaimedComponent {
     constructor(route) {
         this.route = route;
         this.orgName = "";
@@ -5354,8 +5354,8 @@ class AuthDomainRestrictedComponent {
         }
     }
 }
-AuthDomainRestrictedComponent.ɵfac = function AuthDomainRestrictedComponent_Factory(t) { return new (t || AuthDomainRestrictedComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.ActivatedRoute)); };
-AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthDomainRestrictedComponent, selectors: [["app-auth-domain-restricted"]], inputs: { orgName: "orgName", orgLogo: "orgLogo" }, decls: 27, vars: 3, consts: [[1, "az-signin-wrapper"], [1, "az-card-signin", "az-card-domain-restricted"], [1, "domain-restricted-grid"], [1, "domain-restricted-copy"], ["src", "assets/images/banner-transparent-trim.png", "alt", "fasten", 1, "az-img-logo", "mb-3"], [1, "text-indigo"], [1, "mt-3"], ["href", "mailto:support@fastenhealth.com"], ["routerLink", "/auth/signin", "type", "button", 1, "btn", "btn-az-primary", "btn-block", "mt-4"], [1, "domain-restricted-illustration"], [4, "ngIf", "ngIfElse"], ["fallbackIllustration", ""], [1, "domain-restricted-footer"], [1, "org-logo-wrapper"], [1, "org-logo", 3, "src"], ["src", "assets/images/profile-image.svg", "alt", "Fasten team illustration"]], template: function AuthDomainRestrictedComponent_Template(rf, ctx) { if (rf & 1) {
+AuthDomainClaimedComponent.ɵfac = function AuthDomainClaimedComponent_Factory(t) { return new (t || AuthDomainClaimedComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.ActivatedRoute)); };
+AuthDomainClaimedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthDomainClaimedComponent, selectors: [["app-auth-domain-claimed"]], inputs: { orgName: "orgName", orgLogo: "orgLogo" }, decls: 27, vars: 3, consts: [[1, "az-signin-wrapper"], [1, "az-card-signin", "az-card-domain-restricted"], [1, "domain-restricted-grid"], [1, "domain-restricted-copy"], ["src", "assets/images/banner-transparent-trim.png", "alt", "fasten", 1, "az-img-logo", "mb-3"], [1, "text-indigo"], [1, "mt-3"], ["href", "mailto:support@fastenhealth.com"], ["routerLink", "/auth/signin", "type", "button", 1, "btn", "btn-az-primary", "btn-block", "mt-4"], [1, "domain-restricted-illustration"], [4, "ngIf", "ngIfElse"], ["fallbackIllustration", ""], [1, "domain-restricted-footer"], [1, "org-logo-wrapper"], [1, "org-logo", 3, "src"], ["src", "assets/images/profile-image.svg", "alt", "Fasten team illustration"]], template: function AuthDomainClaimedComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "img", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3", 5);
@@ -5377,8 +5377,8 @@ AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Return to Sign In ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](19, AuthDomainRestrictedComponent_ng_container_19_Template, 3, 2, "ng-container", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, AuthDomainRestrictedComponent_ng_template_20_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](19, AuthDomainClaimedComponent_ng_container_19_Template, 3, 2, "ng-container", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, AuthDomainClaimedComponent_ng_template_20_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 12)(23, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Waiting for your invite?");
@@ -5392,7 +5392,7 @@ AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("A team for '", ctx.orgName, "' ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.orgLogo)("ngIfElse", _r1);
-    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink], styles: [".az-card-domain-restricted[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 960px;\n  padding: 2.5rem;\n}\n\n.domain-restricted-grid[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 2rem;\n  align-items: center;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  align-self: center;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 320px;\n  width: 100%;\n}\n\n.org-logo-wrapper[_ngcontent-%COMP%] {\n  width: 220px;\n  height: 220px;\n  max-width: 320px;\n  border-radius: 50%;\n  border: 2px solid #e5e9f2;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  box-shadow: 0 10px 25px rgba(15, 32, 65, 0.12);\n}\n\n.org-logo[_ngcontent-%COMP%] {\n  max-width: 100%;\n  max-height: 100%;\n  width: auto;\n  height: auto;\n  object-fit: contain;\n  display: block;\n  margin: 0 auto;\n  padding: 1.5rem;\n}\n\n.domain-restricted-footer[_ngcontent-%COMP%] {\n  margin-top: 2rem;\n  padding-top: 1.5rem;\n  border-top: 1px solid #e5e9f2;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  row-gap: 0.5rem;\n}\n\n@media (min-width: 768px) {\n  .domain-restricted-grid[_ngcontent-%COMP%] {\n    flex-direction: row;\n    align-items: flex-start;\n  }\n  .domain-restricted-illustration[_ngcontent-%COMP%] {\n    justify-content: center;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF1dGgtZG9tYWluLXJlc3RyaWN0ZWQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLE9BQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQUNGOztBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxXQUFBO0FBQ0Y7O0FBRUE7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxnQkFBQTtFQUNBLDhDQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsNkJBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0U7SUFDRSxtQkFBQTtJQUNBLHVCQUFBO0VBQ0Y7RUFFQTtJQUNFLHVCQUFBO0VBQUY7QUFDRiIsImZpbGUiOiJhdXRoLWRvbWFpbi1yZXN0cmljdGVkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF6LWNhcmQtZG9tYWluLXJlc3RyaWN0ZWQge1xuICB3aWR0aDogMTAwJTtcbiAgbWF4LXdpZHRoOiA5NjBweDtcbiAgcGFkZGluZzogMi41cmVtO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtZ3JpZCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGdhcDogMnJlbTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWNvcHkge1xuICBmbGV4OiAxO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtY29weSBoMiB7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1pbGx1c3RyYXRpb24ge1xuICBmbGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYWxpZ24tc2VsZjogY2VudGVyO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIGltZyB7XG4gIG1heC13aWR0aDogMzIwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4ub3JnLWxvZ28td3JhcHBlciB7XG4gIHdpZHRoOiAyMjBweDtcbiAgaGVpZ2h0OiAyMjBweDtcbiAgbWF4LXdpZHRoOiAzMjBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBib3JkZXI6IDJweCBzb2xpZCAjZTVlOWYyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgYm94LXNoYWRvdzogMCAxMHB4IDI1cHggcmdiYSgxNSwgMzIsIDY1LCAwLjEyKTtcbn1cblxuLm9yZy1sb2dvIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBtYXgtaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogYXV0bztcbiAgaGVpZ2h0OiBhdXRvO1xuICBvYmplY3QtZml0OiBjb250YWluO1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luOiAwIGF1dG87XG4gIHBhZGRpbmc6IDEuNXJlbTtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWZvb3RlciB7XG4gIG1hcmdpbi10b3A6IDJyZW07XG4gIHBhZGRpbmctdG9wOiAxLjVyZW07XG4gIGJvcmRlci10b3A6IDFweCBzb2xpZCAjZTVlOWYyO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAgcm93LWdhcDogMC41cmVtO1xufVxuXG5AbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgLmRvbWFpbi1yZXN0cmljdGVkLWdyaWQge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gIH1cblxuICAuZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIHtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxufVxuIl19 */"] });
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink], styles: [".az-card-domain-restricted[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 960px;\n  padding: 2.5rem;\n}\n\n.domain-restricted-grid[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 2rem;\n  align-items: center;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  align-self: center;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 320px;\n  width: 100%;\n}\n\n.org-logo-wrapper[_ngcontent-%COMP%] {\n  width: 220px;\n  height: 220px;\n  max-width: 320px;\n  border-radius: 50%;\n  border: 2px solid #e5e9f2;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  box-shadow: 0 10px 25px rgba(15, 32, 65, 0.12);\n}\n\n.org-logo[_ngcontent-%COMP%] {\n  max-width: 100%;\n  max-height: 100%;\n  width: auto;\n  height: auto;\n  object-fit: contain;\n  display: block;\n  margin: 0 auto;\n  padding: 1.5rem;\n}\n\n.domain-restricted-footer[_ngcontent-%COMP%] {\n  margin-top: 2rem;\n  padding-top: 1.5rem;\n  border-top: 1px solid #e5e9f2;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  row-gap: 0.5rem;\n}\n\n@media (min-width: 768px) {\n  .domain-restricted-grid[_ngcontent-%COMP%] {\n    flex-direction: row;\n    align-items: flex-start;\n  }\n  .domain-restricted-illustration[_ngcontent-%COMP%] {\n    justify-content: center;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF1dGgtZG9tYWluLWNsYWltZWQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLE9BQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQUNGOztBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxXQUFBO0FBQ0Y7O0FBRUE7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtFQUNBLHNCQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxnQkFBQTtFQUNBLDhDQUFBO0FBQ0Y7O0FBRUE7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsY0FBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsNkJBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtBQUNGOztBQUVBO0VBQ0U7SUFDRSxtQkFBQTtJQUNBLHVCQUFBO0VBQ0Y7RUFFQTtJQUNFLHVCQUFBO0VBQUY7QUFDRiIsImZpbGUiOiJhdXRoLWRvbWFpbi1jbGFpbWVkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF6LWNhcmQtZG9tYWluLXJlc3RyaWN0ZWQge1xuICB3aWR0aDogMTAwJTtcbiAgbWF4LXdpZHRoOiA5NjBweDtcbiAgcGFkZGluZzogMi41cmVtO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtZ3JpZCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGdhcDogMnJlbTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWNvcHkge1xuICBmbGV4OiAxO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtY29weSBoMiB7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1pbGx1c3RyYXRpb24ge1xuICBmbGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYWxpZ24tc2VsZjogY2VudGVyO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIGltZyB7XG4gIG1heC13aWR0aDogMzIwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4ub3JnLWxvZ28td3JhcHBlciB7XG4gIHdpZHRoOiAyMjBweDtcbiAgaGVpZ2h0OiAyMjBweDtcbiAgbWF4LXdpZHRoOiAzMjBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBib3JkZXI6IDJweCBzb2xpZCAjZTVlOWYyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgYm94LXNoYWRvdzogMCAxMHB4IDI1cHggcmdiYSgxNSwgMzIsIDY1LCAwLjEyKTtcbn1cblxuLm9yZy1sb2dvIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBtYXgtaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogYXV0bztcbiAgaGVpZ2h0OiBhdXRvO1xuICBvYmplY3QtZml0OiBjb250YWluO1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luOiAwIGF1dG87XG4gIHBhZGRpbmc6IDEuNXJlbTtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWZvb3RlciB7XG4gIG1hcmdpbi10b3A6IDJyZW07XG4gIHBhZGRpbmctdG9wOiAxLjVyZW07XG4gIGJvcmRlci10b3A6IDFweCBzb2xpZCAjZTVlOWYyO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAgcm93LWdhcDogMC41cmVtO1xufVxuXG5AbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgLmRvbWFpbi1yZXN0cmljdGVkLWdyaWQge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gIH1cblxuICAuZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIHtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxufVxuIl19 */"] });
 
 
 /***/ }),
@@ -5849,7 +5849,7 @@ class AuthSigninComponent {
             console.log(authResponse);
             if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to dashboard
-                return this.router.navigate(['/auth/restricted'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
+                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
             }
             else {
                 this.router.navigateByUrl('/developers');
@@ -6615,7 +6615,7 @@ class AuthSignupComponent {
             }
             else if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to dashboard
-                return this.router.navigate(['/auth/restricted'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
+                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
             }
             else {
                 //after creating a user, proceed to create an organization

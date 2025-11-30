@@ -5647,7 +5647,7 @@ class AuthResetComponent {
             console.log(authResponse);
             if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to dashboard
-                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
+                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed?.name, orgLogo: authResponse.organization_claimed?.logo_uri } });
             }
             else {
                 this.router.navigateByUrl('/dashboard');
@@ -5857,7 +5857,7 @@ class AuthSigninComponent {
             console.log(authResponse);
             if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to dashboard
-                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
+                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed?.name, orgLogo: authResponse.organization_claimed?.logo_uri } });
             }
             else {
                 this.router.navigateByUrl('/dashboard');
@@ -6623,7 +6623,7 @@ class AuthSignupComponent {
             }
             else if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to the restricted domain page
-                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
+                return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed?.name, orgLogo: authResponse.organization_claimed?.logo_uri } });
             }
             else {
                 //after creating a user, proceed to create an organization

@@ -1946,7 +1946,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/router */ 60124);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/router */ 60124);
 /* harmony import */ var _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/developers/developers.component */ 972);
 /* harmony import */ var _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/dashboard/dashboard.component */ 24789);
 /* harmony import */ var _pages_auth_signin_auth_signin_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/auth-signin/auth-signin.component */ 2771);
@@ -1967,7 +1967,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./admin/admin-login/admin-login.component */ 58636);
 /* harmony import */ var _auth_guards_is_admin_auth_guard__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth-guards/is-admin-auth-guard */ 30187);
 /* harmony import */ var _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./admin/organization-details/organization-details.component */ 39409);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-restricted.component */ 12917);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/core */ 22560);
+
 
 
 
@@ -1998,6 +2000,7 @@ const routes = [
     { path: 'auth/signup/org', component: _pages_auth_signup_organization_auth_signup_organization_component__WEBPACK_IMPORTED_MODULE_4__.AuthSignupOrganizationComponent },
     { path: 'auth/reset/request', component: _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_11__.AuthResetRequestComponent },
     { path: 'auth/reset', component: _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_12__.AuthResetComponent },
+    { path: 'auth/restricted', component: _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_20__.AuthDomainRestrictedComponent },
     { path: '', redirectTo: '/developers', pathMatch: 'full' },
     { path: 'dashboard', component: _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_1__.DashboardComponent, canActivate: [_auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_5__.IsAuthenticatedAuthGuard] },
     { path: 'developers', component: _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_0__.DevelopersComponent, canActivate: [_auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_5__.IsAuthenticatedAuthGuard] },
@@ -2026,9 +2029,9 @@ const routes = [
 class AppRoutingModule {
 }
 AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); };
-AppRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
-AppRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵdefineInjector"]({ imports: [_angular_router__WEBPACK_IMPORTED_MODULE_21__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_21__.RouterModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_20__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_21__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_21__.RouterModule] }); })();
+AppRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_21__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
+AppRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_21__["ɵɵdefineInjector"]({ imports: [_angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_21__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_22__.RouterModule] }); })();
 
 
 /***/ }),
@@ -2128,6 +2131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "CRUDMode": () => (/* binding */ CRUDMode),
 /* harmony export */   "CredentialStatus": () => (/* binding */ CredentialStatus),
 /* harmony export */   "EventTypes": () => (/* binding */ EventTypes),
+/* harmony export */   "ORG_ONBOARDING_GRID_IMAGES": () => (/* binding */ ORG_ONBOARDING_GRID_IMAGES),
 /* harmony export */   "STRONG_PASSWORD_PATTERN": () => (/* binding */ STRONG_PASSWORD_PATTERN),
 /* harmony export */   "URI_PATTERN": () => (/* binding */ URI_PATTERN),
 /* harmony export */   "URL_PATTERN": () => (/* binding */ URL_PATTERN),
@@ -2189,6 +2193,92 @@ var EventTypes;
     EventTypes["EventTypesPatientConnectionSuccess"] = "patient.connection_success";
     EventTypes["EventTypesWebhookTest"] = "webhook.test";
 })(EventTypes || (EventTypes = {}));
+const ORG_ONBOARDING_GRID_IMAGES = [
+    "f8f9ce28-d79b-4b54-9f7d-3f0aaba88c2c.png",
+    "89bb6993-b806-49a2-84e2-6e70705c504a.png",
+    "9fcc4529-7dc9-4c66-9198-574f978c8bb7.png",
+    "68952002-f17e-4086-aae5-841241b194dd.png",
+    "767b97b9-4538-433f-ab7a-14ccb0053323.png",
+    "74078880-4084-430e-bc6c-223e5990cef8.png",
+    "10668246-1077-4c1d-a6ce-0557c9476e77.png",
+    "f7e4fc08-c6f6-426b-be98-d60aa36d3b8b.png",
+    "65308856-beaa-46a0-9775-20c6c9322add.png",
+    "6e901e85-8f45-4c60-8d1f-12621aad07f1.png",
+    "e675376d-03de-4e66-8196-eaccda536ad5.png",
+    "a36fd256-2751-464f-b6d7-418279595b1e.png",
+    "c623f37e-6399-4a13-909f-3d9886130673.png",
+    "467592a3-7f5f-4258-909e-a99ca971ce15.png",
+    "5ad8a5ab-6570-4f1e-8002-30a051ec52c2.png",
+    "ddbef50d-3940-4411-9dea-6bf759704c6e.png",
+    "fc2dcde0-0848-4b09-aeaf-bfef58120de9.png",
+    "347c0df7-5817-470e-8b28-2802f90461f6.png",
+    "ec5bc181-5466-4ebd-9e42-471593b8d104.png",
+    "d3b1eba5-ec53-4e6d-9600-9510afbc4dda.png",
+    "16483fad-5c24-4766-ad53-bd78551f0768.png",
+    "ae8026ed-e74b-4bf3-9f53-458c250420ba.png",
+    "907d39f4-6b30-46cd-b0c8-f525c636c933.png",
+    "6b076b97-18f7-452d-9f09-20dffb01729f.png",
+    "c7feccc5-ad10-4aeb-91b0-12b6b93feeba.png",
+    "c66a7c1e-21f2-44aa-9486-cdfb5ad699ba.png",
+    "82af2366-1d27-4665-ba99-e5a60a75205a.png",
+    "2289e832-64da-47d9-82ef-1f4e15ccf627.png",
+    "26768525-2b04-4715-9159-3679598289a3.png",
+    "80af4067-77e9-4c13-b617-4f370dc14d3f.png",
+    "ec6c5f06-d7f8-4eac-8e2f-6cda4536d8ab.png",
+    "93ee1d70-6eaa-487b-84d1-cc18bcda253f.png",
+    "6d5ba4db-4b63-4277-bb80-dc278dbe28bd.png",
+    "b22e4e71-1121-4fca-b158-efbb906918e9.png",
+    "49fd46d0-05ce-4c7d-923c-3891935f6947.png",
+    "19652f82-98b9-44e6-9964-e426192a723d.png",
+    "314a06fc-4efc-4e34-8048-565455e4f3e1.png",
+    "8123cfc7-53b6-45d6-ace3-b64d4bd3234b.png",
+    "35159b16-a1b5-45ba-9d4f-83f471d5f44b.png",
+    "d6c0016f-aaec-4764-ac28-7a6eda64b693.png",
+    "d09c7811-213b-4c19-9154-48e57174f239.png",
+    "2bcdcc4c-0f13-4edb-85f4-2c9f4f948df0.png",
+    "4a4720a0-0efc-4b63-a83d-a8cc5b1c15ad.png",
+    "98f680b2-15c4-4854-902b-ed6b69425164.png",
+    "32283b0a-3c36-4f92-b9c2-dd2edf3a3db1.png",
+    "d56e9e82-3f62-4ce8-8a55-27da90fbe183.png",
+    "4fc37973-195c-4e25-8751-331a3b88e685.png",
+    "fb0bb8fa-8336-4b26-bdc5-7f8a432c1d94.png",
+    "7ca2d9d1-d300-479d-ab85-f956b6ef60de.png",
+    "4fd8bb55-bb2d-4748-a134-bbab7a22e4db.png",
+    "63cde119-f9d8-468d-900a-1976211739f8.png",
+    "e8290a84-88a1-4eac-a5b4-b2c63146b2c9.png",
+    "13b592f9-5c8b-4f90-aa54-5ab57a29ea89.png",
+    "0398ce8e-9200-430c-a654-f2057bc9a2d4.png",
+    "92b1d310-99a1-4de2-99b6-975eaf5a3744.png",
+    "418d563f-bd82-473f-a738-cd9775db4e56.png",
+    "8fb52893-1e93-4fea-adba-838e9b42e4d2.png",
+    "acec8466-8b0a-4adc-9929-561b7136fccb.png",
+    "3d01addb-1103-49ca-9c74-3027112e4aa8.png",
+    "5f5973bf-d11c-4f99-9b86-b1303cea3503.png",
+    "1317665c-e5c4-48b8-b3a5-2a90aa0283d7.png",
+    "48f2153e-6f4a-4da5-99a5-775a888c218a.png",
+    "34451b52-0f65-4e1a-91aa-5f2b1420f4b7.png",
+    "d3a10e7c-63c1-4309-b801-e42ce6e575d5.png",
+    "4c74937f-c30d-49c8-993e-c5a133f92414.png",
+    "5c4c748f-acd5-4fc8-b6cd-a37f629709fb.png",
+    "0293e1f1-291e-48ad-a5d0-cc7fcb062603.png",
+    "407f63d2-8fc7-42dd-9a46-23c76693789b.png",
+    "6d5de058-cc60-4f07-89db-bcc6817bb115.png",
+    "a1c9be32-3539-4390-bf01-828d5fb9f57d.png",
+    "562c8d0a-e524-49d7-81c2-70b34b4b9a15.png",
+    "8023b832-eaca-414a-9a53-c2fe423087d2.png",
+    "e8e73128-7722-4514-9684-1c17d43d880e.png",
+    "24cb81a7-dd2b-4b07-808b-f6611fea0393.png",
+    "5266bc57-58db-4171-8d73-a2a40ff380d2.png",
+    "9752c0a1-49f5-4842-8554-bfa3a6a3c3b4.png",
+    "df4a6dd3-672f-4547-8ade-609df28dcda9.png",
+    "921bb517-fdc9-4ca2-b9fc-a9e17e6cb8fc.png",
+    "e3f229a1-8637-49b1-abaa-84d228aff34a.png",
+    "53f22687-4635-4bff-99e2-2eacdc402359.png",
+    "c7fe32b2-97c6-45f7-90f8-47213c9b85f1.png",
+    "a7a87c72-1d8a-42d6-b0a4-c72b7dd8933a.png",
+    "2630415e-1871-437a-84de-52ad7ce88f3e.png",
+    "b53ff282-4725-45f7-a436-89f77320f062.png",
+];
 
 
 /***/ }),
@@ -2204,17 +2294,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! @angular/platform-browser */ 34497);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! @angular/common/http */ 58987);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! @angular/platform-browser */ 34497);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/common/http */ 58987);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 90158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 55041);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
-/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ 2898);
-/* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ngx-highlightjs */ 97101);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
-/* harmony import */ var ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ngx-infinite-scroll */ 47364);
-/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 19200);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9306);
+/* harmony import */ var _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @fortawesome/free-regular-svg-icons */ 2898);
+/* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ngx-highlightjs */ 97101);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 3191);
+/* harmony import */ var ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ngx-infinite-scroll */ 47364);
+/* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 19200);
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header.component */ 43646);
 /* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/footer/footer.component */ 64662);
 /* harmony import */ var _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/developers/developers.component */ 972);
@@ -2224,14 +2314,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_auth_signup_organization_auth_signup_organization_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/auth-signup-organization/auth-signup-organization.component */ 83515);
 /* harmony import */ var _directives_password_confirm_validator_directive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./directives/password-confirm-validator.directive */ 36465);
 /* harmony import */ var _auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./auth-guards/is-authenticated-auth-guard */ 16056);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! @angular/router */ 60124);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! @angular/router */ 60124);
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/auth.service */ 37556);
 /* harmony import */ var _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/auth-interceptor.service */ 32993);
-/* harmony import */ var ngx_image_cropper__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ngx-image-cropper */ 10649);
+/* harmony import */ var ngx_image_cropper__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ngx-image-cropper */ 10649);
 /* harmony import */ var _components_logo_cropper_logo_cropper_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/logo-cropper/logo-cropper.component */ 57993);
-/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ng2-charts */ 31208);
-/* harmony import */ var ngx_echarts__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ngx-echarts */ 31548);
-/* harmony import */ var ngx_moment__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ngx-moment */ 20728);
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ng2-charts */ 31208);
+/* harmony import */ var ngx_echarts__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ngx-echarts */ 31548);
+/* harmony import */ var ngx_moment__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ngx-moment */ 20728);
 /* harmony import */ var _pages_org_settings_org_settings_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/org-settings/org-settings.component */ 16226);
 /* harmony import */ var _pages_account_settings_account_settings_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/account-settings/account-settings.component */ 84411);
 /* harmony import */ var _components_org_credentials_editor_org_credentials_editor_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/org-credentials-editor/org-credentials-editor.component */ 39302);
@@ -2243,7 +2333,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_org_team_invite_multiple_org_team_invite_multiple_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/org-team-invite-multiple/org-team-invite-multiple.component */ 36890);
 /* harmony import */ var _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/auth-reset-request/auth-reset-request.component */ 38540);
 /* harmony import */ var _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/auth-reset/auth-reset.component */ 48453);
-/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! @ng-select/ng-select */ 73054);
+/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! @ng-select/ng-select */ 73054);
 /* harmony import */ var _components_org_webhook_simulate_org_webhook_simulate_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/org-webhook-simulate/org-webhook-simulate.component */ 24853);
 /* harmony import */ var _directives_email_lowercase_validator_directive__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./directives/email-lowercase-validator.directive */ 97079);
 /* harmony import */ var _admin_admin_shell_admin_shell_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./admin/admin-shell/admin-shell.component */ 21322);
@@ -2257,7 +2347,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/week-month-picker/week-month-picker.component */ 37093);
 /* harmony import */ var _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/week-month-picker/week-picker/week-picker.component */ 86654);
 /* harmony import */ var _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/week-month-picker/month-picker/month-picker.component */ 44880);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-restricted.component */ 12917);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @angular/core */ 22560);
+
 
 
 
@@ -2316,43 +2408,43 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
     constructor(library) {
-        library.addIconPacks(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_38__.fas, _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_39__.far);
+        library.addIconPacks(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_39__.fas, _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_40__.far);
     }
 }
-AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵinject"](_fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__.FaIconLibrary)); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵdefineInjector"]({ providers: [
+AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_41__["ɵɵinject"](_fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_42__.FaIconLibrary)); };
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_41__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_41__["ɵɵdefineInjector"]({ providers: [
         {
-            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_42__.HTTP_INTERCEPTORS,
+            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_43__.HTTP_INTERCEPTORS,
             useClass: _services_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_12__.AuthInterceptorService,
             multi: true,
-            deps: [_services_auth_service__WEBPACK_IMPORTED_MODULE_11__.AuthService, _services_admin_service__WEBPACK_IMPORTED_MODULE_33__.AdminService, _angular_router__WEBPACK_IMPORTED_MODULE_43__.Router]
+            deps: [_services_auth_service__WEBPACK_IMPORTED_MODULE_11__.AuthService, _services_admin_service__WEBPACK_IMPORTED_MODULE_33__.AdminService, _angular_router__WEBPACK_IMPORTED_MODULE_44__.Router]
         },
         _auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_10__.IsAuthenticatedAuthGuard,
         _auth_guards_is_admin_auth_guard__WEBPACK_IMPORTED_MODULE_34__.IsAdminAuthGuard,
         {
-            provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__.HIGHLIGHT_OPTIONS,
+            provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_45__.HIGHLIGHT_OPTIONS,
             useValue: {
                 fullLibraryLoader: () => __webpack_require__.e(/*! import() */ "node_modules_highlight_js_es_index_js").then(__webpack_require__.bind(__webpack_require__, /*! highlight.js */ 7722)),
             }
         }
-    ], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_45__.FormsModule,
-        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_46__.NgSelectModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_45__.ReactiveFormsModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_47__.BrowserModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_42__.HttpClientModule,
+    ], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_46__.FormsModule,
+        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_47__.NgSelectModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_46__.ReactiveFormsModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_48__.BrowserModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_43__.HttpClientModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_48__.NgbModule,
-        ng2_charts__WEBPACK_IMPORTED_MODULE_49__.NgChartsModule,
-        ngx_echarts__WEBPACK_IMPORTED_MODULE_50__.NgxEchartsModule.forRoot({
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_49__.NgbModule,
+        ng2_charts__WEBPACK_IMPORTED_MODULE_50__.NgChartsModule,
+        ngx_echarts__WEBPACK_IMPORTED_MODULE_51__.NgxEchartsModule.forRoot({
             echarts: () => __webpack_require__.e(/*! import() */ "node_modules_echarts_index_js").then(__webpack_require__.bind(__webpack_require__, /*! echarts */ 84343))
         }),
-        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_51__.InfiniteScrollModule,
-        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__.FontAwesomeModule,
-        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_52__.ImageCropperModule,
-        ngx_moment__WEBPACK_IMPORTED_MODULE_53__.MomentModule,
-        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__.HighlightModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
+        ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_52__.InfiniteScrollModule,
+        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_42__.FontAwesomeModule,
+        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_53__.ImageCropperModule,
+        ngx_moment__WEBPACK_IMPORTED_MODULE_54__.MomentModule,
+        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_45__.HighlightModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_41__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
         _components_header_header_component__WEBPACK_IMPORTED_MODULE_2__.HeaderComponent,
         _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__.FooterComponent,
         _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_4__.DevelopersComponent,
@@ -2381,20 +2473,21 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_40__["ɵ�
         _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_32__.OrganizationDetailsComponent,
         _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__.WeekMonthPickerComponent,
         _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__.WeekPickerComponent,
-        _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__.MonthPickerComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_45__.FormsModule,
-        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_46__.NgSelectModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_45__.ReactiveFormsModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_47__.BrowserModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_42__.HttpClientModule,
+        _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__.MonthPickerComponent,
+        _pages_auth_domain_restricted_auth_domain_restricted_component__WEBPACK_IMPORTED_MODULE_38__.AuthDomainRestrictedComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_46__.FormsModule,
+        _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_47__.NgSelectModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_46__.ReactiveFormsModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_48__.BrowserModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_43__.HttpClientModule,
         _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
         _directives_password_confirm_validator_directive__WEBPACK_IMPORTED_MODULE_9__.PasswordConfirmValidatorDirective,
         _directives_email_lowercase_validator_directive__WEBPACK_IMPORTED_MODULE_26__.EmailLowercaseValidatorDirective,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_48__.NgbModule,
-        ng2_charts__WEBPACK_IMPORTED_MODULE_49__.NgChartsModule, ngx_echarts__WEBPACK_IMPORTED_MODULE_50__.NgxEchartsModule, ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_51__.InfiniteScrollModule,
-        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_41__.FontAwesomeModule,
-        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_52__.ImageCropperModule,
-        ngx_moment__WEBPACK_IMPORTED_MODULE_53__.MomentModule,
-        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_44__.HighlightModule] }); })();
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_49__.NgbModule,
+        ng2_charts__WEBPACK_IMPORTED_MODULE_50__.NgChartsModule, ngx_echarts__WEBPACK_IMPORTED_MODULE_51__.NgxEchartsModule, ngx_infinite_scroll__WEBPACK_IMPORTED_MODULE_52__.InfiniteScrollModule,
+        _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_42__.FontAwesomeModule,
+        ngx_image_cropper__WEBPACK_IMPORTED_MODULE_53__.ImageCropperModule,
+        ngx_moment__WEBPACK_IMPORTED_MODULE_54__.MomentModule,
+        ngx_highlightjs__WEBPACK_IMPORTED_MODULE_45__.HighlightModule] }); })();
 
 
 /***/ }),
@@ -5211,6 +5304,62 @@ AccountSettingsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
 
 /***/ }),
 
+/***/ 12917:
+/*!**********************************************************************************!*\
+  !*** ./src/app/pages/auth-domain-restricted/auth-domain-restricted.component.ts ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AuthDomainRestrictedComponent": () => (/* binding */ AuthDomainRestrictedComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 22560);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 60124);
+
+
+class AuthDomainRestrictedComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+AuthDomainRestrictedComponent.ɵfac = function AuthDomainRestrictedComponent_Factory(t) { return new (t || AuthDomainRestrictedComponent)(); };
+AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthDomainRestrictedComponent, selectors: [["app-auth-domain-restricted"]], decls: 25, vars: 0, consts: [[1, "az-signin-wrapper"], [1, "az-card-signin", "az-card-domain-restricted"], [1, "domain-restricted-grid"], [1, "domain-restricted-copy"], ["src", "assets/images/banner-transparent-trim.png", "alt", "fasten", 1, "az-img-logo", "mb-3"], [1, "text-indigo"], [1, "mt-3"], ["href", "mailto:support@fastenhealth.com"], ["routerLink", "/auth/signin", "type", "button", 1, "btn", "btn-az-primary", "btn-block", "mt-4"], [1, "domain-restricted-illustration"], ["src", "assets/images/profile-image.svg", "alt", "Fasten team illustration"], [1, "domain-restricted-footer"]], template: function AuthDomainRestrictedComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "img", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "A team for your organization ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " already exists.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " We detected that your company's email domain is already connected to an existing Fasten team. For security, users cannot create multiple teams, and must be invited by an Administrator. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Please reach out to your Administrator and wait for their invitation before trying to sign in again. If you feel this is unexpected, contact ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "support@fastenhealth.com");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, " for assistance. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Return to Sign In ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "img", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 11)(21, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Waiting for your invite?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Contact support");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+    } }, dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink], styles: [".az-card-domain-restricted[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 960px;\n  padding: 2.5rem;\n}\n\n.domain-restricted-grid[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 2rem;\n  align-items: center;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 320px;\n  width: 100%;\n}\n\n.domain-restricted-footer[_ngcontent-%COMP%] {\n  margin-top: 2rem;\n  padding-top: 1.5rem;\n  border-top: 1px solid #e5e9f2;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  row-gap: 0.5rem;\n}\n\n@media (min-width: 768px) {\n  .domain-restricted-grid[_ngcontent-%COMP%] {\n    flex-direction: row;\n    align-items: flex-start;\n  }\n  .domain-restricted-illustration[_ngcontent-%COMP%] {\n    justify-content: flex-end;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF1dGgtZG9tYWluLXJlc3RyaWN0ZWQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLE9BQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0VBQ0EsV0FBQTtBQUNGOztBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLDZCQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsbUJBQUE7SUFDQSx1QkFBQTtFQUNGO0VBRUE7SUFDRSx5QkFBQTtFQUFGO0FBQ0YiLCJmaWxlIjoiYXV0aC1kb21haW4tcmVzdHJpY3RlZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hei1jYXJkLWRvbWFpbi1yZXN0cmljdGVkIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC13aWR0aDogOTYwcHg7XG4gIHBhZGRpbmc6IDIuNXJlbTtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWdyaWQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBnYXA6IDJyZW07XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1jb3B5IHtcbiAgZmxleDogMTtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWNvcHkgaDIge1xuICBmb250LXdlaWdodDogNjAwO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIHtcbiAgZmxleDogMTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1pbGx1c3RyYXRpb24gaW1nIHtcbiAgbWF4LXdpZHRoOiAzMjBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1mb290ZXIge1xuICBtYXJnaW4tdG9wOiAycmVtO1xuICBwYWRkaW5nLXRvcDogMS41cmVtO1xuICBib3JkZXItdG9wOiAxcHggc29saWQgI2U1ZTlmMjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIHJvdy1nYXA6IDAuNXJlbTtcbn1cblxuQG1lZGlhIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gIC5kb21haW4tcmVzdHJpY3RlZC1ncmlkIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICB9XG5cbiAgLmRvbWFpbi1yZXN0cmljdGVkLWlsbHVzdHJhdGlvbiB7XG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcbiAgfVxufVxuIl19 */"] });
+
+
+/***/ }),
+
 /***/ 38540:
 /*!**************************************************************************!*\
   !*** ./src/app/pages/auth-reset-request/auth-reset-request.component.ts ***!
@@ -5658,9 +5807,17 @@ class AuthSigninComponent {
         this.submitted = true;
         this.loading = true;
         this.authService.Signin(this.existingUser.email, this.existingUser.password)
-            .then(() => {
+            .then((authResponse) => {
             this.loading = false;
-            this.router.navigateByUrl('/developers');
+            console.log(authResponse);
+            if (authResponse?.organization_claimed) {
+                //if the organization is already claimed, redirect to dashboard
+                this.router.navigateByUrl('/auth/restricted');
+                return;
+            }
+            else {
+                this.router.navigateByUrl('/developers');
+            }
         })
             .catch((err) => {
             this.loading = false;
@@ -5921,92 +6078,7 @@ class AuthSignupOrganizationComponent {
         this.router = router;
         this.modalService = modalService;
         this.sanitizer = sanitizer;
-        this.gridImages = [
-            "f8f9ce28-d79b-4b54-9f7d-3f0aaba88c2c.png",
-            "89bb6993-b806-49a2-84e2-6e70705c504a.png",
-            "9fcc4529-7dc9-4c66-9198-574f978c8bb7.png",
-            "68952002-f17e-4086-aae5-841241b194dd.png",
-            "767b97b9-4538-433f-ab7a-14ccb0053323.png",
-            "74078880-4084-430e-bc6c-223e5990cef8.png",
-            "10668246-1077-4c1d-a6ce-0557c9476e77.png",
-            "f7e4fc08-c6f6-426b-be98-d60aa36d3b8b.png",
-            "65308856-beaa-46a0-9775-20c6c9322add.png",
-            "6e901e85-8f45-4c60-8d1f-12621aad07f1.png",
-            "e675376d-03de-4e66-8196-eaccda536ad5.png",
-            "a36fd256-2751-464f-b6d7-418279595b1e.png",
-            "c623f37e-6399-4a13-909f-3d9886130673.png",
-            "467592a3-7f5f-4258-909e-a99ca971ce15.png",
-            "5ad8a5ab-6570-4f1e-8002-30a051ec52c2.png",
-            "ddbef50d-3940-4411-9dea-6bf759704c6e.png",
-            "fc2dcde0-0848-4b09-aeaf-bfef58120de9.png",
-            "347c0df7-5817-470e-8b28-2802f90461f6.png",
-            "ec5bc181-5466-4ebd-9e42-471593b8d104.png",
-            "d3b1eba5-ec53-4e6d-9600-9510afbc4dda.png",
-            "16483fad-5c24-4766-ad53-bd78551f0768.png",
-            "ae8026ed-e74b-4bf3-9f53-458c250420ba.png",
-            "907d39f4-6b30-46cd-b0c8-f525c636c933.png",
-            "6b076b97-18f7-452d-9f09-20dffb01729f.png",
-            "c7feccc5-ad10-4aeb-91b0-12b6b93feeba.png",
-            "c66a7c1e-21f2-44aa-9486-cdfb5ad699ba.png",
-            "82af2366-1d27-4665-ba99-e5a60a75205a.png",
-            "2289e832-64da-47d9-82ef-1f4e15ccf627.png",
-            "26768525-2b04-4715-9159-3679598289a3.png",
-            "80af4067-77e9-4c13-b617-4f370dc14d3f.png",
-            "ec6c5f06-d7f8-4eac-8e2f-6cda4536d8ab.png",
-            "93ee1d70-6eaa-487b-84d1-cc18bcda253f.png",
-            "6d5ba4db-4b63-4277-bb80-dc278dbe28bd.png",
-            "b22e4e71-1121-4fca-b158-efbb906918e9.png",
-            "49fd46d0-05ce-4c7d-923c-3891935f6947.png",
-            "19652f82-98b9-44e6-9964-e426192a723d.png",
-            "314a06fc-4efc-4e34-8048-565455e4f3e1.png",
-            "8123cfc7-53b6-45d6-ace3-b64d4bd3234b.png",
-            "35159b16-a1b5-45ba-9d4f-83f471d5f44b.png",
-            "d6c0016f-aaec-4764-ac28-7a6eda64b693.png",
-            "d09c7811-213b-4c19-9154-48e57174f239.png",
-            "2bcdcc4c-0f13-4edb-85f4-2c9f4f948df0.png",
-            "4a4720a0-0efc-4b63-a83d-a8cc5b1c15ad.png",
-            "98f680b2-15c4-4854-902b-ed6b69425164.png",
-            "32283b0a-3c36-4f92-b9c2-dd2edf3a3db1.png",
-            "d56e9e82-3f62-4ce8-8a55-27da90fbe183.png",
-            "4fc37973-195c-4e25-8751-331a3b88e685.png",
-            "fb0bb8fa-8336-4b26-bdc5-7f8a432c1d94.png",
-            "7ca2d9d1-d300-479d-ab85-f956b6ef60de.png",
-            "4fd8bb55-bb2d-4748-a134-bbab7a22e4db.png",
-            "63cde119-f9d8-468d-900a-1976211739f8.png",
-            "e8290a84-88a1-4eac-a5b4-b2c63146b2c9.png",
-            "13b592f9-5c8b-4f90-aa54-5ab57a29ea89.png",
-            "0398ce8e-9200-430c-a654-f2057bc9a2d4.png",
-            "92b1d310-99a1-4de2-99b6-975eaf5a3744.png",
-            "418d563f-bd82-473f-a738-cd9775db4e56.png",
-            "8fb52893-1e93-4fea-adba-838e9b42e4d2.png",
-            "acec8466-8b0a-4adc-9929-561b7136fccb.png",
-            "3d01addb-1103-49ca-9c74-3027112e4aa8.png",
-            "5f5973bf-d11c-4f99-9b86-b1303cea3503.png",
-            "1317665c-e5c4-48b8-b3a5-2a90aa0283d7.png",
-            "48f2153e-6f4a-4da5-99a5-775a888c218a.png",
-            "34451b52-0f65-4e1a-91aa-5f2b1420f4b7.png",
-            "d3a10e7c-63c1-4309-b801-e42ce6e575d5.png",
-            "4c74937f-c30d-49c8-993e-c5a133f92414.png",
-            "5c4c748f-acd5-4fc8-b6cd-a37f629709fb.png",
-            "0293e1f1-291e-48ad-a5d0-cc7fcb062603.png",
-            "407f63d2-8fc7-42dd-9a46-23c76693789b.png",
-            "6d5de058-cc60-4f07-89db-bcc6817bb115.png",
-            "a1c9be32-3539-4390-bf01-828d5fb9f57d.png",
-            "562c8d0a-e524-49d7-81c2-70b34b4b9a15.png",
-            "8023b832-eaca-414a-9a53-c2fe423087d2.png",
-            "e8e73128-7722-4514-9684-1c17d43d880e.png",
-            "24cb81a7-dd2b-4b07-808b-f6611fea0393.png",
-            "5266bc57-58db-4171-8d73-a2a40ff380d2.png",
-            "9752c0a1-49f5-4842-8554-bfa3a6a3c3b4.png",
-            "df4a6dd3-672f-4547-8ade-609df28dcda9.png",
-            "921bb517-fdc9-4ca2-b9fc-a9e17e6cb8fc.png",
-            "e3f229a1-8637-49b1-abaa-84d228aff34a.png",
-            "53f22687-4635-4bff-99e2-2eacdc402359.png",
-            "c7fe32b2-97c6-45f7-90f8-47213c9b85f1.png",
-            "a7a87c72-1d8a-42d6-b0a4-c72b7dd8933a.png",
-            "2630415e-1871-437a-84de-52ad7ce88f3e.png",
-            "b53ff282-4725-45f7-a436-89f77320f062.png",
-        ];
+        this.gridImages = _app_constants__WEBPACK_IMPORTED_MODULE_3__.ORG_ONBOARDING_GRID_IMAGES;
         this.loading = false;
         this.urlPattern = _app_constants__WEBPACK_IMPORTED_MODULE_3__.URL_PATTERN;
         this.submitted = false;
@@ -6497,12 +6569,17 @@ class AuthSignupComponent {
         else {
             signupFn = this.authService.Signup(this.newUser);
         }
-        signupFn.then((tokenResp) => {
+        signupFn.then((authResponse) => {
             this.loading = false;
-            console.log(tokenResp);
+            console.log(authResponse);
             if (this.inviteToken) {
                 //if we are signing up with an invite, we should redirect to the dashboard
                 this.router.navigateByUrl('/dashboard');
+            }
+            else if (authResponse?.organization_claimed) {
+                //if the organization is already claimed, redirect to dashboard
+                this.router.navigateByUrl('/auth/restricted');
+                return;
             }
             else {
                 //after creating a user, proceed to create an organization

@@ -1967,7 +1967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_admin_login_admin_login_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./admin/admin-login/admin-login.component */ 58636);
 /* harmony import */ var _auth_guards_is_admin_auth_guard__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth-guards/is-admin-auth-guard */ 30187);
 /* harmony import */ var _admin_organization_details_organization_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./admin/organization-details/organization-details.component */ 39409);
-/* harmony import */ var _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-claimed.component */ 26017);
+/* harmony import */ var _pages_auth_domain_claimed_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/auth-domain-claimed/auth-domain-claimed.component */ 42027);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/core */ 22560);
 
 
@@ -2000,7 +2000,7 @@ const routes = [
     { path: 'auth/signup/org', component: _pages_auth_signup_organization_auth_signup_organization_component__WEBPACK_IMPORTED_MODULE_4__.AuthSignupOrganizationComponent },
     { path: 'auth/reset/request', component: _pages_auth_reset_request_auth_reset_request_component__WEBPACK_IMPORTED_MODULE_11__.AuthResetRequestComponent },
     { path: 'auth/reset', component: _pages_auth_reset_auth_reset_component__WEBPACK_IMPORTED_MODULE_12__.AuthResetComponent },
-    { path: 'auth/claimed', component: _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_20__.AuthDomainClaimedComponent },
+    { path: 'auth/claimed', component: _pages_auth_domain_claimed_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_20__.AuthDomainClaimedComponent },
     { path: '', redirectTo: '/developers', pathMatch: 'full' },
     { path: 'dashboard', component: _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_1__.DashboardComponent, canActivate: [_auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_5__.IsAuthenticatedAuthGuard] },
     { path: 'developers', component: _pages_developers_developers_component__WEBPACK_IMPORTED_MODULE_0__.DevelopersComponent, canActivate: [_auth_guards_is_authenticated_auth_guard__WEBPACK_IMPORTED_MODULE_5__.IsAuthenticatedAuthGuard] },
@@ -2347,7 +2347,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/week-month-picker/week-month-picker.component */ 37093);
 /* harmony import */ var _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/week-month-picker/week-picker/week-picker.component */ 86654);
 /* harmony import */ var _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/week-month-picker/month-picker/month-picker.component */ 44880);
-/* harmony import */ var _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/auth-domain-restricted/auth-domain-claimed.component */ 26017);
+/* harmony import */ var _pages_auth_domain_claimed_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pages/auth-domain-claimed/auth-domain-claimed.component */ 42027);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! @angular/core */ 22560);
 
 
@@ -2474,7 +2474,7 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_41__["ɵ�
         _components_week_month_picker_week_month_picker_component__WEBPACK_IMPORTED_MODULE_35__.WeekMonthPickerComponent,
         _components_week_month_picker_week_picker_week_picker_component__WEBPACK_IMPORTED_MODULE_36__.WeekPickerComponent,
         _components_week_month_picker_month_picker_month_picker_component__WEBPACK_IMPORTED_MODULE_37__.MonthPickerComponent,
-        _pages_auth_domain_restricted_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_38__.AuthDomainClaimedComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_46__.FormsModule,
+        _pages_auth_domain_claimed_auth_domain_claimed_component__WEBPACK_IMPORTED_MODULE_38__.AuthDomainClaimedComponent], imports: [_angular_forms__WEBPACK_IMPORTED_MODULE_46__.FormsModule,
         _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_47__.NgSelectModule,
         _angular_forms__WEBPACK_IMPORTED_MODULE_46__.ReactiveFormsModule,
         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_48__.BrowserModule,
@@ -5304,10 +5304,10 @@ AccountSettingsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
 
 /***/ }),
 
-/***/ 26017:
-/*!*******************************************************************************!*\
-  !*** ./src/app/pages/auth-domain-restricted/auth-domain-claimed.component.ts ***!
-  \*******************************************************************************/
+/***/ 42027:
+/*!****************************************************************************!*\
+  !*** ./src/app/pages/auth-domain-claimed/auth-domain-claimed.component.ts ***!
+  \****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

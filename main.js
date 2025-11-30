@@ -6622,7 +6622,7 @@ class AuthSignupComponent {
                 return this.router.navigateByUrl('/dashboard');
             }
             else if (authResponse?.organization_claimed) {
-                //if the organization is already claimed, redirect to dashboard
+                //if the organization is already claimed, redirect to the restricted domain page
                 return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
             }
             else {

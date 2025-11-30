@@ -5317,19 +5317,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 22560);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 60124);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 94666);
 
 
+
+function AuthDomainRestrictedComponent_ng_container_19_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r0.orgLogo, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("alt", ctx_r0.orgName ? ctx_r0.orgName + " logo" : "Organization logo");
+} }
+function AuthDomainRestrictedComponent_ng_template_20_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 15);
+} }
 class AuthDomainRestrictedComponent {
-    constructor() { }
+    constructor(route) {
+        this.route = route;
+        this.orgName = "";
+        this.orgLogo = "";
+    }
     ngOnInit() {
+        const queryParams = this.route.snapshot.queryParamMap;
+        const queryOrgName = queryParams.get('orgName');
+        const queryOrgLogo = queryParams.get('orgLogo');
+        if (queryOrgName) {
+            this.orgName = queryOrgName;
+        }
+        if (queryOrgLogo) {
+            this.orgLogo = queryOrgLogo;
+        }
     }
 }
-AuthDomainRestrictedComponent.ɵfac = function AuthDomainRestrictedComponent_Factory(t) { return new (t || AuthDomainRestrictedComponent)(); };
-AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthDomainRestrictedComponent, selectors: [["app-auth-domain-restricted"]], decls: 25, vars: 0, consts: [[1, "az-signin-wrapper"], [1, "az-card-signin", "az-card-domain-restricted"], [1, "domain-restricted-grid"], [1, "domain-restricted-copy"], ["src", "assets/images/banner-transparent-trim.png", "alt", "fasten", 1, "az-img-logo", "mb-3"], [1, "text-indigo"], [1, "mt-3"], ["href", "mailto:support@fastenhealth.com"], ["routerLink", "/auth/signin", "type", "button", 1, "btn", "btn-az-primary", "btn-block", "mt-4"], [1, "domain-restricted-illustration"], ["src", "assets/images/profile-image.svg", "alt", "Fasten team illustration"], [1, "domain-restricted-footer"]], template: function AuthDomainRestrictedComponent_Template(rf, ctx) { if (rf & 1) {
+AuthDomainRestrictedComponent.ɵfac = function AuthDomainRestrictedComponent_Factory(t) { return new (t || AuthDomainRestrictedComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.ActivatedRoute)); };
+AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AuthDomainRestrictedComponent, selectors: [["app-auth-domain-restricted"]], inputs: { orgName: "orgName", orgLogo: "orgLogo" }, decls: 27, vars: 3, consts: [[1, "az-signin-wrapper"], [1, "az-card-signin", "az-card-domain-restricted"], [1, "domain-restricted-grid"], [1, "domain-restricted-copy"], ["src", "assets/images/banner-transparent-trim.png", "alt", "fasten", 1, "az-img-logo", "mb-3"], [1, "text-indigo"], [1, "mt-3"], ["href", "mailto:support@fastenhealth.com"], ["routerLink", "/auth/signin", "type", "button", 1, "btn", "btn-az-primary", "btn-block", "mt-4"], [1, "domain-restricted-illustration"], [4, "ngIf", "ngIfElse"], ["fallbackIllustration", ""], [1, "domain-restricted-footer"], [1, "org-logo-wrapper"], [1, "org-logo", 3, "src"], ["src", "assets/images/profile-image.svg", "alt", "Fasten team illustration"]], template: function AuthDomainRestrictedComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "img", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "A team for your organization ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " already exists.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -5347,15 +5377,22 @@ AuthDomainRestrictedComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Return to Sign In ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "img", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](19, AuthDomainRestrictedComponent_ng_container_19_Template, 3, 2, "ng-container", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](20, AuthDomainRestrictedComponent_ng_template_20_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 11)(21, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Waiting for your invite?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 12)(23, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Waiting for your invite?");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Contact support");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Contact support");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-    } }, dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink], styles: [".az-card-domain-restricted[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 960px;\n  padding: 2.5rem;\n}\n\n.domain-restricted-grid[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 2rem;\n  align-items: center;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 320px;\n  width: 100%;\n}\n\n.domain-restricted-footer[_ngcontent-%COMP%] {\n  margin-top: 2rem;\n  padding-top: 1.5rem;\n  border-top: 1px solid #e5e9f2;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  row-gap: 0.5rem;\n}\n\n@media (min-width: 768px) {\n  .domain-restricted-grid[_ngcontent-%COMP%] {\n    flex-direction: row;\n    align-items: flex-start;\n  }\n  .domain-restricted-illustration[_ngcontent-%COMP%] {\n    justify-content: flex-end;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF1dGgtZG9tYWluLXJlc3RyaWN0ZWQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLE9BQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0VBQ0EsV0FBQTtBQUNGOztBQUVBO0VBQ0UsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLDZCQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsbUJBQUE7SUFDQSx1QkFBQTtFQUNGO0VBRUE7SUFDRSx5QkFBQTtFQUFGO0FBQ0YiLCJmaWxlIjoiYXV0aC1kb21haW4tcmVzdHJpY3RlZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5hei1jYXJkLWRvbWFpbi1yZXN0cmljdGVkIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC13aWR0aDogOTYwcHg7XG4gIHBhZGRpbmc6IDIuNXJlbTtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWdyaWQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBnYXA6IDJyZW07XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1jb3B5IHtcbiAgZmxleDogMTtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWNvcHkgaDIge1xuICBmb250LXdlaWdodDogNjAwO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIHtcbiAgZmxleDogMTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1pbGx1c3RyYXRpb24gaW1nIHtcbiAgbWF4LXdpZHRoOiAzMjBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1mb290ZXIge1xuICBtYXJnaW4tdG9wOiAycmVtO1xuICBwYWRkaW5nLXRvcDogMS41cmVtO1xuICBib3JkZXItdG9wOiAxcHggc29saWQgI2U1ZTlmMjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIHJvdy1nYXA6IDAuNXJlbTtcbn1cblxuQG1lZGlhIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gIC5kb21haW4tcmVzdHJpY3RlZC1ncmlkIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICB9XG5cbiAgLmRvbWFpbi1yZXN0cmljdGVkLWlsbHVzdHJhdGlvbiB7XG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LWVuZDtcbiAgfVxufVxuIl19 */"] });
+    } if (rf & 2) {
+        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("A team for '", ctx.orgName, "' ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.orgLogo)("ngIfElse", _r1);
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink], styles: [".az-card-domain-restricted[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 960px;\n  padding: 2.5rem;\n}\n\n.domain-restricted-grid[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 2rem;\n  align-items: center;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.domain-restricted-copy[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  font-weight: 600;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.domain-restricted-illustration[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 320px;\n  width: 100%;\n}\n\n.org-logo-wrapper[_ngcontent-%COMP%] {\n  width: 220px;\n  height: 220px;\n  max-width: 320px;\n  border-radius: 50%;\n  border: 2px solid #e5e9f2;\n  background-color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  box-shadow: 0 10px 25px rgba(15, 32, 65, 0.12);\n}\n\n.org-logo[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  padding: 1.5rem;\n}\n\n.domain-restricted-footer[_ngcontent-%COMP%] {\n  margin-top: 2rem;\n  padding-top: 1.5rem;\n  border-top: 1px solid #e5e9f2;\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  row-gap: 0.5rem;\n}\n\n@media (min-width: 768px) {\n  .domain-restricted-grid[_ngcontent-%COMP%] {\n    flex-direction: row;\n    align-items: flex-start;\n  }\n  .domain-restricted-illustration[_ngcontent-%COMP%] {\n    justify-content: flex-end;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF1dGgtZG9tYWluLXJlc3RyaWN0ZWQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLE9BQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0VBQ0EsV0FBQTtBQUNGOztBQUVBO0VBQ0UsWUFBQTtFQUNBLGFBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsZ0JBQUE7RUFDQSw4Q0FBQTtBQUNGOztBQUVBO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7QUFDRjs7QUFFQTtFQUNFLGdCQUFBO0VBQ0EsbUJBQUE7RUFDQSw2QkFBQTtFQUNBLGFBQUE7RUFDQSw4QkFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLG1CQUFBO0lBQ0EsdUJBQUE7RUFDRjtFQUVBO0lBQ0UseUJBQUE7RUFBRjtBQUNGIiwiZmlsZSI6ImF1dGgtZG9tYWluLXJlc3RyaWN0ZWQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXotY2FyZC1kb21haW4tcmVzdHJpY3RlZCB7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXgtd2lkdGg6IDk2MHB4O1xuICBwYWRkaW5nOiAyLjVyZW07XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1ncmlkIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgZ2FwOiAycmVtO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtY29weSB7XG4gIGZsZXg6IDE7XG59XG5cbi5kb21haW4tcmVzdHJpY3RlZC1jb3B5IGgyIHtcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbn1cblxuLmRvbWFpbi1yZXN0cmljdGVkLWlsbHVzdHJhdGlvbiB7XG4gIGZsZXg6IDE7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtaWxsdXN0cmF0aW9uIGltZyB7XG4gIG1heC13aWR0aDogMzIwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4ub3JnLWxvZ28td3JhcHBlciB7XG4gIHdpZHRoOiAyMjBweDtcbiAgaGVpZ2h0OiAyMjBweDtcbiAgbWF4LXdpZHRoOiAzMjBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBib3JkZXI6IDJweCBzb2xpZCAjZTVlOWYyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgYm94LXNoYWRvdzogMCAxMHB4IDI1cHggcmdiYSgxNSwgMzIsIDY1LCAwLjEyKTtcbn1cblxuLm9yZy1sb2dvIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgb2JqZWN0LWZpdDogY29udGFpbjtcbiAgcGFkZGluZzogMS41cmVtO1xufVxuXG4uZG9tYWluLXJlc3RyaWN0ZWQtZm9vdGVyIHtcbiAgbWFyZ2luLXRvcDogMnJlbTtcbiAgcGFkZGluZy10b3A6IDEuNXJlbTtcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlNWU5ZjI7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgZmxleC13cmFwOiB3cmFwO1xuICByb3ctZ2FwOiAwLjVyZW07XG59XG5cbkBtZWRpYSAobWluLXdpZHRoOiA3NjhweCkge1xuICAuZG9tYWluLXJlc3RyaWN0ZWQtZ3JpZCB7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcbiAgfVxuXG4gIC5kb21haW4tcmVzdHJpY3RlZC1pbGx1c3RyYXRpb24ge1xuICAgIGp1c3RpZnktY29udGVudDogZmxleC1lbmQ7XG4gIH1cbn1cbiJdfQ== */"] });
 
 
 /***/ }),
@@ -5812,11 +5849,11 @@ class AuthSigninComponent {
             console.log(authResponse);
             if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to dashboard
-                this.router.navigateByUrl('/auth/restricted');
-                return;
+                return this.router.navigate(['/auth/restricted'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
             }
             else {
                 this.router.navigateByUrl('/developers');
+                return;
             }
         })
             .catch((err) => {
@@ -6574,16 +6611,15 @@ class AuthSignupComponent {
             console.log(authResponse);
             if (this.inviteToken) {
                 //if we are signing up with an invite, we should redirect to the dashboard
-                this.router.navigateByUrl('/dashboard');
+                return this.router.navigateByUrl('/dashboard');
             }
             else if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to dashboard
-                this.router.navigateByUrl('/auth/restricted');
-                return;
+                return this.router.navigate(['/auth/restricted'], { queryParams: { orgName: authResponse.organization_claimed.name, orgLogo: authResponse.organization_claimed.logo_uri } });
             }
             else {
                 //after creating a user, proceed to create an organization
-                this.router.navigateByUrl('/auth/signup/org');
+                return this.router.navigateByUrl('/auth/signup/org');
             }
         }, (err) => {
             this.loading = false;

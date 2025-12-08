@@ -2191,6 +2191,8 @@ var EventTypes;
     EventTypes["EventTypesPatientEHIExportSuccess"] = "patient.ehi_export_success";
     EventTypes["EventTypesPatientAuthorizationRevoked"] = "patient.authorization_revoked";
     EventTypes["EventTypesPatientConnectionSuccess"] = "patient.connection_success";
+    EventTypes["EventTypesPatientRequestHealthSystem"] = "patient.request_health_system";
+    EventTypes["EventTypesPatientRequestSupport"] = "patient.request_support";
     EventTypes["EventTypesWebhookTest"] = "webhook.test";
 })(EventTypes || (EventTypes = {}));
 const ORG_ONBOARDING_GRID_IMAGES = [
@@ -3902,6 +3904,8 @@ class OrgWebhooksEditorComponent {
             { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientEHIExportSuccess, label: 'patient.ehi_export_success', required: true },
             { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientAuthorizationRevoked, label: 'patient.authorization_revoked (beta)', required: false },
             { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientConnectionSuccess, label: 'patient.connection_success (beta)', required: false },
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientRequestHealthSystem, label: 'patient.request_health_system', required: false },
+            { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesPatientRequestSupport, label: 'patient.request_support (beta)', required: false },
             { value: _app_constants__WEBPACK_IMPORTED_MODULE_0__.EventTypes.EventTypesWebhookTest, label: 'webhook.test', required: true }
         ];
         this.selectedEventTypes = [];

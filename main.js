@@ -5870,7 +5870,11 @@ class AuthSigninComponent {
         })
             .catch((err) => {
             this.loading = false;
-            if (err?.name) {
+            if (err?.status === 429) {
+                this.errorMsg = "too many failed sign-in attempts, please try again later";
+                return;
+            }
+            else if (err?.name) {
                 this.errorMsg = "email or password is incorrect";
             }
             else {

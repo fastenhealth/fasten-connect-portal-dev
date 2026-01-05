@@ -5654,7 +5654,7 @@ class AuthResetComponent {
                 return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed?.name, orgLogo: authResponse.organization_claimed?.logo_uri } });
             }
             else {
-                this.router.navigateByUrl('/dashboard');
+                this.router.navigateByUrl('/developers');
                 return;
             }
         })
@@ -5864,7 +5864,7 @@ class AuthSigninComponent {
                 return this.router.navigate(['/auth/claimed'], { queryParams: { orgName: authResponse.organization_claimed?.name, orgLogo: authResponse.organization_claimed?.logo_uri } });
             }
             else {
-                this.router.navigateByUrl('/dashboard');
+                this.router.navigateByUrl('/developers');
                 return;
             }
         })
@@ -6170,7 +6170,7 @@ class AuthSignupOrganizationComponent {
                 .then((orgId) => {
                 const modalRef = this.modalService.open(_components_org_team_invite_multiple_org_team_invite_multiple_component__WEBPACK_IMPORTED_MODULE_2__.OrgTeamInviteMultipleComponent);
                 modalRef.componentInstance.orgId = orgId;
-                modalRef.result.then(() => this.router.navigate(['/dashboard']), () => this.router.navigate(['/dashboard']));
+                modalRef.result.then(() => this.router.navigate(['/developers']), () => this.router.navigate(['/developers']));
             });
         }, (err) => {
             console.error("Error creating Organization", err);
@@ -6627,7 +6627,7 @@ class AuthSignupComponent {
             console.log(authResponse);
             if (this.inviteToken) {
                 //if we are signing up with an invite, we should redirect to the dashboard
-                return this.router.navigateByUrl('/dashboard');
+                return this.router.navigateByUrl('/developers');
             }
             else if (authResponse?.organization_claimed) {
                 //if the organization is already claimed, redirect to the restricted domain page

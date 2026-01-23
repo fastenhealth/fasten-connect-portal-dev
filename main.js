@@ -7914,7 +7914,7 @@ class OrgTeamComponent {
             return false;
         if (!member.user_id)
             return false; // backend must provide user_id
-        const currentUserId = this.portalConfig.config$.user?.id;
+        const currentUserId = this.portalConfig.config$.user?.sub;
         if (!currentUserId)
             return false;
         // Don't allow removing yourself

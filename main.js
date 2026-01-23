@@ -7837,9 +7837,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+function OrgTeamComponent_div_16_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", ctx_r0.errorMsg, " ");
+} }
+function OrgTeamComponent_tr_30_button_9_Template(rf, ctx) { if (rf & 1) {
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "button", 20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgTeamComponent_tr_30_button_9_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r6); const member_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().$implicit; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵresetView"](ctx_r4.removeTeamMember(member_r2)); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1, " Remove ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const member_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().$implicit;
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r3.removingUserId === member_r2.user_id);
+} }
 const _c0 = function (a0, a1) { return { "badge-success": a0, "badge-warning": a1 }; };
-function OrgTeamComponent_tr_29_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "tr")(1, "th", 14)(2, "span", 15);
+function OrgTeamComponent_tr_30_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "tr")(1, "th", 16)(2, "span", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "td");
@@ -7847,17 +7867,23 @@ function OrgTeamComponent_tr_29_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "td");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "td", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](9, OrgTeamComponent_tr_30_button_9_Template, 2, 1, "button", 19);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
 } if (rf & 2) {
-    const member_r1 = ctx.$implicit;
+    const member_r2 = ctx.$implicit;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction2"](4, _c0, member_r1.status === "active", member_r1.status === "pending"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction2"](5, _c0, member_r2.status === "active", member_r2.status === "pending"));
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](member_r1.status);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](member_r2.status);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](member_r1.name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](member_r2.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](member_r1.email);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](member_r2.email);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r1.canRemove(member_r2));
 } }
 class OrgTeamComponent {
     constructor(connectService, modalService, portalConfig) {
@@ -7865,10 +7891,59 @@ class OrgTeamComponent {
         this.modalService = modalService;
         this.portalConfig = portalConfig;
         this.teamMembers = [];
+        this.errorMsg = '';
+        this.removingUserId = null;
     }
     ngOnInit() {
-        this.connectService.getOrgTeam(this.portalConfig.config$.user?.org_id).subscribe((data) => {
-            this.teamMembers = data;
+        this.loadTeam();
+    }
+    loadTeam() {
+        const orgId = this.portalConfig.config$.user?.org_id;
+        if (!orgId) {
+            this.errorMsg = 'Unknown Organization ID';
+            return;
+        }
+        this.errorMsg = '';
+        this.connectService.getOrgTeam(orgId).subscribe({
+            next: (data) => (this.teamMembers = data || []),
+            error: (err) => (this.errorMsg = err?.error?.message || 'Failed to load team.')
+        });
+    }
+    canRemove(member) {
+        if (member.status !== 'active')
+            return false;
+        if (!member.user_id)
+            return false; // backend must provide user_id
+        const currentUserId = this.portalConfig.config$.user?.id;
+        if (!currentUserId)
+            return false;
+        // Don't allow removing yourself
+        return member.user_id !== currentUserId;
+    }
+    removeTeamMember(member) {
+        const orgId = this.portalConfig.config$.user?.org_id;
+        if (!orgId) {
+            this.errorMsg = 'Unknown Organization ID';
+            return;
+        }
+        if (!member.user_id) {
+            this.errorMsg = 'Missing user id for this team member (backend needs to return user_id)';
+            return;
+        }
+        this.errorMsg = '';
+        // Confirm the removal
+        if (!confirm(`Remove ${member.email || member.name} from your organization?`))
+            return;
+        this.removingUserId = member.user_id;
+        this.connectService.removeOrgTeamMember(orgId, member.user_id).subscribe({
+            next: () => {
+                this.removingUserId = null; // reset the removing user id
+                this.loadTeam(); // refresh list
+            },
+            error: (err) => {
+                this.removingUserId = null; // reset the removing user id
+                this.errorMsg = err?.error?.message || 'Failed to remove team member.';
+            }
         });
     }
     openOrgTeamInviteModal() {
@@ -7881,7 +7956,7 @@ class OrgTeamComponent {
     }
 }
 OrgTeamComponent.ɵfac = function OrgTeamComponent_Factory(t) { return new (t || OrgTeamComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_services_connect_service__WEBPACK_IMPORTED_MODULE_1__.ConnectService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__.NgbModal), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_services_portal_config_service__WEBPACK_IMPORTED_MODULE_2__.PortalConfigService)); };
-OrgTeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: OrgTeamComponent, selectors: [["app-org-team"]], decls: 30, vars: 1, consts: [[1, "mg-t-10", "container"], [1, "mg-l-auto", "nav", "nav-pills", "flex-column", "flex-md-row"], ["data-bs-toggle", "tab", "routerLink", "/org/settings", 1, "nav-link"], ["data-bs-toggle", "tab", "routerLink", "/org/team", 1, "nav-link", "active"], ["data-bs-toggle", "tab", "routerLink", "/org/billing", 1, "nav-link"], [1, "row"], [1, "col-12"], [1, "card", "mg-t-20"], [1, "card-header", "d-flex", "justify-content-between", "align-items-center"], [1, "btn", "btn-outline-indigo", "float-right", "text-indigo", 3, "click"], [1, "card-body"], [1, "table", "mg-t-10"], ["scope", "col"], [4, "ngFor", "ngForOf"], ["scope", "row"], [1, "badge", 3, "ngClass"]], template: function OrgTeamComponent_Template(rf, ctx) { if (rf & 1) {
+OrgTeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: OrgTeamComponent, selectors: [["app-org-team"]], decls: 31, vars: 2, consts: [[1, "mg-t-10", "container"], [1, "mg-l-auto", "nav", "nav-pills", "flex-column", "flex-md-row"], ["data-bs-toggle", "tab", "routerLink", "/org/settings", 1, "nav-link"], ["data-bs-toggle", "tab", "routerLink", "/org/team", 1, "nav-link", "active"], ["data-bs-toggle", "tab", "routerLink", "/org/billing", 1, "nav-link"], [1, "row"], [1, "col-12"], [1, "card", "mg-t-20"], [1, "card-header", "d-flex", "justify-content-between", "align-items-center"], [1, "btn", "btn-outline-indigo", "float-right", "text-indigo", 3, "click"], [1, "card-body"], ["class", "alert alert-danger mb-3", 4, "ngIf"], [1, "table", "mg-t-10"], ["scope", "col"], [4, "ngFor", "ngForOf"], [1, "alert", "alert-danger", "mb-3"], ["scope", "row"], [1, "badge", 3, "ngClass"], [1, "text-end"], ["class", "btn btn-sm btn-outline-danger", 3, "disabled", "click", 4, "ngIf"], [1, "btn", "btn-sm", "btn-outline-danger", 3, "disabled", "click"]], template: function OrgTeamComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0)(1, "nav", 1)(2, "a", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, "Details");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -7897,27 +7972,31 @@ OrgTeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3_
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function OrgTeamComponent_Template_button_click_13_listener() { return ctx.openOrgTeamInviteModal(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](14, "Invite new Member");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](15, "div", 10)(16, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "Invite your colleagues to join your team.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](15, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](16, OrgTeamComponent_div_16_Template, 2, 1, "div", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](17, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](18, "Invite your colleagues to join your team.");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](18, "table", 11)(19, "thead")(20, "tr")(21, "th", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](22, "Status");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](19, "table", 12)(20, "thead")(21, "tr")(22, "th", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](23, "Status");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](23, "th", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](24, "Name");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](24, "th", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](25, "Name");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](25, "th", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](26, "Email");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](26, "th", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](27, "Email");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](27, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](28, "th");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](28, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](29, OrgTeamComponent_tr_29_Template, 8, 7, "tr", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](29, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](30, OrgTeamComponent_tr_30_Template, 10, 8, "tr", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()()();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.errorMsg);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.teamMembers);
-    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterLinkWithHref], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmctdGVhbS5jb21wb25lbnQuc2NzcyJ9 */"] });
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterLinkWithHref], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJvcmctdGVhbS5jb21wb25lbnQuc2NzcyJ9 */"] });
 
 
 /***/ }),
@@ -8074,8 +8153,7 @@ class WebhookLogsComponent {
             this.applySearchTerm();
         });
     }
-    handleSearchChange(query) {
-        this.searchTerm = query;
+    handleSearchChange() {
         this.applySearchTerm();
     }
     copySecretToken(secretToken) {
@@ -8320,7 +8398,7 @@ WebhookLogsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODUL
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](64, "i", 26);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()();
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](65, "input", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngModelChange", function WebhookLogsComponent_Template_input_ngModelChange_65_listener($event) { return ctx.searchTerm = $event; })("ngModelChange", function WebhookLogsComponent_Template_input_ngModelChange_65_listener($event) { return ctx.handleSearchChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("ngModelChange", function WebhookLogsComponent_Template_input_ngModelChange_65_listener($event) { return ctx.searchTerm = $event; })("ngModelChange", function WebhookLogsComponent_Template_input_ngModelChange_65_listener() { return ctx.handleSearchChange(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]()()()();
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](66, "div", 21)(67, "div", 28)(68, "div", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](69, WebhookLogsComponent_a_69_Template, 8, 19, "a", 30);
@@ -8884,6 +8962,9 @@ class ConnectService {
             console.log("Organization Team", response);
             return response.data;
         }));
+    }
+    removeOrgTeamMember(orgId, userId) {
+        return this._httpClient.delete(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/team/${userId}`);
     }
     createOrgCredentials(orgId, apiMode, redirectUrls, note) {
         return this._httpClient.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.connect_api_endpoint_base}/org/${orgId}/credentials`, {
